@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Dock Tile Plug-in' target in the 'Dock Tile Plug-in' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
