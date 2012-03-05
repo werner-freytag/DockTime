@@ -12,17 +12,27 @@
 
 @implementation DockTilePlugIn
 
+- (void)finalize {
+	NSLog(@"dealloc");
+	[super finalize];
+}
+
 - (void)setDockTile:(NSDockTile*)dockTile {
+	
+	NSLog(@"set dock tile: %@", dockTile);
 	
 	_dockTile = dockTile;
 	
-	if ( !dockTile )
-		exit(0);
+	if ( dockTile ) {
+		
+		[dockTile setContentView:[[ClockView alloc] init]];
+		[NSTimer scheduledTimerWithTimeInterval:.2 target:dockTile selector:@selector(display) userInfo:Nil repeats:YES];
+	}
+	else {
+		[dockTile setContentView:nil];
+		[NSApp terminate:nil];
+	}
 	
-	[dockTile setContentView:[[ClockView alloc] init]];
-	[NSTimer scheduledTimerWithTimeInterval:.2 target:dockTile selector:@selector(display) userInfo:Nil repeats:YES];
-	
-	NSLog(@"set dock tile: %@", dockTile);
 }
 
 - (NSMenu*)dockMenu {
@@ -30,12 +40,11 @@
 }
 
 - (void)setTheme:(NSMenuItem *)menuItem {
-	NSLog(@"%ld", menuItem.tag);
+	NSLog(@"set theme plugin: %ld", menuItem.tag);
 }
 
 - (void)openPrefPane:(NSMenuItem *)menuItem {
 	NSLog(@"Open prefs plugin");
-	return;
     [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/DateAndTime.prefPane"];
 }
 
