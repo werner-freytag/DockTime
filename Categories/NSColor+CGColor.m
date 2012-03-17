@@ -1,6 +1,6 @@
 //
 //  NSColor+CGColor.m
-//  DockClock
+//  iClock
 //
 //  Created by Werner Freytag on 03.03.12.
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.
@@ -16,6 +16,7 @@
 	NSColor *color = [NSColor colorWithColorSpace:colorSpace
 									   components:CGColorGetComponents(aColorRef)
 											count:CGColorGetNumberOfComponents(aColorRef)];
+	
 	return color;
 }
 
@@ -26,7 +27,7 @@
 	
     [self getComponents:(CGFloat *)&components];
 	
-    return CGColorCreate(colorSpace, components);
+    return (__bridge_retained CGColorRef)(__bridge_transfer id)CGColorCreate(colorSpace, components);
 }
 
 @end

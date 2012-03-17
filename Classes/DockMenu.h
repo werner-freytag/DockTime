@@ -1,6 +1,6 @@
 //
 //  DockMenu.h
-//  DockClock
+//  iClock
 //
 //  Created by Werner Freytag on 04.03.12.
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.
@@ -11,8 +11,13 @@
 #define THEME_1 10001
 #define THEME_2 10002
 
-@interface DockMenu : NSMenu
+@interface DockMenu : NSMenu {
+	NSArray *_bundles;
+}
 
-- (id)initWithTarget:(id)target;
+- (id)init;
+
+- (void)setTheme:(NSMenuItem *)menuItem;
+- (void)openPrefPane:(NSMenuItem *)menuItem;
 
 @end

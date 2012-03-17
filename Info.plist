@@ -7,11 +7,11 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>DockClock version 1.0, Copyright 2012 Pecora GmbH.</string>
+	<string>iClock version 1.0, Copyright 2012 Pecora GmbH.</string>
 	<key>CFBundleIconFile</key>
 	<string>Icon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.pecora.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>de.pecora.iClock</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -23,13 +23,13 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>255</string>
+	<string>737</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.lifestyle</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSDockTilePlugIn</key>
-	<string>Dock Tile Plug-in.docktileplugin</string>
+	<string>DockTilePlugin.docktileplugin</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>©2012 Pecora GmbH</string>
 	<key>NSMainNibFile</key>
