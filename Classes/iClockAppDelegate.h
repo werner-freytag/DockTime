@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class DockTilePlugIn;
+
 @interface iClockAppDelegate : NSObject <NSApplicationDelegate> {
 	
 	NSMenu *_dockMenu;
+	DockTilePlugIn *_dockTilePlugin;
 }
 
 @end

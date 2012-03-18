@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "362AEDAB150AD685009B8640"
-               BuildableName = "Dark.clockbundle"
-               BlueprintName = "ClockBundle-Dark"
+               BuildableName = "Chronometer.clockbundle"
+               BlueprintName = "ClockBundle-Chronometer"
                ReferencedContainer = "container:iClock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

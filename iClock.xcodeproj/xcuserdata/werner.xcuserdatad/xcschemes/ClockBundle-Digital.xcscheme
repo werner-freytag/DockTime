@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "362AEDE8150AE12F009B8640"
-               BuildableName = "PinkLady.clockbundle"
-               BlueprintName = "ClockBundle-PinkLady"
+               BuildableName = "Digital.clockbundle"
+               BlueprintName = "ClockBundle-Digital"
                ReferencedContainer = "container:iClock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

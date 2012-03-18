@@ -17,24 +17,16 @@
 
 - (id)init {
 	
-	if ( ( self = [super initWithTitle:@""] ) ) {
+	if ( ( self = [super initWithTitle:NSLocalizedString(@"Type", Nil)] ) ) {
 		
 		NSMenuItem *item;
-		
-		/*
-		item = [[NSMenuItem alloc] initWithTitle:@"Open Date And Time" action:@selector(openPrefPane:) keyEquivalent:@"?"];
-		item.target = self;
-		[self addItem:item];
-		
-		[self addItem:[NSMenuItem separatorItem]];
-		*/
-		
+				
 		NSUInteger tag = TAG_BASE;
 		
 		_bundles = [NSArray arrayWithArray:[DockTilePlugIn allClockBundles]];
 		
 		for ( NSBundle *bundle in _bundles ) {
-			
+						
             item = [[NSMenuItem alloc] initWithTitle:[bundle objectForInfoDictionaryKey:(NSString *)kCFBundleNameKey] action:@selector(setTheme:) keyEquivalent:@""];
             item.target = self;
 			item.tag = tag;

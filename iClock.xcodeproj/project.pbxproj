@@ -60,17 +60,17 @@
 		3627D94B15040850006B89B0 /* DockMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627D94A15040850006B89B0 /* DockMenu.m */; };
 		362AEDAE150AD685009B8640 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 36028D6115019F4800463021 /* NSColor+CGColor.m */; };
 		362AEDB1150AD685009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		362AEDCD150AD721009B8640 /* ClockView_Dark.m in Sources */ = {isa = PBXBuildFile; fileRef = 362AEDC2150AD721009B8640 /* ClockView_Dark.m */; };
+		362AEDCD150AD721009B8640 /* ClockView_Chronometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 362AEDC2150AD721009B8640 /* ClockView_Chronometer.m */; };
 		362AEDCF150AD721009B8640 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDC6150AD721009B8640 /* Background.png */; };
 		362AEDD0150AD721009B8640 /* Foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDC7150AD721009B8640 /* Foreground.png */; };
 		362AEDD1150AD721009B8640 /* HandsMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDC8150AD721009B8640 /* HandsMiddle.png */; };
 		362AEDD2150AD721009B8640 /* HourHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDC9150AD721009B8640 /* HourHand.png */; };
 		362AEDD3150AD721009B8640 /* MinuteHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDCA150AD721009B8640 /* MinuteHand.png */; };
 		362AEDD4150AD721009B8640 /* SecondHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDCB150AD721009B8640 /* SecondHand.png */; };
-		362AEDD6150AD780009B8640 /* Dark.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDBC150AD685009B8640 /* Dark.clockbundle */; };
+		362AEDD6150AD780009B8640 /* Chronometer.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDBC150AD685009B8640 /* Chronometer.clockbundle */; };
 		362AEDEB150AE12F009B8640 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 36028D6115019F4800463021 /* NSColor+CGColor.m */; };
 		362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		362AEE10150AE854009B8640 /* ClockView_PinkLady.m in Sources */ = {isa = PBXBuildFile; fileRef = 362AEDFF150AE854009B8640 /* ClockView_PinkLady.m */; };
+		362AEE10150AE854009B8640 /* ClockView_Digital.m in Sources */ = {isa = PBXBuildFile; fileRef = 362AEDFF150AE854009B8640 /* ClockView_Digital.m */; };
 		362AEE12150AE854009B8640 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE03150AE854009B8640 /* 0.png */; };
 		362AEE13150AE854009B8640 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE04150AE854009B8640 /* 1.png */; };
 		362AEE14150AE854009B8640 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE05150AE854009B8640 /* 2.png */; };
@@ -82,12 +82,18 @@
 		362AEE1A150AE854009B8640 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE0B150AE854009B8640 /* 8.png */; };
 		362AEE1B150AE854009B8640 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE0C150AE854009B8640 /* 9.png */; };
 		362AEE1C150AE854009B8640 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE0D150AE854009B8640 /* Background.png */; };
-		362AEE1D150AE854009B8640 /* Foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE0E150AE854009B8640 /* Foreground.png */; };
-		362AEE21150AEB5E009B8640 /* PinkLady.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* PinkLady.clockbundle */; };
+		362AEE21150AEB5E009B8640 /* Digital.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Digital.clockbundle */; };
 		362AEE26150AF50B009B8640 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 362AEE25150AF50B009B8640 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36475845150AF6EC003107F4 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36475844150AF6EC003107F4 /* libicucore.dylib */; };
 		364E4470127B39C800963CE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		364E4477127B39C800963CE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4476127B39C800963CE7 /* main.m */; };
+		366AFFA515167CF3008062D9 /* Separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 366AFFA415167CF3008062D9 /* Separator.png */; };
+		366AFFA915169BB5008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36205CA9150ACE3F00D0B0C6 /* InfoPlist.strings */; };
+		366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */; };
+		366AFFAC15169CC8008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 362AEDC3150AD721009B8640 /* InfoPlist.strings */; };
+		366AFFAD15169CD2008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE00150AE854009B8640 /* InfoPlist.strings */; };
+		366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C205150BFF7B00FF8099 /* InfoPlist.strings */; };
+		366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 366AFFB51516A3B1008062D9 /* Localizable.strings */; };
 		36C06AD9150596BD009AFAB2 /* DockMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627D94A15040850006B89B0 /* DockMenu.m */; };
 		36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C4633C13744BB200A91AC4 /* QuartzCore.framework */; };
 		36CB03C0150AAE8900925361 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
@@ -124,14 +130,14 @@
 			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 362AEDAB150AD685009B8640;
-			remoteInfo = "ClockBundle-Dark";
+			remoteInfo = "ClockBundle-Chronometer";
 		};
 		362AEE1F150AEB55009B8640 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 362AEDE8150AE12F009B8640;
-			remoteInfo = "ClockBundle-PinkLady";
+			remoteInfo = "ClockBundle-Digital";
 		};
 		36CB03DC150AB3B500925361 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -160,9 +166,9 @@
 			dstSubfolderSpec = 13;
 			files = (
 				36CB03DF150AB40900925361 /* White.clockbundle in CopyFiles */,
-				362AEDD6150AD780009B8640 /* Dark.clockbundle in CopyFiles */,
+				362AEDD6150AD780009B8640 /* Chronometer.clockbundle in CopyFiles */,
 				3609C226150C033300FF8099 /* FlipClock.clockbundle in CopyFiles */,
-				362AEE21150AEB5E009B8640 /* PinkLady.clockbundle in CopyFiles */,
+				362AEE21150AEB5E009B8640 /* Digital.clockbundle in CopyFiles */,
 				3609C1DE150BF14300FF8099 /* Subway.clockbundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,11 +243,11 @@
 		3627D93215027D6B006B89B0 /* Dock Tile Plug-in-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dock Tile Plug-in-Prefix.pch"; sourceTree = "<group>"; };
 		3627D94915040850006B89B0 /* DockMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockMenu.h; sourceTree = "<group>"; };
 		3627D94A15040850006B89B0 /* DockMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockMenu.m; sourceTree = "<group>"; };
-		362AEDBC150AD685009B8640 /* Dark.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dark.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		362AEDBF150AD721009B8640 /* ClockBundle-Dark-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Dark-Prefix.pch"; sourceTree = "<group>"; };
-		362AEDC0150AD721009B8640 /* ClockBundle-Dark-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-Dark-Info.plist"; sourceTree = "<group>"; };
-		362AEDC1150AD721009B8640 /* ClockView_Dark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView_Dark.h; sourceTree = "<group>"; };
-		362AEDC2150AD721009B8640 /* ClockView_Dark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_Dark.m; sourceTree = "<group>"; };
+		362AEDBC150AD685009B8640 /* Chronometer.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chronometer.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		362AEDBF150AD721009B8640 /* ClockBundle-Chronometer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Chronometer-Prefix.pch"; sourceTree = "<group>"; };
+		362AEDC0150AD721009B8640 /* ClockBundle-Chronometer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-Chronometer-Info.plist"; sourceTree = "<group>"; };
+		362AEDC1150AD721009B8640 /* ClockView_Chronometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView_Chronometer.h; sourceTree = "<group>"; };
+		362AEDC2150AD721009B8640 /* ClockView_Chronometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_Chronometer.m; sourceTree = "<group>"; };
 		362AEDC4150AD721009B8640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		362AEDC6150AD721009B8640 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		362AEDC7150AD721009B8640 /* Foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foreground.png; sourceTree = "<group>"; };
@@ -249,11 +255,11 @@
 		362AEDC9150AD721009B8640 /* HourHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HourHand.png; sourceTree = "<group>"; };
 		362AEDCA150AD721009B8640 /* MinuteHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MinuteHand.png; sourceTree = "<group>"; };
 		362AEDCB150AD721009B8640 /* SecondHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SecondHand.png; sourceTree = "<group>"; };
-		362AEDF9150AE12F009B8640 /* PinkLady.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinkLady.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		362AEDFC150AE854009B8640 /* ClockBundle-PinkLady-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-PinkLady-Info.plist"; sourceTree = "<group>"; };
-		362AEDFD150AE854009B8640 /* ClockBundle-PinkLady-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-PinkLady-Prefix.pch"; sourceTree = "<group>"; };
-		362AEDFE150AE854009B8640 /* ClockView_PinkLady.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView_PinkLady.h; sourceTree = "<group>"; };
-		362AEDFF150AE854009B8640 /* ClockView_PinkLady.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_PinkLady.m; sourceTree = "<group>"; };
+		362AEDF9150AE12F009B8640 /* Digital.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Digital.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		362AEDFC150AE854009B8640 /* ClockBundle-Digital-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-Digital-Info.plist"; sourceTree = "<group>"; };
+		362AEDFD150AE854009B8640 /* ClockBundle-Digital-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Digital-Prefix.pch"; sourceTree = "<group>"; };
+		362AEDFE150AE854009B8640 /* ClockView_Digital.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView_Digital.h; sourceTree = "<group>"; };
+		362AEDFF150AE854009B8640 /* ClockView_Digital.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_Digital.m; sourceTree = "<group>"; };
 		362AEE01150AE854009B8640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		362AEE03150AE854009B8640 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		362AEE04150AE854009B8640 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -266,7 +272,6 @@
 		362AEE0B150AE854009B8640 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 		362AEE0C150AE854009B8640 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		362AEE0D150AE854009B8640 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
-		362AEE0E150AE854009B8640 /* Foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foreground.png; sourceTree = "<group>"; };
 		362AEE24150AF50B009B8640 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		362AEE25150AF50B009B8640 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		36475844150AF6EC003107F4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -275,6 +280,13 @@
 		364E4471127B39C800963CE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364E4472127B39C800963CE7 /* iClock_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = iClock_Prefix.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		364E4476127B39C800963CE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		366AFFA415167CF3008062D9 /* Separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Separator.png; sourceTree = "<group>"; };
+		366AFFA8151697EC008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		366AFFAB15169C61008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		366AFFAF15169CE1008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		366AFFB01516A341008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
+		366AFFB41516A3B1008062D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		366AFFB61516A3C0008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		366B282014B852240018DD37 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36C4633C13744BB200A91AC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		36CB03BF150AAE8900925361 /* White.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = White.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -512,15 +524,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		362AEDBE150AD721009B8640 /* ClockBundle-Dark */ = {
+		362AEDBE150AD721009B8640 /* ClockBundle-Chronometer */ = {
 			isa = PBXGroup;
 			children = (
 				362AEDD5150AD730009B8640 /* Supporting Files */,
-				362AEDC1150AD721009B8640 /* ClockView_Dark.h */,
-				362AEDC2150AD721009B8640 /* ClockView_Dark.m */,
+				362AEDC1150AD721009B8640 /* ClockView_Chronometer.h */,
+				362AEDC2150AD721009B8640 /* ClockView_Chronometer.m */,
 				362AEDC5150AD721009B8640 /* Resources */,
 			);
-			path = "ClockBundle-Dark";
+			path = "ClockBundle-Chronometer";
 			sourceTree = "<group>";
 		};
 		362AEDC5150AD721009B8640 /* Resources */ = {
@@ -539,22 +551,22 @@
 		362AEDD5150AD730009B8640 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				362AEDBF150AD721009B8640 /* ClockBundle-Dark-Prefix.pch */,
-				362AEDC0150AD721009B8640 /* ClockBundle-Dark-Info.plist */,
+				362AEDBF150AD721009B8640 /* ClockBundle-Chronometer-Prefix.pch */,
+				362AEDC0150AD721009B8640 /* ClockBundle-Chronometer-Info.plist */,
 				362AEDC3150AD721009B8640 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		362AEDFB150AE854009B8640 /* ClockBundle-PinkLady */ = {
+		362AEDFB150AE854009B8640 /* ClockBundle-Digital */ = {
 			isa = PBXGroup;
 			children = (
 				362AEE1E150AE85B009B8640 /* Supporting Files */,
-				362AEDFE150AE854009B8640 /* ClockView_PinkLady.h */,
-				362AEDFF150AE854009B8640 /* ClockView_PinkLady.m */,
+				362AEDFE150AE854009B8640 /* ClockView_Digital.h */,
+				362AEDFF150AE854009B8640 /* ClockView_Digital.m */,
 				362AEE02150AE854009B8640 /* Resources */,
 			);
-			path = "ClockBundle-PinkLady";
+			path = "ClockBundle-Digital";
 			sourceTree = "<group>";
 		};
 		362AEE02150AE854009B8640 /* Resources */ = {
@@ -570,8 +582,8 @@
 				362AEE0A150AE854009B8640 /* 7.png */,
 				362AEE0B150AE854009B8640 /* 8.png */,
 				362AEE0C150AE854009B8640 /* 9.png */,
+				366AFFA415167CF3008062D9 /* Separator.png */,
 				362AEE0D150AE854009B8640 /* Background.png */,
-				362AEE0E150AE854009B8640 /* Foreground.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -579,8 +591,8 @@
 		362AEE1E150AE85B009B8640 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				362AEDFC150AE854009B8640 /* ClockBundle-PinkLady-Info.plist */,
-				362AEDFD150AE854009B8640 /* ClockBundle-PinkLady-Prefix.pch */,
+				362AEDFC150AE854009B8640 /* ClockBundle-Digital-Info.plist */,
+				362AEDFD150AE854009B8640 /* ClockBundle-Digital-Prefix.pch */,
 				362AEE00150AE854009B8640 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -613,8 +625,8 @@
 				364E4466127B39C800963CE7 /* Resources */,
 				3627D92C15027D6B006B89B0 /* Dock Tile Plug-in */,
 				36205CA4150ACE3F00D0B0C6 /* ClockBundle-White */,
-				362AEDBE150AD721009B8640 /* ClockBundle-Dark */,
-				362AEDFB150AE854009B8640 /* ClockBundle-PinkLady */,
+				362AEDBE150AD721009B8640 /* ClockBundle-Chronometer */,
+				362AEDFB150AE854009B8640 /* ClockBundle-Digital */,
 				3609C1B8150BEE5B00FF8099 /* ClockBundle-Subway */,
 				3609C200150BFF7B00FF8099 /* ClockBundle-FlipClock */,
 				364E4467127B39C800963CE7 /* Frameworks */,
@@ -639,6 +651,7 @@
 			isa = PBXGroup;
 			children = (
 				36F06BB6127B75B00003535B /* Icon.icns */,
+				366AFFB51516A3B1008062D9 /* Localizable.strings */,
 				360CE725127CCF38009BC9FB /* MainMenu.xib */,
 				36F06B92127B73C80003535B /* Credits.rtf */,
 			);
@@ -662,8 +675,8 @@
 				364E446C127B39C800963CE7 /* iClock.app */,
 				3627D92615027D6B006B89B0 /* DockTilePlugin.docktileplugin */,
 				36CB03BF150AAE8900925361 /* White.clockbundle */,
-				362AEDBC150AD685009B8640 /* Dark.clockbundle */,
-				362AEDF9150AE12F009B8640 /* PinkLady.clockbundle */,
+				362AEDBC150AD685009B8640 /* Chronometer.clockbundle */,
+				362AEDF9150AE12F009B8640 /* Digital.clockbundle */,
 				3609C1B5150BEDE400FF8099 /* Subway.clockbundle */,
 				3609C1FE150BFF1800FF8099 /* FlipClock.clockbundle */,
 			);
@@ -730,9 +743,9 @@
 			productReference = 3627D92615027D6B006B89B0 /* DockTilePlugin.docktileplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
-		362AEDAB150AD685009B8640 /* ClockBundle-Dark */ = {
+		362AEDAB150AD685009B8640 /* ClockBundle-Chronometer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362AEDB9150AD685009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Dark" */;
+			buildConfigurationList = 362AEDB9150AD685009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Chronometer" */;
 			buildPhases = (
 				362AEDAC150AD685009B8640 /* Sources */,
 				362AEDB0150AD685009B8640 /* Frameworks */,
@@ -742,14 +755,14 @@
 			);
 			dependencies = (
 			);
-			name = "ClockBundle-Dark";
+			name = "ClockBundle-Chronometer";
 			productName = ClockView_White;
-			productReference = 362AEDBC150AD685009B8640 /* Dark.clockbundle */;
+			productReference = 362AEDBC150AD685009B8640 /* Chronometer.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		362AEDE8150AE12F009B8640 /* ClockBundle-PinkLady */ = {
+		362AEDE8150AE12F009B8640 /* ClockBundle-Digital */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-PinkLady" */;
+			buildConfigurationList = 362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Digital" */;
 			buildPhases = (
 				362AEDE9150AE12F009B8640 /* Sources */,
 				362AEDED150AE12F009B8640 /* Frameworks */,
@@ -759,9 +772,9 @@
 			);
 			dependencies = (
 			);
-			name = "ClockBundle-PinkLady";
+			name = "ClockBundle-Digital";
 			productName = ClockView_White;
-			productReference = 362AEDF9150AE12F009B8640 /* PinkLady.clockbundle */;
+			productReference = 362AEDF9150AE12F009B8640 /* Digital.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		364E446B127B39C800963CE7 /* iClock */ = {
@@ -831,8 +844,8 @@
 				364E446B127B39C800963CE7 /* iClock */,
 				3627D92515027D6B006B89B0 /* DockTilePlugin */,
 				36CB03BE150AAE8900925361 /* ClockBundle-White */,
-				362AEDAB150AD685009B8640 /* ClockBundle-Dark */,
-				362AEDE8150AE12F009B8640 /* ClockBundle-PinkLady */,
+				362AEDAB150AD685009B8640 /* ClockBundle-Chronometer */,
+				362AEDE8150AE12F009B8640 /* ClockBundle-Digital */,
 				3609C19B150BEDE400FF8099 /* ClockBundle-Subway */,
 				3609C1E5150BFF1800FF8099 /* ClockBundle-FlipClock */,
 			);
@@ -857,6 +870,7 @@
 				3609C1D9150BEE5B00FF8099 /* Background.png in Resources */,
 				3609C1DA150BEE5B00FF8099 /* Foreground.png in Resources */,
 				3609C1E0150BF1C000FF8099 /* Dot.png in Resources */,
+				366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +890,7 @@
 				3609C220150BFF7B00FF8099 /* 9.png in Resources */,
 				3609C221150BFF7B00FF8099 /* Background.png in Resources */,
 				3609C222150BFF7B00FF8099 /* Foreground.png in Resources */,
+				366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,6 +911,7 @@
 				362AEDD2150AD721009B8640 /* HourHand.png in Resources */,
 				362AEDD3150AD721009B8640 /* MinuteHand.png in Resources */,
 				362AEDD4150AD721009B8640 /* SecondHand.png in Resources */,
+				366AFFAC15169CC8008062D9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,7 +930,8 @@
 				362AEE1A150AE854009B8640 /* 8.png in Resources */,
 				362AEE1B150AE854009B8640 /* 9.png in Resources */,
 				362AEE1C150AE854009B8640 /* Background.png in Resources */,
-				362AEE1D150AE854009B8640 /* Foreground.png in Resources */,
+				366AFFA515167CF3008062D9 /* Separator.png in Resources */,
+				366AFFAD15169CD2008062D9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +942,7 @@
 				360CE72D127CD056009BC9FB /* MainMenu.xib in Resources */,
 				360CE732127CD056009BC9FB /* Credits.rtf in Resources */,
 				36F06BB7127B75B00003535B /* Icon.icns in Resources */,
+				366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,6 +956,7 @@
 				36205CB8150ACE3F00D0B0C6 /* HourHand.png in Resources */,
 				36205CB9150ACE3F00D0B0C6 /* MinuteHand.png in Resources */,
 				36205CBA150ACE3F00D0B0C6 /* SecondHand.png in Resources */,
+				366AFFA915169BB5008062D9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,7 +1013,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				362AEDAE150AD685009B8640 /* NSColor+CGColor.m in Sources */,
-				362AEDCD150AD721009B8640 /* ClockView_Dark.m in Sources */,
+				362AEDCD150AD721009B8640 /* ClockView_Chronometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,7 +1022,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				362AEDEB150AE12F009B8640 /* NSColor+CGColor.m in Sources */,
-				362AEE10150AE854009B8640 /* ClockView_PinkLady.m in Sources */,
+				362AEE10150AE854009B8640 /* ClockView_Digital.m in Sources */,
 				362AEE26150AF50B009B8640 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1048,12 +1067,12 @@
 		};
 		362AEDD8150AD789009B8640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 362AEDAB150AD685009B8640 /* ClockBundle-Dark */;
+			target = 362AEDAB150AD685009B8640 /* ClockBundle-Chronometer */;
 			targetProxy = 362AEDD7150AD789009B8640 /* PBXContainerItemProxy */;
 		};
 		362AEE20150AEB55009B8640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 362AEDE8150AE12F009B8640 /* ClockBundle-PinkLady */;
+			target = 362AEDE8150AE12F009B8640 /* ClockBundle-Digital */;
 			targetProxy = 362AEE1F150AEB55009B8640 /* PBXContainerItemProxy */;
 		};
 		36CB03DD150AB3B500925361 /* PBXTargetDependency */ = {
@@ -1068,6 +1087,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3609C1BE150BEE5B00FF8099 /* en */,
+				366AFFAB15169C61008062D9 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1076,6 +1096,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3609C206150BFF7B00FF8099 /* en */,
+				366AFFAF15169CE1008062D9 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1097,6 +1118,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				36205CAA150ACE3F00D0B0C6 /* en */,
+				366AFFA8151697EC008062D9 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1125,10 +1147,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		366AFFB51516A3B1008062D9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366AFFB41516A3B1008062D9 /* en */,
+				366AFFB61516A3C0008062D9 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		36F06B92127B73C80003535B /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
 				36F06B93127B73C80003535B /* en */,
+				366AFFB01516A341008062D9 /* de */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -1302,7 +1334,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockBundle-Dark/ClockBundle-Dark-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClockBundle-Chronometer/ClockBundle-Chronometer-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1310,10 +1342,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "ClockBundle-Dark/ClockBundle-Dark-Info.plist";
+				INFOPLIST_FILE = "ClockBundle-Chronometer/ClockBundle-Chronometer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = Dark;
+				PRODUCT_NAME = Chronometer;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1330,13 +1362,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockBundle-Dark/ClockBundle-Dark-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClockBundle-Chronometer/ClockBundle-Chronometer-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "ClockBundle-Dark/ClockBundle-Dark-Info.plist";
+				INFOPLIST_FILE = "ClockBundle-Chronometer/ClockBundle-Chronometer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = Dark;
+				PRODUCT_NAME = Chronometer;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1353,7 +1385,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockBundle-PinkLady/ClockBundle-PinkLady-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClockBundle-Digital/ClockBundle-Digital-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1361,10 +1393,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "ClockBundle-PinkLady/ClockBundle-PinkLady-Info.plist";
+				INFOPLIST_FILE = "ClockBundle-Digital/ClockBundle-Digital-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = PinkLady;
+				PRODUCT_NAME = Digital;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1381,13 +1413,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockBundle-PinkLady/ClockBundle-PinkLady-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClockBundle-Digital/ClockBundle-Digital-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "ClockBundle-PinkLady/ClockBundle-PinkLady-Info.plist";
+				INFOPLIST_FILE = "ClockBundle-Digital/ClockBundle-Digital-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = PinkLady;
+				PRODUCT_NAME = Digital;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1561,7 +1593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362AEDB9150AD685009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Dark" */ = {
+		362AEDB9150AD685009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Chronometer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AEDBA150AD685009B8640 /* Debug */,
@@ -1570,7 +1602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-PinkLady" */ = {
+		362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Digital" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AEDF7150AE12F009B8640 /* Debug */,

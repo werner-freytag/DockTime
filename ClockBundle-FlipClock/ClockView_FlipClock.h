@@ -1,5 +1,5 @@
 //
-//  ClockView_PinkLady.h
+//  ClockView_Digital.h
 //  iClock
 //
 //  Created by Werner Freytag on 09.03.12.

@@ -8,6 +8,7 @@
 
 #import "iClockAppDelegate.h"
 #import "DockMenu.h"
+#import "DockTilePlugIn.h"
 
 @implementation iClockAppDelegate
 
@@ -19,6 +20,21 @@
 	_dockMenu = [[DockMenu alloc] init];
 	
 	return self;
+}
+
+- (void)applicationWillFinishLaunching:(NSNotification *)notification {
+	
+	NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"" action:Nil keyEquivalent:@""];
+	menuItem.submenu = _dockMenu;
+	
+	[[NSApp mainMenu] addItem:menuItem];
+	
+	if ( [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSDockTilePlugIn"] == Nil ) {
+		
+		_dockTilePlugin = [[DockTilePlugIn alloc] init];
+		
+		[_dockTilePlugin setDockTile:[NSApp dockTile]];
+	}	
 }
 
 - (NSMenu *)applicationDockMenu:(NSApplication *)sender {
