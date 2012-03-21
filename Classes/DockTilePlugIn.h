@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface DockTilePlugIn : NSObject <NSDockTilePlugIn> {
-	NSDockTile	*_dockTile;
-	NSMenu		*_dockMenu;
-	NSTimer		*_refreshTimer;
+	NSDockTile		*_dockTile;
+	NSMenu			*_dockMenu;
+	NSTimer			*_refreshTimer;
+	NSTimeInterval	_lastRefreshTime;
 }
 
 - (void)updateCurrentClockBundle;

@@ -11,6 +11,7 @@
 
 #define NOTIFICATION_NAME	@"de.pecora.iClock.BundleIDChanged"
 #define APPLICATION_ID		CFSTR("de.pecora.iClock")
+#define DEFAULT_BUNDLE_ID	CFSTR("de.pecora.iClock-ClockBundle-White")
 
 @implementation DockTilePlugIn
 
@@ -25,7 +26,7 @@
 		
 		[self updateCurrentClockBundle];
 		
-		_refreshTimer = [NSTimer scheduledTimerWithTimeInterval:.2 target:_dockTile selector:@selector(display) userInfo:Nil repeats:YES];
+		_refreshTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(refreshDockTile) userInfo:Nil repeats:YES];
 		
 	}
 	else {
@@ -33,6 +34,14 @@
 	}
 }
 
+- (void)refreshDockTile {
+	
+	if ( _lastRefreshTime && floor(_lastRefreshTime) == floor( [NSDate timeIntervalSinceReferenceDate] ) )
+		return;
+	
+	_lastRefreshTime = [NSDate timeIntervalSinceReferenceDate];
+	[_dockTile display];
+}
 
 // setzt das docktile anhand des Wertes aus dem Preferences file
 
@@ -43,22 +52,27 @@
 	CFPropertyListRef value = CFPreferencesCopyAppValue(CFSTR("BundleID"), APPLICATION_ID);
 	NSString *selectedBundleID = (__bridge_transfer NSString *)(CFStringRef)value;
 	
-	NSArray *bundles = [DockTilePlugIn allClockBundles];
-	
 	NSBundle *foundBundle = NULL;
 	
-	for ( NSBundle *bundle in bundles ) {
+	if ( selectedBundleID ) {
+			
+		NSArray *bundles = [DockTilePlugIn allClockBundles];
 		
-		if ( [bundle.bundleIdentifier isEqualToString:selectedBundleID] ) {
-			foundBundle = bundle;
-			break;
+		for ( NSBundle *bundle in bundles ) {
+			
+			if ( [bundle.bundleIdentifier isEqualToString:selectedBundleID] ) {
+				foundBundle = bundle;
+				break;
+			}
 		}
 	}
 	
 	if ( !foundBundle ) {
 		
-		CFPreferencesSetAppValue(CFSTR("BundleID"), CFSTR("de.pecora.iClock-ClockBundle-White"), APPLICATION_ID);
+		CFPreferencesSetAppValue(CFSTR("BundleID"), DEFAULT_BUNDLE_ID, APPLICATION_ID);
 		CFPreferencesAppSynchronize(APPLICATION_ID);
+		
+		[[NSDistributedNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_NAME object:nil];
 		
 		return;
 	}

@@ -35,15 +35,15 @@
 	
 	imageName = [NSString stringWithFormat:@"%d.png", components.hour/10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(25, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(22, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	imageName = [NSString stringWithFormat:@"%d.png", components.hour%10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(43, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(42, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
 	imageName = [NSString stringWithFormat:@"%d.png", components.minute/10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(66, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(64, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	imageName = [NSString stringWithFormat:@"%d.png", components.minute%10];
 	image = [bundle imageForResource:imageName];
@@ -64,9 +64,6 @@
 		float y = cosf(angle) * 48;
 		[image drawAtPoint:CGPointMake(62.0 + x, 64.0 + y) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	}
-	
-	image = [bundle imageForResource:@"Foreground.png"];
-	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	CGContextRestoreGState(context);
 }

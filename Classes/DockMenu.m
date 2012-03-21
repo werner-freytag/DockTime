@@ -17,7 +17,7 @@
 
 - (id)init {
 	
-	if ( ( self = [super initWithTitle:NSLocalizedString(@"Type", Nil)] ) ) {
+	if ( ( self = [super initWithTitle:NSLocalizedString(@"Model", Nil)] ) ) {
 		
 		NSMenuItem *item;
 				
@@ -80,6 +80,5 @@
 - (void)openPrefPane:(NSMenuItem *)menuItem {
     [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/DateAndTime.prefPane"];
 }
-
 
 @end
