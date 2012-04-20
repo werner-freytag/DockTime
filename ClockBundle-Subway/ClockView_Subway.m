@@ -35,19 +35,19 @@
 	
 	imageName = [NSString stringWithFormat:@"%d.png", components.hour/10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(22, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(21, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	imageName = [NSString stringWithFormat:@"%d.png", components.hour%10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(42, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(41, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
 	imageName = [NSString stringWithFormat:@"%d.png", components.minute/10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(64, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(63, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	imageName = [NSString stringWithFormat:@"%d.png", components.minute%10];
 	image = [bundle imageForResource:imageName];
-	[image drawAtPoint:CGPointMake(84, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[image drawAtPoint:CGPointMake(83, 50) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	image = [bundle imageForResource:@"Dot.png"];
 	
