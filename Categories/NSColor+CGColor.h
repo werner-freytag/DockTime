@@ -11,6 +11,6 @@
 @interface NSColor (CGColor)
 
 + (NSColor *)colorWithCGColor:(CGColorRef)aColorRef;
-- (CGColorRef)CGColor;
+- (CGColorRef)CGColor CF_RETURNS_RETAINED;
 
 @end
