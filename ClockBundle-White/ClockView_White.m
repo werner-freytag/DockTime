@@ -26,7 +26,7 @@
 	
 	CGContextScaleCTM( context, self.bounds.size.width/128.0, self.bounds.size.height/128.0);
 	
-	image = [bundle imageForResource:@"Background.png"];
+	image = [bundle imageForResource:@"Background"];
 	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
 
 	NSCalendar *currentCalendar = [NSCalendar currentCalendar];
@@ -41,29 +41,29 @@
 	
 	CGContextSaveGState(context);
 	CGContextRotateCTM(context, 2 * M_PI * ( ( [components hour] % 12 + (float)[components minute] / 60 ) / 12 ) );
-	image = [bundle imageForResource:@"HourHand.png"];
+	image = [bundle imageForResource:@"HourHand"];
 	[image drawAtPoint:CGPointMake(-image.size.width/2,0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	CGContextRestoreGState(context);
 	
 	CGContextSaveGState(context);
 	CGContextRotateCTM(context, 2 * M_PI * ( [components minute] + (float)[components second] / 60 ) / 60);
-	image = [bundle imageForResource:@"MinuteHand.png"];
+	image = [bundle imageForResource:@"MinuteHand"];
 	[image drawAtPoint:CGPointMake(-image.size.width/2,0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	CGContextRestoreGState(context);
 	
 	CGContextSaveGState(context);
 	CGContextRotateCTM(context, 2 * M_PI * [components second] / 60);
-	image = [bundle imageForResource:@"SecondHand.png"];
+	image = [bundle imageForResource:@"SecondHand"];
 	[image drawAtPoint:CGPointMake(-image.size.width/2,0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	CGContextRestoreGState(context);
 	
 	CGContextSetShadowWithColor( context, CGSizeMake(0.0, -2.0), 4, [[NSColor colorWithDeviceRed:.25 green:.28 blue:.32 alpha:.4] CGColor]);
-	image = [bundle imageForResource:@"HandsMiddle.png"];
+	image = [bundle imageForResource:@"HandsMiddle"];
 	[image drawAtPoint:CGPointMake(-image.size.width/2,-image.size.width/2) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	CGContextRestoreGState(context);
 	
-	image = [bundle imageForResource:@"Foreground.png"];
+	image = [bundle imageForResource:@"Foreground"];
 	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	CGContextRestoreGState(context);

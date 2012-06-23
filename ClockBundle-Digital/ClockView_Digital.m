@@ -24,7 +24,7 @@
 	
 	CGContextScaleCTM( context, self.bounds.size.width/128.0, self.bounds.size.height/128.0);
 	
-	image = [bundle imageForResource:@"Background.png"];
+	image = [bundle imageForResource:@"Background"];
 	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
 	
 	NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
@@ -37,24 +37,24 @@
 	NSArray *strings = [result objectAtIndex:0];
 	
 	if ( [[strings objectAtIndex:1] length] > 0 ) {
-		imageName = [[strings objectAtIndex:1] stringByAppendingString:@".png"];
+		imageName = [strings objectAtIndex:1];
 		image = [bundle imageForResource:imageName];
 		[image drawAtPoint:CGPointMake(21, 33) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	}
 	
-	imageName = [[strings objectAtIndex:2] stringByAppendingString:@".png"];
+	imageName = [strings objectAtIndex:2];
 	image = [bundle imageForResource:imageName];
 	[image drawAtPoint:CGPointMake(41, 33) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
-	imageName = [[strings objectAtIndex:3] stringByAppendingString:@".png"];
+	imageName = [strings objectAtIndex:3];
 	image = [bundle imageForResource:imageName];
 	[image drawAtPoint:CGPointMake(68, 33) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
-	imageName = [[strings objectAtIndex:4] stringByAppendingString:@".png"];
+	imageName = [strings objectAtIndex:4];
 	image = [bundle imageForResource:imageName];
 	[image drawAtPoint:CGPointMake(88, 33) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
-	image = [bundle imageForResource:@"Separator.png"];
+	image = [bundle imageForResource:@"Separator"];
 	[image drawAtPoint:CGPointMake(60, 51) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 		
 	CGContextRestoreGState(context);

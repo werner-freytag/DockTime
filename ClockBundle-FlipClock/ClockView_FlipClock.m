@@ -28,7 +28,7 @@
 	
 	CGContextScaleCTM( context, self.bounds.size.width/128.0, self.bounds.size.height/128.0);
 	
-	image = [bundle imageForResource:@"Background.png"];
+	image = [bundle imageForResource:@"Background"];
 	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
 	
 	NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
@@ -41,29 +41,29 @@
 	NSArray *strings = [result objectAtIndex:0];
 	
 	if ( [[strings objectAtIndex:1] length] > 0 ) {
-		imageName = [[strings objectAtIndex:1] stringByAppendingString:@".png"];
+		imageName = [strings objectAtIndex:1];
 		image = [bundle imageForResource:imageName];
 		[image drawAtPoint:CGPointMake(17, 44) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
-		imageName = [[strings objectAtIndex:2] stringByAppendingString:@".png"];
+		imageName = [strings objectAtIndex:2];
 		image = [bundle imageForResource:imageName];
 		[image drawAtPoint:CGPointMake(38, 44) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	}
 	else {
-		imageName = [[strings objectAtIndex:2] stringByAppendingString:@".png"];
+		imageName = [strings objectAtIndex:2];
 		image = [bundle imageForResource:imageName];
 		[image drawAtPoint:CGPointMake(29, 44) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	}
 	
-	imageName = [[strings objectAtIndex:3] stringByAppendingString:@".png"];
+	imageName = [strings objectAtIndex:3];
 	image = [bundle imageForResource:imageName];
 	[image drawAtPoint:CGPointMake(72, 44) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
-	imageName = [[strings objectAtIndex:4] stringByAppendingString:@".png"];
+	imageName = [strings objectAtIndex:4];
 	image = [bundle imageForResource:imageName];
 	[image drawAtPoint:CGPointMake(92, 44) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
-	image = [bundle imageForResource:@"Foreground.png"];
+	image = [bundle imageForResource:@"Foreground"];
 	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	
 	CGContextRestoreGState(context);
