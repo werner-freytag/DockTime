@@ -9,7 +9,7 @@
 #import "NSColor+CGColor.h"
 
 @implementation NSColor (CGColor)
-
+	
 + (NSColor *)colorWithCGColor:(CGColorRef)aColorRef {
 	
 	NSColorSpace *colorSpace = [[NSColorSpace alloc] initWithCGColorSpace:CGColorGetColorSpace(aColorRef)];	

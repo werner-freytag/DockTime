@@ -82,6 +82,12 @@
 		366AFFAD15169CD2008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 362AEE00150AE854009B8640 /* InfoPlist.strings */; };
 		366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C205150BFF7B00FF8099 /* InfoPlist.strings */; };
 		366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 366AFFB51516A3B1008062D9 /* Localizable.strings */; };
+		36724CA015B005FC002B26AF /* NSBundle+ImageResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */; };
+		36724CA215B00C48002B26AF /* NSBundle+ImageResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */; };
+		36724CA315B00C4F002B26AF /* NSBundle+ImageResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */; };
+		36724CA415B00C54002B26AF /* NSBundle+ImageResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */; };
+		36724CA515B00C5F002B26AF /* NSBundle+ImageResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */; };
+		36724CA615B00C65002B26AF /* NSBundle+ImageResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */; };
 		36BCCF851594D99600D22ABF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF7F1594D99500D22ABF /* Background@2x.png */; };
 		36BCCF861594D99600D22ABF /* Foreground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF801594D99500D22ABF /* Foreground@2x.png */; };
 		36BCCF871594D99600D22ABF /* HandsMiddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF811594D99500D22ABF /* HandsMiddle@2x.png */; };
@@ -329,6 +335,8 @@
 		366AFFB41516A3B1008062D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		366AFFB61516A3C0008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		366B282014B852240018DD37 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		36724C9E15B005FC002B26AF /* NSBundle+ImageResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+ImageResource.h"; path = "Categories/NSBundle+ImageResource.h"; sourceTree = SOURCE_ROOT; };
+		36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+ImageResource.m"; path = "Categories/NSBundle+ImageResource.m"; sourceTree = SOURCE_ROOT; };
 		36BCCF7F1594D99500D22ABF /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
 		36BCCF801594D99500D22ABF /* Foreground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Foreground@2x.png"; sourceTree = "<group>"; };
 		36BCCF811594D99500D22ABF /* HandsMiddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HandsMiddle@2x.png"; sourceTree = "<group>"; };
@@ -462,6 +470,8 @@
 			children = (
 				36028D6015019F4800463021 /* NSColor+CGColor.h */,
 				36028D6115019F4800463021 /* NSColor+CGColor.m */,
+				36724C9E15B005FC002B26AF /* NSBundle+ImageResource.h */,
+				36724C9F15B005FC002B26AF /* NSBundle+ImageResource.m */,
 			);
 			name = Categories;
 			path = Classes;
@@ -1174,6 +1184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36724CA515B00C5F002B26AF /* NSBundle+ImageResource.m in Sources */,
 				3609C1CD150BEE5B00FF8099 /* ClockView_Subway.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1182,6 +1193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36724CA615B00C65002B26AF /* NSBundle+ImageResource.m in Sources */,
 				3609C215150BFF7B00FF8099 /* ClockView_FlipClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1201,6 +1213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36724CA315B00C4F002B26AF /* NSBundle+ImageResource.m in Sources */,
 				362AEDCD150AD721009B8640 /* ClockView_Chronometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1209,6 +1222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36724CA415B00C54002B26AF /* NSBundle+ImageResource.m in Sources */,
 				362AEE10150AE854009B8640 /* ClockView_Digital.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1223,6 +1237,7 @@
 				36C5EAC11519E82800702860 /* NSColor+CGColor.m in Sources */,
 				36C5EAC21519E82D00702860 /* RegexKitLite.m in Sources */,
 				67982458150E259900D292F9 /* DockTilePlugIn.m in Sources */,
+				36724CA015B005FC002B26AF /* NSBundle+ImageResource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1230,6 +1245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36724CA215B00C48002B26AF /* NSBundle+ImageResource.m in Sources */,
 				36205CB3150ACE3F00D0B0C6 /* ClockView_White.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

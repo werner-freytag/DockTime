@@ -34,7 +34,9 @@
 		_dockTilePlugin = [[DockTilePlugIn alloc] init];
 		
 		[_dockTilePlugin setDockTile:[NSApp dockTile]];
-	}	
+	}
+	
+	
 }
 
 - (NSMenu *)applicationDockMenu:(NSApplication *)sender {

@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>iClock version 1.0.5, Copyright 2012 Pecora GmbH.</string>
+	<string>iClock version 1.0.6, Copyright 2012 Pecora GmbH.</string>
 	<key>CFBundleIconFile</key>
 	<string>Icon.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -19,17 +19,15 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>914</string>
+	<string>928</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.lifestyle</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSDockTilePlugIn</key>
-	<string>DockTilePlugin.docktileplugin</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>©2012 Pecora GmbH</string>
 	<key>NSMainNibFile</key>
