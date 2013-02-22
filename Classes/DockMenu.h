@@ -1,6 +1,6 @@
 //
 //  DockMenu.h
-//  iClock
+//  DockTime
 //
 //  Created by Werner Freytag on 04.03.12.
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.

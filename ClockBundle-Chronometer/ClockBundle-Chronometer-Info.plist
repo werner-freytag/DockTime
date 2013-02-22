@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 Werner Freytag. All rights reserved.</string>
+	<string>Copyright © 2012-2013 Werner Freytag. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>ClockView_${PRODUCT_NAME:rfc1034identifier}</string>
 </dict>

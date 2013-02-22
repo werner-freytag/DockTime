@@ -1,6 +1,6 @@
 //
 //  NSBundle+Compatibility10_6.m
-//  iClock
+//  DockTime
 //
 //  Created by Werner on 13.07.12.
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.
