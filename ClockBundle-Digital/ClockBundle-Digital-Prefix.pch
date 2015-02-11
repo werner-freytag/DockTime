@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'ClockBundle-Digital' target in the 'iClock' project
-//
-
-#ifdef __OBJC__
-	#import <Cocoa/Cocoa.h>
-#endif

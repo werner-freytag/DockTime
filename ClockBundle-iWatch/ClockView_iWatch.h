@@ -1,5 +1,5 @@
 //
-//  ClockView_Discreet.h
+//  ClockView_iWatch.h
 //  DockTime
 //
 //  Created by Werner Freytag on 09.03.12.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ClockView_FlipClock : NSView {
+@interface ClockView_iWatch : NSView {
 
 }
 

@@ -25,14 +25,16 @@
 		
 		_bundles = [NSArray arrayWithArray:[DockTilePlugIn allClockBundles]];
 		
+		int i = 1;
 		for ( NSBundle *bundle in _bundles ) {
-						
-            item = [[NSMenuItem alloc] initWithTitle:[bundle objectForInfoDictionaryKey:(NSString *)kCFBundleNameKey] action:@selector(setTheme:) keyEquivalent:@""];
+			
+            item = [[NSMenuItem alloc] initWithTitle:[bundle objectForInfoDictionaryKey:(NSString *)kCFBundleNameKey] action:@selector(setTheme:) keyEquivalent:[NSString stringWithFormat:@"%d", i]];
             item.target = self;
 			item.tag = tag;
             [self addItem:item];
 			
             tag++;
+			i++;
 		}
 		
 		NSDistributedNotificationCenter *notificationCenter = [NSDistributedNotificationCenter defaultCenter];

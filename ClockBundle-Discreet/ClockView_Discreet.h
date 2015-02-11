@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ClockView_FlipClock : NSView {
+@interface ClockView_Discreet : NSView {
 
 }
 

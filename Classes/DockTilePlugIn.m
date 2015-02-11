@@ -11,7 +11,7 @@
 
 #define NOTIFICATION_NAME	@"de.pecora.iClock.BundleIDChanged"
 #define APPLICATION_ID		CFSTR("de.pecora.iClock")
-#define DEFAULT_BUNDLE_ID	CFSTR("de.pecora.iClock-ClockBundle-White")
+#define DEFAULT_BUNDLE_ID	CFSTR("de.pecora.iClock-ClockBundle-xxx")
 
 @implementation DockTilePlugIn
 
@@ -101,7 +101,6 @@
 	if ( !mainBundle ) {
 		
 		NSString *path = [NSBundle pathForResource:@"DockTilePlugin" ofType:@"docktileplugin" inDirectory:[[NSBundle mainBundle] builtInPlugInsPath]];
-		
 		mainBundle = [NSBundle bundleWithPath:path];
 	}
 	
