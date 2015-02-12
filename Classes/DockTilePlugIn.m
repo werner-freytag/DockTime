@@ -81,7 +81,8 @@
 	
 	if ( (clockViewClass = [foundBundle principalClass]) )
 	{
-		NSView *clockView = [[clockViewClass alloc] initWithFrame:NSMakeRect(0, 0, 128, 128)];
+		// Wird automatisch auf 128x128 gesetzt
+		NSView *clockView = [[clockViewClass alloc] initWithFrame:NSZeroRect];
 		[_dockTile setContentView:clockView];
 	}
 	

@@ -25,8 +25,6 @@
 	CGContextRef context = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
 	CGContextSaveGState(context);
 	
-	CGContextScaleCTM( context, self.bounds.size.width/128.0, self.bounds.size.height/128.0);
-	
 	image = [bundle imageNamed:@"Background"];
 	[image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
 

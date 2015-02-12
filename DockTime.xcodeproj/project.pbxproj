@@ -70,7 +70,6 @@
 		36BCCF871594D99600D22ABF /* HandsMiddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF811594D99500D22ABF /* HandsMiddle@2x.png */; };
 		36BCCF881594D99600D22ABF /* HourHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF821594D99600D22ABF /* HourHand@2x.png */; };
 		36BCCF891594D99600D22ABF /* MinuteHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF831594D99600D22ABF /* MinuteHand@2x.png */; };
-		36BCCF8A1594D99600D22ABF /* SecondHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF841594D99600D22ABF /* SecondHand@2x.png */; };
 		36BCCFBC1594DAC200D22ABF /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFB01594DAC200D22ABF /* 0@2x.png */; };
 		36BCCFBD1594DAC200D22ABF /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFB11594DAC200D22ABF /* 1@2x.png */; };
 		36BCCFBE1594DAC200D22ABF /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFB21594DAC200D22ABF /* 2@2x.png */; };
@@ -99,18 +98,16 @@
 		36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C4633C13744BB200A91AC4 /* QuartzCore.framework */; };
 		36C4FDFC1A8C89E6000641AC /* ClockBundle-Watch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FDF81A8C89E6000641AC /* ClockBundle-Watch-Info.plist */; };
 		36C4FDFD1A8C89E6000641AC /* ClockView_Watch.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */; };
-		36C4FE091A8C8A02000641AC /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FDFF1A8C8A02000641AC /* Background.png */; };
-		36C4FE0A1A8C8A02000641AC /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE001A8C8A02000641AC /* Background@2x.png */; };
-		36C4FE0B1A8C8A02000641AC /* HandsMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE011A8C8A02000641AC /* HandsMiddle.png */; };
-		36C4FE0C1A8C8A02000641AC /* HandsMiddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE021A8C8A02000641AC /* HandsMiddle@2x.png */; };
-		36C4FE0D1A8C8A02000641AC /* HourHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE031A8C8A02000641AC /* HourHand.png */; };
-		36C4FE0E1A8C8A02000641AC /* HourHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE041A8C8A02000641AC /* HourHand@2x.png */; };
-		36C4FE0F1A8C8A02000641AC /* MinuteHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE051A8C8A02000641AC /* MinuteHand.png */; };
-		36C4FE101A8C8A02000641AC /* MinuteHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE061A8C8A02000641AC /* MinuteHand@2x.png */; };
-		36C4FE111A8C8A02000641AC /* SecondHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE071A8C8A02000641AC /* SecondHand.png */; };
-		36C4FE121A8C8A02000641AC /* SecondHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE081A8C8A02000641AC /* SecondHand@2x.png */; };
 		36C4FE151A8C8A0D000641AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE131A8C8A0D000641AC /* InfoPlist.strings */; };
 		36C4FE181A8C8A5F000641AC /* Watch.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDBC150AD685009B8640 /* Watch.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36C4FE511A8C9E28000641AC /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE4D1A8C9E28000641AC /* Background.png */; };
+		36C4FE521A8C9E28000641AC /* HourHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE4E1A8C9E28000641AC /* HourHand.png */; };
+		36C4FE531A8C9E28000641AC /* MinuteHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE4F1A8C9E28000641AC /* MinuteHand.png */; };
+		36C4FE541A8C9E28000641AC /* SecondHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE501A8C9E28000641AC /* SecondHand.png */; };
+		36C4FE591A8CA145000641AC /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE551A8CA145000641AC /* Background@2x.png */; };
+		36C4FE5A1A8CA145000641AC /* HourHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE561A8CA145000641AC /* HourHand@2x.png */; };
+		36C4FE5B1A8CA145000641AC /* MinuteHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE571A8CA145000641AC /* MinuteHand@2x.png */; };
+		36C4FE5C1A8CA145000641AC /* SecondHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE581A8CA145000641AC /* SecondHand@2x.png */; };
 		36C5EABD1519E66800702860 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 36028D6115019F4800463021 /* NSColor+CGColor.m */; };
 		36C5EABE1519E66B00702860 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 362AEE25150AF50B009B8640 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36C5EABF1519E7E200702860 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36475844150AF6EC003107F4 /* libicucore.dylib */; };
@@ -313,7 +310,6 @@
 		36BCCF811594D99500D22ABF /* HandsMiddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HandsMiddle@2x.png"; sourceTree = "<group>"; };
 		36BCCF821594D99600D22ABF /* HourHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HourHand@2x.png"; sourceTree = "<group>"; };
 		36BCCF831594D99600D22ABF /* MinuteHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MinuteHand@2x.png"; sourceTree = "<group>"; };
-		36BCCF841594D99600D22ABF /* SecondHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SecondHand@2x.png"; sourceTree = "<group>"; };
 		36BCCFB01594DAC200D22ABF /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		36BCCFB11594DAC200D22ABF /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		36BCCFB21594DAC200D22ABF /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
@@ -343,19 +339,17 @@
 		36C4FDF91A8C89E6000641AC /* ClockBundle-Watch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ClockBundle-Watch-Prefix.pch"; path = "ClockBundle-Watch/ClockBundle-Watch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		36C4FDFA1A8C89E6000641AC /* ClockView_Watch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockView_Watch.h; path = "ClockBundle-Watch/ClockView_Watch.h"; sourceTree = SOURCE_ROOT; };
 		36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockView_Watch.m; path = "ClockBundle-Watch/ClockView_Watch.m"; sourceTree = SOURCE_ROOT; };
-		36C4FDFF1A8C8A02000641AC /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
-		36C4FE001A8C8A02000641AC /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
-		36C4FE011A8C8A02000641AC /* HandsMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HandsMiddle.png; sourceTree = "<group>"; };
-		36C4FE021A8C8A02000641AC /* HandsMiddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HandsMiddle@2x.png"; sourceTree = "<group>"; };
-		36C4FE031A8C8A02000641AC /* HourHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HourHand.png; sourceTree = "<group>"; };
-		36C4FE041A8C8A02000641AC /* HourHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HourHand@2x.png"; sourceTree = "<group>"; };
-		36C4FE051A8C8A02000641AC /* MinuteHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MinuteHand.png; sourceTree = "<group>"; };
-		36C4FE061A8C8A02000641AC /* MinuteHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MinuteHand@2x.png"; sourceTree = "<group>"; };
-		36C4FE071A8C8A02000641AC /* SecondHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SecondHand.png; sourceTree = "<group>"; };
-		36C4FE081A8C8A02000641AC /* SecondHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SecondHand@2x.png"; sourceTree = "<group>"; };
 		36C4FE141A8C8A0D000641AC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "ClockBundle-Watch/de.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36C4FE161A8C8A13000641AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "ClockBundle-Watch/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36C4FE171A8C8A1B000641AC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "ClockBundle-Watch/fr.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		36C4FE4D1A8C9E28000641AC /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		36C4FE4E1A8C9E28000641AC /* HourHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HourHand.png; sourceTree = "<group>"; };
+		36C4FE4F1A8C9E28000641AC /* MinuteHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MinuteHand.png; sourceTree = "<group>"; };
+		36C4FE501A8C9E28000641AC /* SecondHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SecondHand.png; sourceTree = "<group>"; };
+		36C4FE551A8CA145000641AC /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		36C4FE561A8CA145000641AC /* HourHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HourHand@2x.png"; sourceTree = "<group>"; };
+		36C4FE571A8CA145000641AC /* MinuteHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MinuteHand@2x.png"; sourceTree = "<group>"; };
+		36C4FE581A8CA145000641AC /* SecondHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SecondHand@2x.png"; sourceTree = "<group>"; };
 		36CB03BF150AAE8900925361 /* White.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = White.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D6DEB316AE1F5E000C40A0 /* DockTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DockTime.entitlements; sourceTree = "<group>"; };
 		36EDF8C01A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ClockBundle-Discreet-Info.plist"; path = "ClockBundle-Discreet/ClockBundle-Discreet-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -483,7 +477,7 @@
 				36C4FDFA1A8C89E6000641AC /* ClockView_Watch.h */,
 				36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */,
 				36C4FE131A8C8A0D000641AC /* InfoPlist.strings */,
-				36C4FDFE1A8C8A02000641AC /* Resources */,
+				36C4FE4C1A8C9D6D000641AC /* Resources */,
 			);
 			name = "ClockBundle-Watch";
 			path = "ClockBundle-iWatch";
@@ -618,7 +612,6 @@
 				36205CB0150ACE3F00D0B0C6 /* MinuteHand.png */,
 				36BCCF831594D99600D22ABF /* MinuteHand@2x.png */,
 				36205CB1150ACE3F00D0B0C6 /* SecondHand.png */,
-				36BCCF841594D99600D22ABF /* SecondHand@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -770,19 +763,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36C4FDFE1A8C8A02000641AC /* Resources */ = {
+		36C4FE4C1A8C9D6D000641AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				36C4FDFF1A8C8A02000641AC /* Background.png */,
-				36C4FE001A8C8A02000641AC /* Background@2x.png */,
-				36C4FE011A8C8A02000641AC /* HandsMiddle.png */,
-				36C4FE021A8C8A02000641AC /* HandsMiddle@2x.png */,
-				36C4FE031A8C8A02000641AC /* HourHand.png */,
-				36C4FE041A8C8A02000641AC /* HourHand@2x.png */,
-				36C4FE051A8C8A02000641AC /* MinuteHand.png */,
-				36C4FE061A8C8A02000641AC /* MinuteHand@2x.png */,
-				36C4FE071A8C8A02000641AC /* SecondHand.png */,
-				36C4FE081A8C8A02000641AC /* SecondHand@2x.png */,
+				36C4FE551A8CA145000641AC /* Background@2x.png */,
+				36C4FE561A8CA145000641AC /* HourHand@2x.png */,
+				36C4FE571A8CA145000641AC /* MinuteHand@2x.png */,
+				36C4FE581A8CA145000641AC /* SecondHand@2x.png */,
+				36C4FE4D1A8C9E28000641AC /* Background.png */,
+				36C4FE4E1A8C9E28000641AC /* HourHand.png */,
+				36C4FE4F1A8C9E28000641AC /* MinuteHand.png */,
+				36C4FE501A8C9E28000641AC /* SecondHand.png */,
 			);
 			name = Resources;
 			path = "ClockBundle-Watch/Resources";
@@ -1065,18 +1056,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C4FE111A8C8A02000641AC /* SecondHand.png in Resources */,
+				36C4FE521A8C9E28000641AC /* HourHand.png in Resources */,
+				36C4FE591A8CA145000641AC /* Background@2x.png in Resources */,
+				36C4FE5B1A8CA145000641AC /* MinuteHand@2x.png in Resources */,
+				36C4FE511A8C9E28000641AC /* Background.png in Resources */,
+				36C4FE541A8C9E28000641AC /* SecondHand.png in Resources */,
 				36C4FE151A8C8A0D000641AC /* InfoPlist.strings in Resources */,
-				36C4FE121A8C8A02000641AC /* SecondHand@2x.png in Resources */,
-				36C4FE0B1A8C8A02000641AC /* HandsMiddle.png in Resources */,
-				36C4FE0D1A8C8A02000641AC /* HourHand.png in Resources */,
+				36C4FE5A1A8CA145000641AC /* HourHand@2x.png in Resources */,
+				36C4FE5C1A8CA145000641AC /* SecondHand@2x.png in Resources */,
+				36C4FE531A8C9E28000641AC /* MinuteHand.png in Resources */,
 				36C4FDFC1A8C89E6000641AC /* ClockBundle-Watch-Info.plist in Resources */,
-				36C4FE0C1A8C8A02000641AC /* HandsMiddle@2x.png in Resources */,
-				36C4FE0E1A8C8A02000641AC /* HourHand@2x.png in Resources */,
-				36C4FE091A8C8A02000641AC /* Background.png in Resources */,
-				36C4FE101A8C8A02000641AC /* MinuteHand@2x.png in Resources */,
-				36C4FE0F1A8C8A02000641AC /* MinuteHand.png in Resources */,
-				36C4FE0A1A8C8A02000641AC /* Background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1140,7 +1129,6 @@
 				36BCCF871594D99600D22ABF /* HandsMiddle@2x.png in Resources */,
 				36BCCF881594D99600D22ABF /* HourHand@2x.png in Resources */,
 				36BCCF891594D99600D22ABF /* MinuteHand@2x.png in Resources */,
-				36BCCF8A1594D99600D22ABF /* SecondHand@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
