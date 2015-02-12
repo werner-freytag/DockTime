@@ -19,7 +19,7 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
 	
-	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"de.pecora.iClock-ClockBundle-FlipClock"];
+	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.sympnosis.DockTime-ClockBundle-FlipClock"];
 	
 	NSString *imageName;
 	NSImage *image;

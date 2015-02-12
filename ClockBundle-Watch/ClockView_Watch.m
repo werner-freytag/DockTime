@@ -1,20 +1,20 @@
 //
-//  ClockView_iWatch.m
+//  ClockView_Watch.m
 //  DockTime
 //
 //  Created by Werner Freytag on 03.03.12.
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.
 //
 
-#import "ClockView_iWatch.h"
+#import "ClockView_Watch.h"
 #import "NSColor+CGColor.h"
 #import "NSBundle+ImageResource.h"
 
-@implementation ClockView_iWatch
+@implementation ClockView_Watch
 
 - (void)drawRect:(NSRect)dirtyRect {
 	
-	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"de.pecora.iClock-ClockBundle-iWatch"];
+	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.sympnosis.DockTime-ClockBundle-Watch"];
 	
 	NSImage *image;
 	

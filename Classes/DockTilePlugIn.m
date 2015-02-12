@@ -9,9 +9,9 @@
 #import "DockTilePlugIn.h"
 #import "DockMenu.h"
 
-#define NOTIFICATION_NAME	@"de.pecora.iClock.BundleIDChanged"
-#define APPLICATION_ID		CFSTR("de.pecora.iClock")
-#define DEFAULT_BUNDLE_ID	CFSTR("de.pecora.iClock-ClockBundle-xxx")
+#define NOTIFICATION_NAME	@"com.sympnosis.DockTime.BundleIDChanged"
+#define APPLICATION_ID		CFSTR("com.sympnosis.DockTime")
+#define DEFAULT_BUNDLE_ID	CFSTR("com.sympnosis.DockTime-ClockBundle-White")
 
 @implementation DockTilePlugIn
 
@@ -96,7 +96,7 @@
 
 + (NSArray *)allClockBundles {
 	
-	NSBundle *mainBundle = [NSBundle bundleWithIdentifier:@"de.pecora.iClock-DockTilePlugin"];
+	NSBundle *mainBundle = [NSBundle bundleWithIdentifier:@"com.sympnosis.DockTime-DockTilePlugin"];
 	
 	if ( !mainBundle ) {
 		

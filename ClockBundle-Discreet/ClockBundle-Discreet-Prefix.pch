@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'ClockBundle-Discreet' target in the 'iClock' project
+// Prefix header for all source files of the 'ClockBundle-Discreet' target in the 'DockTime' project
 //
 
 #ifdef __OBJC__

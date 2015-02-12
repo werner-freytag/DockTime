@@ -1,5 +1,5 @@
 //
-//  ClockView_iWatch.h
+//  ClockView_Watch.h
 //  DockTime
 //
 //  Created by Werner Freytag on 09.03.12.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ClockView_iWatch : NSView {
+@interface ClockView_Watch : NSView {
 
 }
 

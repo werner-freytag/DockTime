@@ -10,8 +10,8 @@
 #import "DockTilePlugIn.h"
 
 #define TAG_BASE			100000
-#define NOTIFICATION_NAME	@"de.pecora.iClock.BundleIDChanged"
-#define APPLICATION_ID		CFSTR("de.pecora.iClock")
+#define NOTIFICATION_NAME	@"com.sympnosis.DockTime.BundleIDChanged"
+#define APPLICATION_ID		CFSTR("com.sympnosis.DockTime")
 
 @implementation DockMenu
 

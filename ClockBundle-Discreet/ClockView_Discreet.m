@@ -15,7 +15,7 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
 	
-	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"de.pecora.iClock-ClockBundle-Discreet"];
+	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.sympnosis.DockTime-ClockBundle-Discreet"];
 	
 	NSString *imageName;
 	NSImage *image;
