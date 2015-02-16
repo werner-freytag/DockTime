@@ -8,10 +8,8 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
 	<string>DockTime version 1.1, Copyright 2012-2015 Sympnosis.</string>
-	<key>CFBundleIconFile</key>
-	<string>Icon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.sympnosis.DockTime</string>
+	<string>de.pecora.iClock</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -23,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1177</string>
+	<string>1188</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.lifestyle</string>
 	<key>LSMinimumSystemVersion</key>

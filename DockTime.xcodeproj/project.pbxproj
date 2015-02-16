@@ -117,6 +117,7 @@
 		36CB03C0150AAE8900925361 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		36CB03DF150AB40900925361 /* White.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36CB03BF150AAE8900925361 /* White.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		36CBDEC41A8B34A000F30447 /* Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EC87931A927FEC00A80A35 /* Images.xcassets */; };
 		36EDF8DD1A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C01A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist */; };
 		36EDF8DE1A8B296600BE9B66 /* ClockView_Discreet.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF8C31A8B296600BE9B66 /* ClockView_Discreet.m */; };
 		36EDF8DF1A8B296600BE9B66 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C51A8B296600BE9B66 /* 0.png */; };
@@ -352,6 +353,7 @@
 		36C4FE581A8CA145000641AC /* SecondHand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SecondHand@2x.png"; sourceTree = "<group>"; };
 		36CB03BF150AAE8900925361 /* White.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = White.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D6DEB316AE1F5E000C40A0 /* DockTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DockTime.entitlements; sourceTree = "<group>"; };
+		36EC87931A927FEC00A80A35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DockTime/Images.xcassets; sourceTree = "<group>"; };
 		36EDF8C01A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ClockBundle-Discreet-Info.plist"; path = "ClockBundle-Discreet/ClockBundle-Discreet-Info.plist"; sourceTree = SOURCE_ROOT; };
 		36EDF8C11A8B296600BE9B66 /* ClockBundle-Discreet-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ClockBundle-Discreet-Prefix.pch"; path = "ClockBundle-Discreet/ClockBundle-Discreet-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		36EDF8C21A8B296600BE9B66 /* ClockView_Discreet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockView_Discreet.h; path = "ClockBundle-Discreet/ClockView_Discreet.h"; sourceTree = SOURCE_ROOT; };
@@ -730,6 +732,7 @@
 		364E4466127B39C800963CE7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				36EC87931A927FEC00A80A35 /* Images.xcassets */,
 				36F06BB6127B75B00003535B /* Icon.icns */,
 				366AFFB51516A3B1008062D9 /* Localizable.strings */,
 				360CE725127CCF38009BC9FB /* MainMenu.xib */,
@@ -1107,6 +1110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				360CE732127CD056009BC9FB /* Credits.rtf in Resources */,
+				36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */,
 				366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */,
 				360CE72D127CD056009BC9FB /* MainMenu.xib in Resources */,
 				36F06BB7127B75B00003535B /* Icon.icns in Resources */,
@@ -1670,6 +1674,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = DockTime.entitlements;
 				CODE_SIGN_IDENTITY = "";
@@ -1682,7 +1687,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DockTime_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = DockTime;
@@ -1696,6 +1701,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = DockTime.entitlements;
 				CODE_SIGN_IDENTITY = "";
@@ -1707,7 +1713,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DockTime_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = DockTime;
