@@ -96,7 +96,6 @@
 		36BCCFDF1594DAE200D22ABF /* Foreground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFD31594DAE200D22ABF /* Foreground@2x.png */; };
 		36C06AD9150596BD009AFAB2 /* DockMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627D94A15040850006B89B0 /* DockMenu.m */; };
 		36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C4633C13744BB200A91AC4 /* QuartzCore.framework */; };
-		36C4FDFC1A8C89E6000641AC /* ClockBundle-Watch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FDF81A8C89E6000641AC /* ClockBundle-Watch-Info.plist */; };
 		36C4FDFD1A8C89E6000641AC /* ClockView_Watch.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */; };
 		36C4FE151A8C8A0D000641AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE131A8C8A0D000641AC /* InfoPlist.strings */; };
 		36C4FE181A8C8A5F000641AC /* Watch.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDBC150AD685009B8640 /* Watch.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -118,7 +117,6 @@
 		36CB03DF150AB40900925361 /* White.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36CB03BF150AAE8900925361 /* White.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		36CBDEC41A8B34A000F30447 /* Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EC87931A927FEC00A80A35 /* Images.xcassets */; };
-		36EDF8DD1A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C01A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist */; };
 		36EDF8DE1A8B296600BE9B66 /* ClockView_Discreet.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF8C31A8B296600BE9B66 /* ClockView_Discreet.m */; };
 		36EDF8DF1A8B296600BE9B66 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C51A8B296600BE9B66 /* 0.png */; };
 		36EDF8E01A8B296600BE9B66 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C61A8B296600BE9B66 /* 0@2x.png */; };
@@ -953,6 +951,16 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Pecora GmbH";
+				TargetAttributes = {
+					364E446B127B39C800963CE7 = {
+						DevelopmentTeam = 6F42U4FE9C;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 364E4462127B39C700963CE7 /* Build configuration list for PBXProject "DockTime" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1068,7 +1076,6 @@
 				36C4FE5A1A8CA145000641AC /* HourHand@2x.png in Resources */,
 				36C4FE5C1A8CA145000641AC /* SecondHand@2x.png in Resources */,
 				36C4FE531A8C9E28000641AC /* MinuteHand.png in Resources */,
-				36C4FDFC1A8C89E6000641AC /* ClockBundle-Watch-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1100,7 +1107,6 @@
 				36EDF8E91A8B296600BE9B66 /* 5.png in Resources */,
 				36EDF8EC1A8B296600BE9B66 /* 6@2x.png in Resources */,
 				36EDF8E71A8B296600BE9B66 /* 4.png in Resources */,
-				36EDF8DD1A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist in Resources */,
 				36EDF8ED1A8B296600BE9B66 /* 7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1462,7 +1468,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1491,7 +1497,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1677,7 +1683,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = DockTime.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1704,7 +1710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = DockTime.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
