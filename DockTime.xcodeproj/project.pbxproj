@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0551A3F1D986B27817460A14 /* libPods-DockTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6022FAA59A778429E4F553 /* libPods-DockTime.a */; };
+		141E0F77245E3C70E3E32630 /* libPods-DockTilePlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A31FD4D4CF80313F3A543662 /* libPods-DockTilePlugin.a */; };
 		3609C1A4150BEDE400FF8099 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		3609C1CD150BEE5B00FF8099 /* ClockView_Subway.m in Sources */ = {isa = PBXBuildFile; fileRef = 3609C1BC150BEE5B00FF8099 /* ClockView_Subway.m */; };
 		3609C1CF150BEE5B00FF8099 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1C0150BEE5B00FF8099 /* 0.png */; };
@@ -220,6 +222,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B6022FAA59A778429E4F553 /* libPods-DockTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DockTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2580B7788388D2ADB8F841F8 /* Pods-DockTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DockTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-DockTime/Pods-DockTime.release.xcconfig"; sourceTree = "<group>"; };
+		2A9E6DB4BF989D079E4A6677 /* Pods-DockTilePlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DockTilePlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DockTilePlugin/Pods-DockTilePlugin.release.xcconfig"; sourceTree = "<group>"; };
+		2DCAF7FACC9321F5F2DB390A /* Pods-DockTilePlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DockTilePlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DockTilePlugin/Pods-DockTilePlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		36028D6015019F4800463021 /* NSColor+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+CGColor.h"; path = "Categories/NSColor+CGColor.h"; sourceTree = SOURCE_ROOT; };
 		36028D6115019F4800463021 /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+CGColor.m"; path = "Categories/NSColor+CGColor.m"; sourceTree = SOURCE_ROOT; };
 		3609C1B5150BEDE400FF8099 /* Subway.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Subway.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -392,6 +398,8 @@
 		36F82F0E154AFDCD00152D11 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67982454150E254B00D292F9 /* DockTilePlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockTilePlugIn.h; sourceTree = "<group>"; };
 		67982455150E254B00D292F9 /* DockTilePlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockTilePlugIn.m; sourceTree = "<group>"; };
+		A31FD4D4CF80313F3A543662 /* libPods-DockTilePlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DockTilePlugin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E878F5EE87A99084B76101ED /* Pods-DockTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DockTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DockTime/Pods-DockTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +425,7 @@
 			files = (
 				36C5EABF1519E7E200702860 /* libicucore.dylib in Frameworks */,
 				3627D92715027D6B006B89B0 /* Cocoa.framework in Frameworks */,
+				141E0F77245E3C70E3E32630 /* libPods-DockTilePlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +452,7 @@
 				36C5EAC01519E81A00702860 /* libicucore.dylib in Frameworks */,
 				36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */,
 				364E4470127B39C800963CE7 /* Cocoa.framework in Frameworks */,
+				0551A3F1D986B27817460A14 /* libPods-DockTime.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +721,7 @@
 				3609C200150BFF7B00FF8099 /* ClockBundle-FlipClock */,
 				364E4467127B39C800963CE7 /* Frameworks */,
 				364E446D127B39C800963CE7 /* Products */,
+				471F919FC48DEE725CF7B262 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -746,6 +757,8 @@
 				36C4633C13744BB200A91AC4 /* QuartzCore.framework */,
 				364E446F127B39C800963CE7 /* Cocoa.framework */,
 				3627D92815027D6B006B89B0 /* Other Frameworks */,
+				1B6022FAA59A778429E4F553 /* libPods-DockTime.a */,
+				A31FD4D4CF80313F3A543662 /* libPods-DockTilePlugin.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -812,6 +825,17 @@
 			path = "ClockBundle-Discreet/Resources";
 			sourceTree = SOURCE_ROOT;
 		};
+		471F919FC48DEE725CF7B262 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E878F5EE87A99084B76101ED /* Pods-DockTime.debug.xcconfig */,
+				2580B7788388D2ADB8F841F8 /* Pods-DockTime.release.xcconfig */,
+				2DCAF7FACC9321F5F2DB390A /* Pods-DockTilePlugin.debug.xcconfig */,
+				2A9E6DB4BF989D079E4A6677 /* Pods-DockTilePlugin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -853,10 +877,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3627D93315027D6B006B89B0 /* Build configuration list for PBXNativeTarget "DockTilePlugin" */;
 			buildPhases = (
+				A8FBCF39FFD9BC924044DF3B /* [CP] Check Pods Manifest.lock */,
 				3627D92215027D6B006B89B0 /* Sources */,
 				3627D92315027D6B006B89B0 /* Frameworks */,
 				3627D92415027D6B006B89B0 /* Resources */,
 				36CB03DE150AB3F900925361 /* CopyFiles */,
+				3582C93A8633AF8C1712DDF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -910,11 +936,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 364E4483127B39C800963CE7 /* Build configuration list for PBXNativeTarget "DockTime" */;
 			buildPhases = (
+				1D010D36DF98E88112201E33 /* [CP] Check Pods Manifest.lock */,
 				364E4468127B39C800963CE7 /* Sources */,
 				364E4469127B39C800963CE7 /* Frameworks */,
 				364E446A127B39C800963CE7 /* Resources */,
-				3679DB571284809700BC36EB /* ShellScript */,
+				3679DB571284809700BC36EB /* Increase Build Number */,
 				3627D943150285FB006B89B0 /* CopyFiles */,
+				9EF02FEE8AFFC9A6D300A593 /* [CP] Embed Pods Frameworks */,
+				73917D0243EDB50DE3B4E9C9 /* [CP] Copy Pods Resources */,
+				367A2C14201BA4200054A91F /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -952,6 +982,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Pecora GmbH";
 				TargetAttributes = {
+					3627D92515027D6B006B89B0 = {
+						DevelopmentTeam = 6F42U4FE9C;
+					};
 					364E446B127B39C800963CE7 = {
 						DevelopmentTeam = 6F42U4FE9C;
 						SystemCapabilities = {
@@ -1145,18 +1178,114 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3679DB571284809700BC36EB /* ShellScript */ = {
+		1D010D36DF98E88112201E33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DockTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3582C93A8633AF8C1712DDF4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DockTilePlugin/Pods-DockTilePlugin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3679DB571284809700BC36EB /* Increase Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increase Build Number";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# http://davedelong.com/blog/2009/04/15/incrementing-build-numbers-xcode\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" Info.plist)\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" Info.plist\n";
+		};
+		367A2C14201BA4200054A91F /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ddd7fdc7c9bd1b7597e1488fbbb883e718906298 a302d9b4a8eb2454ce68f2c093ea37b6fea3852bfc608d28a377056332d1fa11";
+		};
+		73917D0243EDB50DE3B4E9C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DockTime/Pods-DockTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF02FEE8AFFC9A6D300A593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DockTime/Pods-DockTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8FBCF39FFD9BC924044DF3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DockTilePlugin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1465,12 +1594,14 @@
 		};
 		3627D93415027D6B006B89B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCAF7FACC9321F5F2DB390A /* Pods-DockTilePlugin.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1494,6 +1625,7 @@
 		};
 		3627D93515027D6B006B89B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9E6DB4BF989D079E4A6677 /* Pods-DockTilePlugin.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1501,6 +1633,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dock Tile Plug-in/Dock Tile Plug-in-Prefix.pch";
@@ -1641,7 +1774,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
@@ -1669,7 +1802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
@@ -1678,6 +1811,7 @@
 		};
 		364E4484127B39C800963CE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E878F5EE87A99084B76101ED /* Pods-DockTime.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1694,7 +1828,7 @@
 				GCC_PREFIX_HEADER = DockTime_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = DockTime;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1705,6 +1839,7 @@
 		};
 		364E4485127B39C800963CE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2580B7788388D2ADB8F841F8 /* Pods-DockTime.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1720,7 +1855,7 @@
 				GCC_PREFIX_HEADER = DockTime_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = DockTime;
 				RUN_CLANG_STATIC_ANALYZER = YES;
