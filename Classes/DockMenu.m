@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.
 //
 
+#import <Crashlytics/Crashlytics.h>
+
 #import "DockMenu.h"
 #import "DockTilePlugIn.h"
 
@@ -60,8 +62,13 @@
 		
 		BOOL isOn = [bundle.bundleIdentifier isEqualToString:selectedBundleID];
 		
-		[[self itemWithTag:tag] setState:isOn];
+        NSMenuItem *item = [self itemWithTag:tag] ;
+		[item setState:isOn];
 		
+        if (isOn) {
+            [Answers logContentViewWithName:@"MenuItem" contentType:@"Text" contentId:item.title customAttributes:@{}];
+        }
+        
 		tag++;
 	}
 }

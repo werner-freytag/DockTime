@@ -6,6 +6,9 @@
 //  Copyright (c) 2012 Pecora GmbH. All rights reserved.
 //
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 #import "DockTimeAppDelegate.h"
 #import "DockMenu.h"
 #import "DockTilePlugIn.h"
@@ -29,18 +32,14 @@
 	
 	[[NSApp mainMenu] addItem:menuItem];
 	
-	if ( [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSDockTilePlugIn"] == Nil ) {
-		
-		_dockTilePlugin = [[DockTilePlugIn alloc] init];
-		
-		[_dockTilePlugin setDockTile:[NSApp dockTile]];
-	}
-	
-	
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"NSApplicationCrashOnExceptions": @YES }];
+    [Fabric with:@[[Crashlytics class]]];
+    
+    _dockTilePlugin = [[DockTilePlugIn alloc] init];
+    [_dockTilePlugin setDockTile:[NSApp dockTile]];
 }
 
 - (NSMenu *)applicationDockMenu:(NSApplication *)sender {
-	
 	return _dockMenu;
 }
 
