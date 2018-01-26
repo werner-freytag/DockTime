@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>DockTime version 1.1, Copyright 2012-2015 Sympnosis.</string>
+	<string>DockTime version 1.1.1, Copyright 2012-2018 Werner Freytag</string>
 	<key>CFBundleIdentifier</key>
 	<string>de.pecora.iClock</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,17 +17,17 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1196</string>
+	<string>1214</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.lifestyle</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>©2012-2015 Sympnosis.</string>
+	<string>©2012-2018 Werner Freytag.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
