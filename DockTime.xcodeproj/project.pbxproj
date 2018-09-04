@@ -259,7 +259,6 @@
 		3609C212150BFF7B00FF8099 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		3609C213150BFF7B00FF8099 /* Foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foreground.png; sourceTree = "<group>"; };
 		360CE726127CCF38009BC9FB /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		360CE727127CCF38009BC9FB /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		360CE728127CCF38009BC9FB /* af */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = af; path = af.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		360CE729127CCF38009BC9FB /* no */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = no; path = no.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		360CE72A127CCF38009BC9FB /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -383,6 +382,7 @@
 		36EDF8F81A8B297000BE9B66 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "ClockBundle-Discreet/de.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36EDF8F91A8B297000BE9B66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "ClockBundle-Discreet/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36EDF8FA1A8B297000BE9B66 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "ClockBundle-Discreet/fr.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		36EE8393213E7E3A006C7A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36F06B93127B73C80003535B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		36F06BB6127B75B00003535B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		36F82F03154AFCEA00152D11 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -949,7 +949,7 @@
 		364E445F127B39C700963CE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Pecora GmbH";
 				TargetAttributes = {
 					364E446B127B39C800963CE7 = {
@@ -974,6 +974,7 @@
 				no,
 				English,
 				it,
+				Base,
 			);
 			mainGroup = 364E445D127B39C700963CE7;
 			productRefGroup = 364E446D127B39C800963CE7 /* Products */;
@@ -1291,11 +1292,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				360CE726127CCF38009BC9FB /* de */,
-				360CE727127CCF38009BC9FB /* en */,
 				360CE728127CCF38009BC9FB /* af */,
 				360CE729127CCF38009BC9FB /* no */,
 				360CE72A127CCF38009BC9FB /* fr */,
 				366B282014B852240018DD37 /* it */,
+				36EE8393213E7E3A006C7A01 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1383,6 +1384,7 @@
 				INFOPLIST_FILE = "ClockBundle-Subway/ClockBundle-Subway-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1406,6 +1408,7 @@
 				INFOPLIST_FILE = "ClockBundle-Subway/ClockBundle-Subway-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1434,6 +1437,7 @@
 				INFOPLIST_FILE = "ClockBundle-FlipClock/ClockBundle-FlipClock-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1457,6 +1461,7 @@
 				INFOPLIST_FILE = "ClockBundle-FlipClock/ClockBundle-FlipClock-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1485,6 +1490,7 @@
 				INFOPLIST_FILE = "Dock Tile Plug-in/Dock Tile Plug-in-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-DockTilePlugin";
 				PRODUCT_NAME = DockTilePlugin;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1509,6 +1515,7 @@
 				INFOPLIST_FILE = "Dock Tile Plug-in/Dock Tile Plug-in-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-DockTilePlugin";
 				PRODUCT_NAME = DockTilePlugin;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1538,6 +1545,7 @@
 				INFOPLIST_FILE = "ClockBundle-Watch/ClockBundle-Watch-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1561,6 +1569,7 @@
 				INFOPLIST_FILE = "ClockBundle-Watch/ClockBundle-Watch-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1589,6 +1598,7 @@
 				INFOPLIST_FILE = "ClockBundle-Discreet/ClockBundle-Discreet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1612,6 +1622,7 @@
 				INFOPLIST_FILE = "ClockBundle-Discreet/ClockBundle-Discreet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1621,17 +1632,30 @@
 		364E4481127B39C800963CE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1651,17 +1675,29 @@
 		364E4482127B39C800963CE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1696,6 +1732,7 @@
 				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.pecora.iClock;
 				PRODUCT_NAME = DockTime;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -1722,6 +1759,7 @@
 				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.pecora.iClock;
 				PRODUCT_NAME = DockTime;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -1751,6 +1789,7 @@
 				INFOPLIST_FILE = "ClockBundle-White/ClockBundle-White-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1774,6 +1813,7 @@
 				INFOPLIST_FILE = "ClockBundle-White/ClockBundle-White-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
