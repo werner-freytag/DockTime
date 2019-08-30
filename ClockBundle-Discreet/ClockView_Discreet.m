@@ -7,9 +7,9 @@
 //
 
 #import "ClockView_Discreet.h"
-#import "NSColor+CGColor.h"
 #import "RegexKitLite.h"
-#import "NSBundle+ImageResource.h"
+
+#import "Discreet-Swift.h"
 
 @implementation ClockView_Discreet
 

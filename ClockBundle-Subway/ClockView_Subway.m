@@ -7,8 +7,8 @@
 //
 
 #import "ClockView_Subway.h"
-#import "NSColor+CGColor.h"
-#import "NSBundle+ImageResource.h"
+
+#import "Subway-Swift.h"
 
 @implementation ClockView_Subway
 
@@ -50,14 +50,14 @@
 	
 	image = [bundle imageNamed:@"Dot"];
 	
-	for ( int i = 0; i < 60; i+=5 ) {
+	for ( NSInteger i = 0; i < 60; i+=5 ) {
 		float angle = M_PI * 2 / 60 * i;
 		float x = sinf(angle) * 52;
 		float y = cosf(angle) * 52;
 		[image drawAtPoint:CGPointMake(62.0 + x, 64.0 + y) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 	}
 	
-	for ( int i = 0; i <= components.second; ++i ) {
+	for ( NSInteger i = 0; i <= components.second; ++i ) {
 		float angle = M_PI * 2 / 60 * i;
 		float x = sinf(angle) * 48;
 		float y = cosf(angle) * 48;

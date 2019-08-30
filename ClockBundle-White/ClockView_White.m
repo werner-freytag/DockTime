@@ -7,8 +7,8 @@
 //
 
 #import "ClockView_White.h"
-#import "NSColor+CGColor.h"
-#import "NSBundle+ImageResource.h"
+
+#import "White-Swift.h"
 
 @implementation ClockView_White
 

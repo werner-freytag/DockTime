@@ -7,8 +7,8 @@
 //
 
 #import "ClockView_Watch.h"
-#import "NSColor+CGColor.h"
-#import "NSBundle+ImageResource.h"
+
+#import "Watch-Swift.h"
 
 @implementation ClockView_Watch
 

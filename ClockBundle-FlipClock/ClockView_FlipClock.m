@@ -7,9 +7,9 @@
 //
 
 #import "ClockView_FlipClock.h"
-#import "NSColor+CGColor.h"
 #import "RegexKitLite.h"
-#import "NSBundle+ImageResource.h"
+
+#import "FlipClock-Swift.h"
 
 @implementation ClockView_FlipClock
 
