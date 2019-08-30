@@ -11,8 +11,8 @@ import AppKit
 @objc extension Bundle {
     @nonobjc private static var images: [String: [String: NSImage?]] = [:]
 
-    @objc(imageNamed:)
-    func image(named name: String) -> NSImage? {
+    // TODO: Replace with image(named:)
+    func imageNamed(_ name: String) -> NSImage? {
         if !Bundle.images.keys.contains(bundlePath) {
             Bundle.images[bundlePath] = [:]
         }

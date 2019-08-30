@@ -66,7 +66,7 @@ class DockTilePlugIn: NSObject, NSDockTilePlugIn {
 
             return
         }
-
+        
         if let clockViewClass = foundBundle.principalClass as? NSView.Type {
             let clockView = clockViewClass.init(frame: .zero)
             dockTile.contentView = clockView

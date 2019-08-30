@@ -39,7 +39,6 @@
 		3609C226150C033300FF8099 /* FlipClock.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3609C1FE150BFF1800FF8099 /* FlipClock.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		360CE72D127CD056009BC9FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360CE725127CCF38009BC9FB /* MainMenu.xib */; };
 		360CE732127CD056009BC9FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 36F06B92127B73C80003535B /* Credits.rtf */; };
-		36205CB3150ACE3F00D0B0C6 /* ClockView_White.m in Sources */ = {isa = PBXBuildFile; fileRef = 36205CA8150ACE3F00D0B0C6 /* ClockView_White.m */; };
 		36205CB5150ACE3F00D0B0C6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 36205CAC150ACE3F00D0B0C6 /* Background.png */; };
 		36205CB6150ACE3F00D0B0C6 /* Foreground.png in Resources */ = {isa = PBXBuildFile; fileRef = 36205CAD150ACE3F00D0B0C6 /* Foreground.png */; };
 		36205CB7150ACE3F00D0B0C6 /* HandsMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 36205CAE150ACE3F00D0B0C6 /* HandsMiddle.png */; };
@@ -149,6 +148,7 @@
 		ADFF709823187A0B00C00838 /* DockMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47A6BC23181ABF00C6651A /* DockMenu.swift */; };
 		ADFF709A2318ECF700C00838 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70992318ECF700C00838 /* String+Regex.swift */; };
 		ADFF709B2318ED0C00C00838 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70992318ECF700C00838 /* String+Regex.swift */; };
+		ADFF70A22318FA0700C00838 /* ClockView_White.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF709C2318F24400C00838 /* ClockView_White.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,8 +266,6 @@
 		360CE72A127CCF38009BC9FB /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36205CA5150ACE3F00D0B0C6 /* ClockBundle-White-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-White-Info.plist"; sourceTree = "<group>"; };
 		36205CA6150ACE3F00D0B0C6 /* ClockBundle-White-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-White-Prefix.pch"; sourceTree = "<group>"; };
-		36205CA7150ACE3F00D0B0C6 /* ClockView_White.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView_White.h; sourceTree = "<group>"; };
-		36205CA8150ACE3F00D0B0C6 /* ClockView_White.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_White.m; sourceTree = "<group>"; };
 		36205CAA150ACE3F00D0B0C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36205CAC150ACE3F00D0B0C6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		36205CAD150ACE3F00D0B0C6 /* Foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foreground.png; sourceTree = "<group>"; };
@@ -395,6 +393,7 @@
 		AD735914231815FD00B2AE6A /* ClockBundle-FlipClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-FlipClock-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD735915231815FE00B2AE6A /* Bundle+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Image.swift"; sourceTree = "<group>"; };
 		ADFF70992318ECF700C00838 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		ADFF709C2318F24400C00838 /* ClockView_White.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView_White.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -579,8 +578,7 @@
 		36205CA4150ACE3F00D0B0C6 /* ClockBundle-White */ = {
 			isa = PBXGroup;
 			children = (
-				36205CA7150ACE3F00D0B0C6 /* ClockView_White.h */,
-				36205CA8150ACE3F00D0B0C6 /* ClockView_White.m */,
+				ADFF709C2318F24400C00838 /* ClockView_White.swift */,
 				362AEDAA150AD3CF009B8640 /* Supporting Files */,
 				36205CAB150ACE3F00D0B0C6 /* Resources */,
 			);
@@ -667,13 +665,6 @@
 			path = "ClockBundle-Discreet";
 			sourceTree = "<group>";
 		};
-		362AEE22150AF50B009B8640 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
 		364E445D127B39C700963CE7 = {
 			isa = PBXGroup;
 			children = (
@@ -684,7 +675,6 @@
 				AD735914231815FD00B2AE6A /* ClockBundle-FlipClock-Bridging-Header.h */,
 				364E4464127B39C700963CE7 /* Classes */,
 				AD73590523180C6A00B2AE6A /* Extensions */,
-				362AEE22150AF50B009B8640 /* Framework */,
 				36205CBC150ACEDA00D0B0C6 /* Supporting Files */,
 				364E4466127B39C800963CE7 /* Resources */,
 				3627D92C15027D6B006B89B0 /* Dock Tile Plug-in */,
@@ -1241,8 +1231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD47A6D123182C9E00C6651A /* Bundle+Extension.swift in Sources */,
-				36205CB3150ACE3F00D0B0C6 /* ClockView_White.m in Sources */,
 				AD735918231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				ADFF70A22318FA0700C00838 /* ClockView_White.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
