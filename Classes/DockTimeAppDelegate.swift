@@ -8,6 +8,7 @@
 
 import AppKit
 
+@NSApplicationMain
 class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private var dockMenu = DockMenu()
     private var dockTilePlugin: DockTilePlugIn!

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3609C1A4150BEDE400FF8099 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		3609C1CD150BEE5B00FF8099 /* ClockView_Subway.m in Sources */ = {isa = PBXBuildFile; fileRef = 3609C1BC150BEE5B00FF8099 /* ClockView_Subway.m */; };
 		3609C1CF150BEE5B00FF8099 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1C0150BEE5B00FF8099 /* 0.png */; };
 		3609C1D0150BEE5B00FF8099 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1C1150BEE5B00FF8099 /* 1.png */; };
 		3609C1D1150BEE5B00FF8099 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1C2150BEE5B00FF8099 /* 2.png */; };
@@ -23,7 +22,6 @@
 		3609C1DE150BF14300FF8099 /* Subway.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3609C1B5150BEDE400FF8099 /* Subway.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3609C1E0150BF1C000FF8099 /* Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1DF150BF1C000FF8099 /* Dot.png */; };
 		3609C1ED150BFF1800FF8099 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		3609C215150BFF7B00FF8099 /* ClockView_FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3609C204150BFF7B00FF8099 /* ClockView_FlipClock.m */; };
 		3609C217150BFF7B00FF8099 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C208150BFF7B00FF8099 /* 0.png */; };
 		3609C218150BFF7B00FF8099 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C209150BFF7B00FF8099 /* 1.png */; };
 		3609C219150BFF7B00FF8099 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3609C20A150BFF7B00FF8099 /* 2.png */; };
@@ -50,7 +48,6 @@
 		362AEDB1150AD685009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		364E4470127B39C800963CE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		364E4477127B39C800963CE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4476127B39C800963CE7 /* main.m */; };
 		366AFFA915169BB5008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36205CA9150ACE3F00D0B0C6 /* InfoPlist.strings */; };
 		366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */; };
 		366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C205150BFF7B00FF8099 /* InfoPlist.strings */; };
@@ -85,7 +82,6 @@
 		36BCCFDE1594DAE200D22ABF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFD21594DAE200D22ABF /* Background@2x.png */; };
 		36BCCFDF1594DAE200D22ABF /* Foreground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFD31594DAE200D22ABF /* Foreground@2x.png */; };
 		36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C4633C13744BB200A91AC4 /* QuartzCore.framework */; };
-		36C4FDFD1A8C89E6000641AC /* ClockView_Watch.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */; };
 		36C4FE151A8C8A0D000641AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE131A8C8A0D000641AC /* InfoPlist.strings */; };
 		36C4FE181A8C8A5F000641AC /* Watch.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDBC150AD685009B8640 /* Watch.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36C4FE511A8C9E28000641AC /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FE4D1A8C9E28000641AC /* Background.png */; };
@@ -100,7 +96,6 @@
 		36CB03DF150AB40900925361 /* White.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36CB03BF150AAE8900925361 /* White.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		36CBDEC41A8B34A000F30447 /* Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EC87931A927FEC00A80A35 /* Images.xcassets */; };
-		36EDF8DE1A8B296600BE9B66 /* ClockView_Discreet.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EDF8C31A8B296600BE9B66 /* ClockView_Discreet.m */; };
 		36EDF8DF1A8B296600BE9B66 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C51A8B296600BE9B66 /* 0.png */; };
 		36EDF8E01A8B296600BE9B66 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C61A8B296600BE9B66 /* 0@2x.png */; };
 		36EDF8E11A8B296600BE9B66 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8C71A8B296600BE9B66 /* 1.png */; };
@@ -149,6 +144,15 @@
 		ADFF709A2318ECF700C00838 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70992318ECF700C00838 /* String+Regex.swift */; };
 		ADFF709B2318ED0C00C00838 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70992318ECF700C00838 /* String+Regex.swift */; };
 		ADFF70A22318FA0700C00838 /* ClockView_White.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF709C2318F24400C00838 /* ClockView_White.swift */; };
+		ADFF70A4231903EC00C00838 /* ClockView_Discreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A3231903EB00C00838 /* ClockView_Discreet.swift */; };
+		ADFF70A6231903F800C00838 /* ClockView_FlipClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A5231903F800C00838 /* ClockView_FlipClock.swift */; };
+		ADFF70A82319040300C00838 /* ClockView_Subway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A72319040200C00838 /* ClockView_Subway.swift */; };
+		ADFF70AA2319040D00C00838 /* ClockView_Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A92319040D00C00838 /* ClockView_Watch.swift */; };
+		ADFF70AC2319058D00C00838 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
+		ADFF70AD231905CD00C00838 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
+		ADFF70AE231905CE00C00838 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
+		ADFF70AF231905CF00C00838 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
+		ADFF70B0231905D000C00838 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,9 +230,6 @@
 /* Begin PBXFileReference section */
 		3609C1B5150BEDE400FF8099 /* Subway.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Subway.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3609C1B9150BEE5B00FF8099 /* ClockBundle-Subway-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-Subway-Info.plist"; sourceTree = "<group>"; };
-		3609C1BA150BEE5B00FF8099 /* ClockBundle-Subway-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Subway-Prefix.pch"; sourceTree = "<group>"; };
-		3609C1BB150BEE5B00FF8099 /* ClockView_Subway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView_Subway.h; sourceTree = "<group>"; };
-		3609C1BC150BEE5B00FF8099 /* ClockView_Subway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_Subway.m; sourceTree = "<group>"; };
 		3609C1BE150BEE5B00FF8099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3609C1C0150BEE5B00FF8099 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		3609C1C1150BEE5B00FF8099 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -244,9 +245,6 @@
 		3609C1DF150BF1C000FF8099 /* Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dot.png; sourceTree = "<group>"; };
 		3609C1FE150BFF1800FF8099 /* FlipClock.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClock.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3609C201150BFF7B00FF8099 /* ClockBundle-FlipClock-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-FlipClock-Info.plist"; sourceTree = "<group>"; };
-		3609C202150BFF7B00FF8099 /* ClockBundle-FlipClock-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-FlipClock-Prefix.pch"; sourceTree = "<group>"; };
-		3609C203150BFF7B00FF8099 /* ClockView_FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ClockView_FlipClock.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		3609C204150BFF7B00FF8099 /* ClockView_FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView_FlipClock.m; sourceTree = "<group>"; };
 		3609C206150BFF7B00FF8099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3609C208150BFF7B00FF8099 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		3609C209150BFF7B00FF8099 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 		360CE729127CCF38009BC9FB /* no */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = no; path = no.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		360CE72A127CCF38009BC9FB /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36205CA5150ACE3F00D0B0C6 /* ClockBundle-White-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockBundle-White-Info.plist"; sourceTree = "<group>"; };
-		36205CA6150ACE3F00D0B0C6 /* ClockBundle-White-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-White-Prefix.pch"; sourceTree = "<group>"; };
 		36205CAA150ACE3F00D0B0C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36205CAC150ACE3F00D0B0C6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		36205CAD150ACE3F00D0B0C6 /* Foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foreground.png; sourceTree = "<group>"; };
@@ -279,15 +276,12 @@
 		3627D92B15027D6B006B89B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3627D92E15027D6B006B89B0 /* Dock Tile Plug-in-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dock Tile Plug-in-Info.plist"; sourceTree = "<group>"; };
 		3627D93015027D6B006B89B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3627D93215027D6B006B89B0 /* Dock Tile Plug-in-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dock Tile Plug-in-Prefix.pch"; sourceTree = "<group>"; };
 		362AEDBC150AD685009B8640 /* Watch.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watch.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		362AEDF9150AE12F009B8640 /* Discreet.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Discreet.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		36475844150AF6EC003107F4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		364E446C127B39C800963CE7 /* DockTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364E446F127B39C800963CE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		364E4471127B39C800963CE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		364E4472127B39C800963CE7 /* DockTime_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DockTime_Prefix.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		364E4476127B39C800963CE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		366AFFA8151697EC008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		366AFFAB15169C61008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		366AFFAF15169CE1008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -326,9 +320,6 @@
 		36BCCFD31594DAE200D22ABF /* Foreground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Foreground@2x.png"; sourceTree = "<group>"; };
 		36C4633C13744BB200A91AC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		36C4FDF81A8C89E6000641AC /* ClockBundle-Watch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ClockBundle-Watch-Info.plist"; path = "ClockBundle-Watch/ClockBundle-Watch-Info.plist"; sourceTree = SOURCE_ROOT; };
-		36C4FDF91A8C89E6000641AC /* ClockBundle-Watch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ClockBundle-Watch-Prefix.pch"; path = "ClockBundle-Watch/ClockBundle-Watch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		36C4FDFA1A8C89E6000641AC /* ClockView_Watch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockView_Watch.h; path = "ClockBundle-Watch/ClockView_Watch.h"; sourceTree = SOURCE_ROOT; };
-		36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockView_Watch.m; path = "ClockBundle-Watch/ClockView_Watch.m"; sourceTree = SOURCE_ROOT; };
 		36C4FE141A8C8A0D000641AC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "ClockBundle-Watch/de.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36C4FE161A8C8A13000641AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "ClockBundle-Watch/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36C4FE171A8C8A1B000641AC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "ClockBundle-Watch/fr.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
@@ -344,9 +335,6 @@
 		36D6DEB316AE1F5E000C40A0 /* DockTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DockTime.entitlements; sourceTree = "<group>"; };
 		36EC87931A927FEC00A80A35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DockTime/Images.xcassets; sourceTree = "<group>"; };
 		36EDF8C01A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ClockBundle-Discreet-Info.plist"; path = "ClockBundle-Discreet/ClockBundle-Discreet-Info.plist"; sourceTree = SOURCE_ROOT; };
-		36EDF8C11A8B296600BE9B66 /* ClockBundle-Discreet-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ClockBundle-Discreet-Prefix.pch"; path = "ClockBundle-Discreet/ClockBundle-Discreet-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		36EDF8C21A8B296600BE9B66 /* ClockView_Discreet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockView_Discreet.h; path = "ClockBundle-Discreet/ClockView_Discreet.h"; sourceTree = SOURCE_ROOT; };
-		36EDF8C31A8B296600BE9B66 /* ClockView_Discreet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockView_Discreet.m; path = "ClockBundle-Discreet/ClockView_Discreet.m"; sourceTree = SOURCE_ROOT; };
 		36EDF8C51A8B296600BE9B66 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		36EDF8C61A8B296600BE9B66 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		36EDF8C71A8B296600BE9B66 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -386,14 +374,14 @@
 		AD47A6BF23181CB800C6651A /* DockTilePlugIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockTilePlugIn.swift; sourceTree = "<group>"; };
 		AD47A6C423182B7000C6651A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockTimeAppDelegate.swift; sourceTree = "<group>"; };
-		AD735910231815FD00B2AE6A /* ClockBundle-White-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-White-Bridging-Header.h"; sourceTree = "<group>"; };
-		AD735911231815FD00B2AE6A /* ClockBundle-Watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Watch-Bridging-Header.h"; sourceTree = "<group>"; };
-		AD735912231815FD00B2AE6A /* ClockBundle-Discreet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Discreet-Bridging-Header.h"; sourceTree = "<group>"; };
-		AD735913231815FD00B2AE6A /* ClockBundle-Subway-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-Subway-Bridging-Header.h"; sourceTree = "<group>"; };
-		AD735914231815FD00B2AE6A /* ClockBundle-FlipClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockBundle-FlipClock-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD735915231815FE00B2AE6A /* Bundle+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Image.swift"; sourceTree = "<group>"; };
 		ADFF70992318ECF700C00838 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
 		ADFF709C2318F24400C00838 /* ClockView_White.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView_White.swift; sourceTree = "<group>"; };
+		ADFF70A3231903EB00C00838 /* ClockView_Discreet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView_Discreet.swift; sourceTree = "<group>"; };
+		ADFF70A5231903F800C00838 /* ClockView_FlipClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView_FlipClock.swift; sourceTree = "<group>"; };
+		ADFF70A72319040200C00838 /* ClockView_Subway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView_Subway.swift; sourceTree = "<group>"; };
+		ADFF70A92319040D00C00838 /* ClockView_Watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockView_Watch.swift; path = "ClockBundle-Watch/ClockView_Watch.swift"; sourceTree = SOURCE_ROOT; };
+		ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+CGContext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,10 +448,8 @@
 		3608DCDA1A89806700241647 /* ClockBundle-Watch */ = {
 			isa = PBXGroup;
 			children = (
+				ADFF70A92319040D00C00838 /* ClockView_Watch.swift */,
 				36C4FDF81A8C89E6000641AC /* ClockBundle-Watch-Info.plist */,
-				36C4FDF91A8C89E6000641AC /* ClockBundle-Watch-Prefix.pch */,
-				36C4FDFA1A8C89E6000641AC /* ClockView_Watch.h */,
-				36C4FDFB1A8C89E6000641AC /* ClockView_Watch.m */,
 				36C4FE131A8C8A0D000641AC /* InfoPlist.strings */,
 				36C4FE4C1A8C9D6D000641AC /* Resources */,
 			);
@@ -474,9 +460,9 @@
 		3609C1B8150BEE5B00FF8099 /* ClockBundle-Subway */ = {
 			isa = PBXGroup;
 			children = (
-				3609C1DB150BEE6300FF8099 /* Supporting Files */,
-				3609C1BB150BEE5B00FF8099 /* ClockView_Subway.h */,
-				3609C1BC150BEE5B00FF8099 /* ClockView_Subway.m */,
+				ADFF70A72319040200C00838 /* ClockView_Subway.swift */,
+				3609C1B9150BEE5B00FF8099 /* ClockBundle-Subway-Info.plist */,
+				3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */,
 				3609C1BF150BEE5B00FF8099 /* Resources */,
 			);
 			path = "ClockBundle-Subway";
@@ -513,22 +499,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		3609C1DB150BEE6300FF8099 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3609C1B9150BEE5B00FF8099 /* ClockBundle-Subway-Info.plist */,
-				3609C1BA150BEE5B00FF8099 /* ClockBundle-Subway-Prefix.pch */,
-				3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		3609C200150BFF7B00FF8099 /* ClockBundle-FlipClock */ = {
 			isa = PBXGroup;
 			children = (
-				3609C223150C02D300FF8099 /* Supporting Files */,
-				3609C203150BFF7B00FF8099 /* ClockView_FlipClock.h */,
-				3609C204150BFF7B00FF8099 /* ClockView_FlipClock.m */,
+				ADFF70A5231903F800C00838 /* ClockView_FlipClock.swift */,
+				3609C201150BFF7B00FF8099 /* ClockBundle-FlipClock-Info.plist */,
+				3609C205150BFF7B00FF8099 /* InfoPlist.strings */,
 				3609C207150BFF7B00FF8099 /* Resources */,
 			);
 			path = "ClockBundle-FlipClock";
@@ -565,21 +541,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		3609C223150C02D300FF8099 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3609C201150BFF7B00FF8099 /* ClockBundle-FlipClock-Info.plist */,
-				3609C202150BFF7B00FF8099 /* ClockBundle-FlipClock-Prefix.pch */,
-				3609C205150BFF7B00FF8099 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		36205CA4150ACE3F00D0B0C6 /* ClockBundle-White */ = {
 			isa = PBXGroup;
 			children = (
 				ADFF709C2318F24400C00838 /* ClockView_White.swift */,
-				362AEDAA150AD3CF009B8640 /* Supporting Files */,
+				36205CA5150ACE3F00D0B0C6 /* ClockBundle-White-Info.plist */,
+				36205CA9150ACE3F00D0B0C6 /* InfoPlist.strings */,
 				36205CAB150ACE3F00D0B0C6 /* Resources */,
 			);
 			path = "ClockBundle-White";
@@ -607,8 +574,6 @@
 			isa = PBXGroup;
 			children = (
 				36D6DEB316AE1F5E000C40A0 /* DockTime.entitlements */,
-				364E4476127B39C800963CE7 /* main.m */,
-				364E4472127B39C800963CE7 /* DockTime_Prefix.pch */,
 				364E4471127B39C800963CE7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -637,17 +602,6 @@
 			children = (
 				3627D92E15027D6B006B89B0 /* Dock Tile Plug-in-Info.plist */,
 				3627D92F15027D6B006B89B0 /* InfoPlist.strings */,
-				3627D93215027D6B006B89B0 /* Dock Tile Plug-in-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		362AEDAA150AD3CF009B8640 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				36205CA5150ACE3F00D0B0C6 /* ClockBundle-White-Info.plist */,
-				36205CA6150ACE3F00D0B0C6 /* ClockBundle-White-Prefix.pch */,
-				36205CA9150ACE3F00D0B0C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -655,11 +609,9 @@
 		362AEDFB150AE854009B8640 /* ClockBundle-Discreet */ = {
 			isa = PBXGroup;
 			children = (
+				ADFF70A3231903EB00C00838 /* ClockView_Discreet.swift */,
 				36EDF8F71A8B297000BE9B66 /* InfoPlist.strings */,
 				36EDF8C01A8B296600BE9B66 /* ClockBundle-Discreet-Info.plist */,
-				36EDF8C11A8B296600BE9B66 /* ClockBundle-Discreet-Prefix.pch */,
-				36EDF8C21A8B296600BE9B66 /* ClockView_Discreet.h */,
-				36EDF8C31A8B296600BE9B66 /* ClockView_Discreet.m */,
 				36EDF8C41A8B296600BE9B66 /* Resources */,
 			);
 			path = "ClockBundle-Discreet";
@@ -668,11 +620,6 @@
 		364E445D127B39C700963CE7 = {
 			isa = PBXGroup;
 			children = (
-				AD735910231815FD00B2AE6A /* ClockBundle-White-Bridging-Header.h */,
-				AD735911231815FD00B2AE6A /* ClockBundle-Watch-Bridging-Header.h */,
-				AD735912231815FD00B2AE6A /* ClockBundle-Discreet-Bridging-Header.h */,
-				AD735913231815FD00B2AE6A /* ClockBundle-Subway-Bridging-Header.h */,
-				AD735914231815FD00B2AE6A /* ClockBundle-FlipClock-Bridging-Header.h */,
 				364E4464127B39C700963CE7 /* Classes */,
 				AD73590523180C6A00B2AE6A /* Extensions */,
 				36205CBC150ACEDA00D0B0C6 /* Supporting Files */,
@@ -787,6 +734,7 @@
 			isa = PBXGroup;
 			children = (
 				AD735915231815FE00B2AE6A /* Bundle+Image.swift */,
+				ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */,
 				AD47A6C423182B7000C6651A /* Bundle+Extension.swift */,
 				ADFF70992318ECF700C00838 /* String+Regex.swift */,
 			);
@@ -1164,8 +1112,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFF70AA2319040D00C00838 /* ClockView_Watch.swift in Sources */,
+				ADFF70AC2319058D00C00838 /* NSView+CGContext.swift in Sources */,
 				AD47A6D423182CA000C6651A /* Bundle+Extension.swift in Sources */,
-				3609C1CD150BEE5B00FF8099 /* ClockView_Subway.m in Sources */,
+				ADFF70A82319040300C00838 /* ClockView_Subway.swift in Sources */,
 				AD73591B231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1175,8 +1125,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD47A6D523182CA000C6651A /* Bundle+Extension.swift in Sources */,
-				3609C215150BFF7B00FF8099 /* ClockView_FlipClock.m in Sources */,
+				ADFF70B0231905D000C00838 /* NSView+CGContext.swift in Sources */,
 				ADFF709B2318ED0C00C00838 /* String+Regex.swift in Sources */,
+				ADFF70A6231903F800C00838 /* ClockView_FlipClock.swift in Sources */,
 				AD73591C231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1197,8 +1148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD47A6D223182C9E00C6651A /* Bundle+Extension.swift in Sources */,
-				36C4FDFD1A8C89E6000641AC /* ClockView_Watch.m in Sources */,
 				AD735919231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				ADFF70AE231905CE00C00838 /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1207,8 +1158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD47A6D323182C9F00C6651A /* Bundle+Extension.swift in Sources */,
-				36EDF8DE1A8B296600BE9B66 /* ClockView_Discreet.m in Sources */,
+				ADFF70AF231905CF00C00838 /* NSView+CGContext.swift in Sources */,
 				ADFF709A2318ECF700C00838 /* String+Regex.swift in Sources */,
+				ADFF70A4231903EC00C00838 /* ClockView_Discreet.swift in Sources */,
 				AD73591A231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1221,7 +1173,6 @@
 				AD47A6BD23181AC000C6651A /* DockMenu.swift in Sources */,
 				AD47A6C523182B7000C6651A /* Bundle+Extension.swift in Sources */,
 				AD47A6C223181DE000C6651A /* DockTilePlugIn.swift in Sources */,
-				364E4477127B39C800963CE7 /* main.m in Sources */,
 				AD735916231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1233,6 +1184,7 @@
 				AD47A6D123182C9E00C6651A /* Bundle+Extension.swift in Sources */,
 				AD735918231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
 				ADFF70A22318FA0700C00838 /* ClockView_White.swift in Sources */,
+				ADFF70AD231905CD00C00838 /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1393,7 +1345,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-Subway-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1422,7 +1373,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-Subway-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1455,7 +1405,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-FlipClock-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1484,7 +1433,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-FlipClock-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1573,7 +1521,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-Watch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1602,7 +1549,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-Watch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1635,7 +1581,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-Discreet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1664,7 +1609,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-Discreet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -1841,7 +1785,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-White-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
@@ -1870,7 +1813,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sympnosis.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClockBundle-White-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
 			};
