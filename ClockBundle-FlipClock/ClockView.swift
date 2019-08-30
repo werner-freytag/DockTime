@@ -1,5 +1,5 @@
 //
-//  ClockView_FlipClock.m
+//  ClockView
 //  DockTime
 //
 //  Created by Werner Freytag on 03.03.12.
@@ -8,8 +8,8 @@
 
 import AppKit
 
-class ClockView_FlipClock: NSView {
-    private let bundle = Bundle(identifier: "com.sympnosis.DockTime-ClockBundle-FlipClock")!
+class ClockView: NSView {
+    private let bundle = Bundle(identifier: "io.pecora.DockTime-ClockBundle-FlipClock")!
 
     override func draw(_: NSRect) {
         guard let context = currentContext else { return }

@@ -1,5 +1,5 @@
 //
-//  ClockView_Subway.m
+//  ClockView
 //  DockTime
 //
 //  Created by Werner Freytag on 10.03.12.
@@ -8,8 +8,8 @@
 
 import AppKit
 
-class ClockView_Subway: NSView {
-    private let bundle = Bundle(identifier: "com.sympnosis.DockTime-ClockBundle-Subway")!
+class ClockView: NSView {
+    private let bundle = Bundle(identifier: "io.pecora.DockTime-ClockBundle-Subway")!
 
     override func draw(_: NSRect) {
         guard let context = currentContext else { return }

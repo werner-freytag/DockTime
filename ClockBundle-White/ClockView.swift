@@ -1,5 +1,5 @@
 //
-//  ClockView_White.m
+//  ClockView
 //  DockTime
 //
 //  Created by Werner Freytag on 03.03.12.
@@ -8,8 +8,8 @@
 
 import AppKit
 
-class ClockView_White: NSView {
-    private let bundle = Bundle(identifier: "com.sympnosis.DockTime-ClockBundle-White")!
+class ClockView: NSView {
+    private let bundle = Bundle(identifier: "io.pecora.DockTime-ClockBundle-White")!
 
     override func draw(_: NSRect) {
         guard let context = currentContext else { return }
