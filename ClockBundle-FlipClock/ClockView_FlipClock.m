@@ -7,7 +7,6 @@
 //
 
 #import "ClockView_FlipClock.h"
-#import "RegexKitLite.h"
 
 #import "FlipClock-Swift.h"
 

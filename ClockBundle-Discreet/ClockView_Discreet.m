@@ -7,7 +7,6 @@
 //
 
 #import "ClockView_Discreet.h"
-#import "RegexKitLite.h"
 
 #import "Discreet-Swift.h"
 

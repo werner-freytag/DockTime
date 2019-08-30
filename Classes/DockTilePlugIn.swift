@@ -14,7 +14,7 @@ class DockTilePlugIn: NSObject, NSDockTilePlugIn {
     let DEFAULT_BUNDLE_ID = "com.sympnosis.DockTime-ClockBundle-White"
 
     var dockTile: NSDockTile!
-    
+
     private var _dockMenu = DockMenu()
     private var refreshTimer: Timer!
     private var lastRefreshTime: TimeInterval!

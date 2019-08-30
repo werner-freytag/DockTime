@@ -40,7 +40,7 @@ class DockMenu: NSMenu {
         let value = CFPreferencesCopyAppValue("BundleID" as CFString, APPLICATION_ID as CFString)
         let selectedBundleID = value as! CFString as String
 
-        for (index,bundle) in bundles.enumerated() {
+        for (index, bundle) in bundles.enumerated() {
             let isOn = bundle.bundleIdentifier == selectedBundleID
             item(withTag: TAG_BASE + index)?.state = NSControl.StateValue(isOn ? 1 : 0)
         }
