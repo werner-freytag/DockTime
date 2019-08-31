@@ -30,7 +30,7 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
     private lazy var clockMenuItems: [NSMenuItem] = {
         clockBundles.enumerated().map { index, bundle in
-            let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index))
+            let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
             item.target = self
             item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
             return item
