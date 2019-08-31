@@ -30,7 +30,7 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
     private lazy var clockMenuItems: [NSMenuItem] = {
         clockBundles.enumerated().map { index, bundle in
-            let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index))
+            let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
             item.target = self
             item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
             return item
@@ -58,14 +58,6 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
     private let dockTile = NSApp.dockTile
 
-    override init() {
-        super.init()
-
-        if UserDefaults.standard.selectedClockBundle == nil {
-            UserDefaults.standard.selectedClockBundle = clockBundles.first!.bundleIdentifier!
-        }
-    }
-
     func applicationWillFinishLaunching(_: Notification) {
         let menuItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
         menuItem.submenu = menu
@@ -74,6 +66,10 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
         currentClockBundle = clockBundles.first(where: { $0.bundleIdentifier == UserDefaults.standard.selectedClockBundle }) ??
             clockBundles.first(where: { $0.bundleIdentifier == defaultBundleIdentifier }) ??
             clockBundles.first!
+
+        if UserDefaults.standard.selectedClockBundle != currentClockBundle?.bundleIdentifier {
+            UserDefaults.standard.selectedClockBundle = currentClockBundle?.bundleIdentifier
+        }
 
         refreshTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(refreshDockTile), userInfo: nil, repeats: true)
     }
