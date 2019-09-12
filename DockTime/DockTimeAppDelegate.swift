@@ -27,7 +27,9 @@ import DockTimePlugin
 class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private let defaultBundleIdentifier = "io.pecora.DockTime-ClockBundle-White"
 
-    private let clockBundles = Bundle.paths(forResourcesOfType: "clockbundle", inDirectory: Bundle.main.builtInPlugInsPath!).compactMap { Bundle(path: $0) }
+    private let clockBundles = Bundle.paths(forResourcesOfType: "clockbundle", inDirectory: Bundle.main.builtInPlugInsPath!)
+        .compactMap { Bundle(path: $0) }
+        .sorted(by: { $0.bundleIdentifier! < $1.bundleIdentifier! })
 
     private lazy var clockMenuItems: [NSMenuItem] = {
         clockBundles.enumerated()
@@ -37,7 +39,6 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
                 item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
                 return item
             }
-            .sorted(by: { $0.title < $1.title })
     }()
 
     private lazy var menu: NSMenu = {
