@@ -20,19 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import AppKit
+import Foundation
 
-extension Bundle {
-    private static var images: [String: [String: NSImage?]] = [:]
-
-    func image(named name: String) -> NSImage? {
-        if !Bundle.images.keys.contains(bundlePath) {
-            Bundle.images[bundlePath] = [:]
-        }
-        if !Bundle.images[bundlePath]!.keys.contains(name) {
-            Bundle.images[bundlePath]![name] = image(forResource: name)
-        }
-
-        return Bundle.images[bundlePath]![name]!
-    }
+protocol BundleInitiable {
+    init(bundle: Bundle)
 }

@@ -21,12 +21,14 @@
 // THE SOFTWARE.
 
 import AppKit
+import DockTimePlugin
 
-class ClockView: NSView {
-    private let bundle = Bundle(identifier: "io.pecora.DockTime-ClockBundle-Watch")!
+class ClockView: NSView, BundleAware {
+    var bundle: Bundle?
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return }
+        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
+        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
         var image: NSImage
 
@@ -36,7 +38,11 @@ class ClockView: NSView {
         image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
 
         let currentCalendar = Calendar.current
-        let components = currentCalendar.dateComponents([.hour, .minute, .second], from: Date())
+        let components = currentCalendar.dateComponents([.hour, .minute, .second, .nanosecond], from: Date())
+
+        let secondFraction = (Double(components.second!) + Double(components.nanosecond!) / 1_000_000_000) / 60
+        let minuteFraction = (Double(components.minute!) + secondFraction) / 60
+        let hourFraction = (Double(components.hour! % 12) + minuteFraction) / 12
 
         context.saveGState()
 
@@ -46,19 +52,19 @@ class ClockView: NSView {
         context.setShadow(offset: CGSize(width: 0, height: -1), blur: 1, color: NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.3).cgColor)
 
         context.saveGState()
-        context.rotate(by: CGFloat(2) * .pi * ((CGFloat(components.hour! % 12) + CGFloat(components.minute!) / 60) / 12))
+        context.rotate(by: CGFloat(2) * .pi * CGFloat(hourFraction))
         image = bundle.image(named: "HourHand")!
         image.draw(at: CGPoint(x: -image.size.width / 2, y: 1.0), from: .zero, operation: .sourceOver, fraction: 1)
         context.restoreGState()
 
         context.saveGState()
-        context.rotate(by: CGFloat(2) * .pi * (CGFloat(components.minute!) + CGFloat(components.second!) / 60) / 60)
+        context.rotate(by: CGFloat(2) * .pi * CGFloat(minuteFraction))
         image = bundle.image(named: "MinuteHand")!
         image.draw(at: CGPoint(x: -image.size.width / 2, y: 1.0), from: .zero, operation: .sourceOver, fraction: 1)
         context.restoreGState()
 
         context.saveGState()
-        context.rotate(by: CGFloat(2) * .pi * CGFloat(components.second!) / 60)
+        context.rotate(by: CGFloat(2) * .pi * CGFloat(secondFraction))
         image = bundle.image(named: "SecondHand")!
         image.draw(at: CGPoint(x: -image.size.width / 2, y: -8.5), from: .zero, operation: .sourceOver, fraction: 1)
         context.restoreGState()

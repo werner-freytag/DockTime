@@ -21,12 +21,14 @@
 // THE SOFTWARE.
 
 import AppKit
+import DockTimePlugin
 
-class ClockView: NSView {
-    private let bundle = Bundle(identifier: "io.pecora.DockTime-ClockBundle-Subway")!
+class ClockView: NSView, BundleAware {
+    var bundle: Bundle?
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return }
+        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
+        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
         var imageName: String
         var image: NSImage

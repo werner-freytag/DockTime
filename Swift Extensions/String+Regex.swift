@@ -22,8 +22,8 @@
 
 import Foundation
 
-@objc extension NSString {
-    func arrayOfCaptureComponentsMatchedByRegex(_ string: String) -> [[String]] {
+extension NSString {
+    func componentsMatchedByRegex(_ string: String) -> [[String]] {
         let regex = try! NSRegularExpression(pattern: string, options: [])
         let result = regex.matches(in: self as String, options: [], range: NSMakeRange(0, length))
         return result.map { result in

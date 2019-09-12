@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 import AppKit
+import DockTimePlugin
 
 @NSApplicationMain
 class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
@@ -29,12 +30,14 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private let clockBundles = Bundle.paths(forResourcesOfType: "clockbundle", inDirectory: Bundle.main.builtInPlugInsPath!).compactMap { Bundle(path: $0) }
 
     private lazy var clockMenuItems: [NSMenuItem] = {
-        clockBundles.enumerated().map { index, bundle in
-            let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
-            item.target = self
-            item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
-            return item
-        }
+        clockBundles.enumerated()
+            .map { index, bundle in
+                let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
+                item.target = self
+                item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
+                return item
+            }
+            .sorted(by: { $0.title < $1.title })
     }()
 
     private lazy var menu: NSMenu = {
@@ -47,9 +50,22 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
     private var currentClockBundle: Bundle? {
         didSet {
-            guard let clockViewClass = currentClockBundle?.principalClass as? NSView.Type else { return assertionFailure() }
+            guard let principalClass = currentClockBundle?.principalClass else {
+                return assertionFailure("Missing principalClass for bundle \(String(describing: currentClockBundle?.bundleIdentifier)).")
+            }
 
-            dockTile.contentView = clockViewClass.init(frame: .zero)
+            guard let clockViewClass = principalClass as? NSView.Type else {
+                return assertionFailure("\(String(describing: principalClass)) is not a NSView.")
+            }
+
+            NSLog("Loading \(clockViewClass) of bundle \(currentClockBundle!.bundleIdentifier!)")
+
+            let view = clockViewClass.init(frame: .zero)
+            if var bundleAware = view as? BundleAware {
+                bundleAware.bundle = currentClockBundle
+            }
+
+            dockTile.contentView = view
         }
     }
 
@@ -66,10 +82,6 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
         currentClockBundle = clockBundles.first(where: { $0.bundleIdentifier == UserDefaults.standard.selectedClockBundle }) ??
             clockBundles.first(where: { $0.bundleIdentifier == defaultBundleIdentifier }) ??
             clockBundles.first!
-
-        if UserDefaults.standard.selectedClockBundle != currentClockBundle?.bundleIdentifier {
-            UserDefaults.standard.selectedClockBundle = currentClockBundle?.bundleIdentifier
-        }
 
         refreshTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(refreshDockTile), userInfo: nil, repeats: true)
     }
@@ -91,8 +103,6 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func refreshDockTile() {
-        guard lastRefreshTime == nil || floor(lastRefreshTime!) < floor(Date.timeIntervalSinceReferenceDate) else { return }
-
         lastRefreshTime = Date.timeIntervalSinceReferenceDate
         dockTile.display()
     }

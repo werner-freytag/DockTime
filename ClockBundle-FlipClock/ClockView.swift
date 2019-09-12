@@ -21,12 +21,14 @@
 // THE SOFTWARE.
 
 import AppKit
+import DockTimePlugin
 
-class ClockView: NSView {
-    private let bundle = Bundle(identifier: "io.pecora.DockTime-ClockBundle-FlipClock")!
+class ClockView: NSView, BundleAware {
+    var bundle: Bundle?
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return }
+        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
+        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
         var imageName: String
         var image: NSImage
@@ -42,7 +44,7 @@ class ClockView: NSView {
 
         let dateString: String! = timeFormatter.string(from: Date())
 
-        let result = dateString.arrayOfCaptureComponentsMatchedByRegex("([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)")
+        let result = dateString.componentsMatchedByRegex("([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)")
         let components = result[0]
 
         if !components[1].isEmpty {
