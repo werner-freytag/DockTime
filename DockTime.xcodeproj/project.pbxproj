@@ -167,6 +167,7 @@
 		36FF4919232BFAC7000FB0D4 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FF48ED232BFA9E000FB0D4 /* Background@2x.png */; };
 		36FF491B232BFAC7000FB0D4 /* HandsMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FF48EF232BFA9E000FB0D4 /* HandsMiddle.png */; };
 		36FF491C232BFB4D000FB0D4 /* Black.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36FF490E232BFAA3000FB0D4 /* Black.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36FF491D232C137D000FB0D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36FF48DF232BFA9E000FB0D4 /* InfoPlist.strings */; };
 		AD47A6D723182D4000C6651A /* DockTimeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */; };
 		AD735918231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
 		AD735919231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
@@ -1425,6 +1426,7 @@
 				36FF4918232BFAC7000FB0D4 /* Foreground@2x.png in Resources */,
 				36FF4919232BFAC7000FB0D4 /* Background@2x.png in Resources */,
 				36FF491B232BFAC7000FB0D4 /* HandsMiddle.png in Resources */,
+				36FF491D232C137D000FB0D4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
