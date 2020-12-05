@@ -23,7 +23,7 @@
 import Foundation
 
 extension UserDefaults {
-    struct Key {
+    enum Key {
         static let selectedClockBundle = "SelectedClockBundle"
     }
 
