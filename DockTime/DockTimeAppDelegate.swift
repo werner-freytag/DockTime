@@ -61,6 +61,11 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
             NSLog("Loading \(clockViewClass) of bundle \(currentClockBundle!.bundleIdentifier!)")
 
+            let sharedDefault = UserDefaults(suiteName: "io.pecora.DockTime")!
+            let showSeconds = !sharedDefault.bool(forKey: "showSeconds")
+            sharedDefault.set(showSeconds, forKey: "showSeconds")
+            NSLog("Toggle Show Seconds: \(showSeconds)")
+
             let view = clockViewClass.init(frame: .zero)
             if var bundleAware = view as? BundleAware {
                 bundleAware.bundle = currentClockBundle

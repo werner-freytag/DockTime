@@ -26,44 +26,43 @@ import DockTimePlugin
 class ClockView: NSView, BundleAware {
     var bundle: Bundle?
 
+    let defaults = UserDefaults.shared
+
     override func draw(_: NSRect) {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
         guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
         var image: NSImage
 
-        context.saveGState()
-
         image = bundle.image(named: "Background")!
         image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
 
-        let currentCalendar = Calendar.current
-        let components = currentCalendar.dateComponents([.calendar, .hour, .minute, .second], from: Date())
+        let fractions = Calendar.current.fractions([.hour, .minute, .second, .nanosecond])
 
-        context.saveGState()
+        context.saveGState {
+            context.translateBy(x: 64, y: 64)
+            context.concatenate(CGAffineTransform(scaleX: 1, y: -1))
+            context.rotate(by: .pi)
 
-        context.translateBy(x: 64, y: 64)
-        context.concatenate(CGAffineTransform(scaleX: 1, y: -1))
-        context.rotate(by: .pi)
+            if defaults.showSeconds {
+                context.saveGState {
+                    context.rotate(by: CGFloat(2) * .pi * fractions.second)
+                    image = bundle.image(named: "SecondHand")!
+                    image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1)
+                }
+            }
 
-        context.saveGState()
-        context.rotate(by: CGFloat(2) * .pi * CGFloat(components.second!) / 60)
-        image = bundle.image(named: "SecondHand")!
-        image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1)
-        context.restoreGState()
+            context.saveGState {
+                context.rotate(by: CGFloat(2) * .pi * fractions.minute)
+                image = bundle.image(named: "MinuteHand")!
+                image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1)
+            }
 
-        context.saveGState()
-        context.rotate(by: CGFloat(2) * .pi * (CGFloat(components.minute!) + CGFloat(components.second!) / 60) / 60)
-        image = bundle.image(named: "MinuteHand")!
-        image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1)
-        context.restoreGState()
-
-        context.saveGState()
-        context.rotate(by: CGFloat(2) * .pi * ((CGFloat(components.hour! % 12) + CGFloat(components.minute!) / 60) / 12))
-        image = bundle.image(named: "HourHand")!
-        image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1)
-        context.restoreGState()
-
-        context.restoreGState()
+            context.saveGState {
+                context.rotate(by: CGFloat(2) * .pi * fractions.hour)
+                image = bundle.image(named: "HourHand")!
+                image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1)
+            }
+        }
     }
 }

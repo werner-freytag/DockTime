@@ -163,8 +163,34 @@
 		36FD307425A3A0A7002B13CA /* MinuteHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FD303F25A397A9002B13CA /* MinuteHand@2x.png */; };
 		36FD307525A3A0A7002B13CA /* SecondHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FD304025A397A9002B13CA /* SecondHand.png */; };
 		36FD307625A3A0A7002B13CA /* SecondHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FD304325A397A9002B13CA /* SecondHand@2x.png */; };
-		36FD307925A3A0B1002B13CA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36FD304925A397A9002B13CA /* Info.plist */; };
 		36FD307B25A3A454002B13CA /* Big Sur.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36FD306725A399C3002B13CA /* Big Sur.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36FD308225A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308325A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308425A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308525A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308625A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308725A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308825A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD308B25A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD308C25A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD308D25A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD308E25A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD308F25A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD309025A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD309125A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD309225A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD309325A3B53C002B13CA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36FD309625A3B849002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD309825A3B849002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36FD30AB25A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30AC25A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30AD25A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30AE25A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30AF25A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30B025A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30B125A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30B225A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36FD30B325A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
 		36FF48F6232BFAA3000FB0D4 /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
 		36FF48F8232BFAA3000FB0D4 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36FF48FA232BFAA3000FB0D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
@@ -592,6 +618,9 @@
 		36FD304525A397A9002B13CA /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
 		36FD304925A397A9002B13CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36FD306725A399C3002B13CA /* Big Sur.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Sur.clockbundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+Extension.swift"; sourceTree = "<group>"; };
+		36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extension.swift"; sourceTree = "<group>"; };
 		36FF48E0232BFA9E000FB0D4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36FF48E1232BFA9E000FB0D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36FF48E2232BFA9E000FB0D4 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -1017,8 +1046,8 @@
 		36FF48DE232BFA9E000FB0D4 /* ClockBundle-Black */ = {
 			isa = PBXGroup;
 			children = (
-				36FF48DF232BFA9E000FB0D4 /* InfoPlist.strings */,
 				36FF48E2232BFA9E000FB0D4 /* ClockView.swift */,
+				36FF48DF232BFA9E000FB0D4 /* InfoPlist.strings */,
 				36FF48E3232BFA9E000FB0D4 /* Resources */,
 				36FF48F1232BFA9E000FB0D4 /* Info.plist */,
 			);
@@ -1049,6 +1078,9 @@
 				AD735915231815FE00B2AE6A /* Bundle+Image.swift */,
 				ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */,
 				ADFF70992318ECF700C00838 /* String+Regex.swift */,
+				36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */,
+				36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */,
+				36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */,
 			);
 			path = "Swift Extensions";
 			sourceTree = "<group>";
@@ -1284,7 +1316,7 @@
 		364E445F127B39C700963CE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Werner Freytag";
 				TargetAttributes = {
 					3609C19B150BEDE400FF8099 = {
@@ -1525,7 +1557,6 @@
 				36FD307425A3A0A7002B13CA /* MinuteHand@2x.png in Resources */,
 				36FD307525A3A0A7002B13CA /* SecondHand.png in Resources */,
 				36FD307625A3A0A7002B13CA /* SecondHand@2x.png in Resources */,
-				36FD307925A3A0B1002B13CA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1572,7 +1603,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFF70AC2319058D00C00838 /* NSView+CGContext.swift in Sources */,
+				36FD30B025A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				ADFF70A82319040300C00838 /* ClockView.swift in Sources */,
+				36FD308525A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
+				36FD309025A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				AD73591B231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1584,7 +1618,10 @@
 				ADFF70B0231905D000C00838 /* NSView+CGContext.swift in Sources */,
 				ADFF709B2318ED0C00C00838 /* String+Regex.swift in Sources */,
 				ADFF70A6231903F800C00838 /* ClockView.swift in Sources */,
+				36FD308F25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
+				36FD309625A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
 				AD73591C231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				36FD30AF25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1593,7 +1630,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFF70BA2319239500C00838 /* ClockView.swift in Sources */,
+				36FD30B125A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				AD735919231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				36FD308625A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
+				36FD309125A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				ADFF70AE231905CE00C00838 /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1605,7 +1645,10 @@
 				ADFF70AF231905CF00C00838 /* NSView+CGContext.swift in Sources */,
 				ADFF709A2318ECF700C00838 /* String+Regex.swift in Sources */,
 				ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */,
+				36FD308E25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
+				36FD309825A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
 				AD73591A231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				36FD30AE25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1622,7 +1665,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD47A6D723182D4000C6651A /* DockTimeAppDelegate.swift in Sources */,
+				36FD308B25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
+				36FD308225A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
 				ADFF70BC23192E6800C00838 /* UserDefault+Keys.swift in Sources */,
+				36FD30AB25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1631,7 +1677,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3676034F232AAA9300056F92 /* Bundle+Image.swift in Sources */,
+				36FD30B225A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				3676034D232A9C8800056F92 /* ClockView.swift in Sources */,
+				36FD308725A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
+				36FD309225A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36760350232AAA9700056F92 /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1641,7 +1690,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD735918231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				36FD30B325A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				ADFF70A22318FA0700C00838 /* ClockView.swift in Sources */,
+				36FD308825A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
+				36FD309325A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				ADFF70AD231905CD00C00838 /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1651,7 +1703,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD304F25A399C3002B13CA /* Bundle+Image.swift in Sources */,
+				36FD30AC25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				36FD306C25A39A53002B13CA /* ClockView.swift in Sources */,
+				36FD308325A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
+				36FD308C25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD305125A399C3002B13CA /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1661,7 +1716,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FF48F6232BFAA3000FB0D4 /* Bundle+Image.swift in Sources */,
+				36FD30AD25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				36FF490F232BFAB7000FB0D4 /* ClockView.swift in Sources */,
+				36FD308425A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
+				36FD308D25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FF48F8232BFAA3000FB0D4 /* NSView+CGContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1856,7 +1914,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1890,7 +1948,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1917,7 +1975,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1952,7 +2010,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-FlipClock/ClockBundle-FlipClock-Prefix.pch";
@@ -1980,7 +2038,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2015,7 +2073,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-Watch/ClockBundle-Watch-Prefix.pch";
@@ -2043,7 +2101,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2078,7 +2136,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-Discreet/ClockBundle-Discreet-Prefix.pch";
@@ -2171,6 +2229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -2193,6 +2252,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2224,6 +2284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -2246,6 +2307,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2276,6 +2338,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DockTime/DockTime.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2296,6 +2359,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DockTime/DockTime.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2318,7 +2382,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2356,7 +2420,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-Watch/ClockBundle-Watch-Prefix.pch";
@@ -2386,7 +2450,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2423,7 +2487,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-White/ClockBundle-White-Prefix.pch";
@@ -2452,7 +2516,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2488,7 +2552,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-White/ClockBundle-White-Prefix.pch";
@@ -2517,7 +2581,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2552,7 +2616,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClockBundle-White/ClockBundle-White-Prefix.pch";

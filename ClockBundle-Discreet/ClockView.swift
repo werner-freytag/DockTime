@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019 Werner Freytag
+// Copyright 2012-2019, 2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -30,13 +30,6 @@ class ClockView: NSView, BundleAware {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
         guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
-        var image: NSImage
-
-        context.saveGState()
-
-        image = bundle.image(named: "Background")!
-        image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
-
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
@@ -44,23 +37,28 @@ class ClockView: NSView, BundleAware {
         let dateString = timeFormatter.string(from: Date())
         let components = dateString.componentsMatchedByRegex("([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)").first!
 
-        if !components[0].isEmpty {
-            image = bundle.image(named: components[1])!
-            image.draw(at: CGPoint(x: 16, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        context.saveGState {
+            var image: NSImage
+
+            image = bundle.image(named: "Background")!
+            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+
+            if !components[0].isEmpty {
+                image = bundle.image(named: components[1])!
+                image.draw(at: CGPoint(x: 16, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+            }
+
+            image = bundle.image(named: components[2])!
+            image.draw(at: CGPoint(x: 38, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+
+            image = bundle.image(named: "Separator")!
+            image.draw(at: CGPoint(x: 63, y: 55), from: .zero, operation: .sourceOver, fraction: 1)
+
+            image = bundle.image(named: components[3])!
+            image.draw(at: CGPoint(x: 71, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+
+            image = bundle.image(named: components[4])!
+            image.draw(at: CGPoint(x: 93, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
         }
-
-        image = bundle.image(named: components[2])!
-        image.draw(at: CGPoint(x: 38, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
-
-        image = bundle.image(named: "Separator")!
-        image.draw(at: CGPoint(x: 63, y: 55), from: .zero, operation: .sourceOver, fraction: 1)
-
-        image = bundle.image(named: components[3])!
-        image.draw(at: CGPoint(x: 71, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
-
-        image = bundle.image(named: components[4])!
-        image.draw(at: CGPoint(x: 93, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
-
-        context.restoreGState()
     }
 }
