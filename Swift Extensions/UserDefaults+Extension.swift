@@ -34,7 +34,7 @@ extension UserDefaults {
     }
 
     static var shared: UserDefaults {
-        return UserDefaults(suiteName: "io.pecora.DockTime")!
+        return UserDefaults(suiteName: "DockTime")!
     }
 }
 
