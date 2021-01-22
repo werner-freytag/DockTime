@@ -22,6 +22,7 @@
 
 import AppKit
 import DockTimePlugin
+import SwiftToolbox
 
 class ClockView: NSView, BundleAware {
     var bundle: Bundle?
@@ -35,30 +36,29 @@ class ClockView: NSView, BundleAware {
         timeFormatter.timeStyle = .short
 
         let dateString = timeFormatter.string(from: Date())
-        let components = dateString.componentsMatchedByRegex("([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)").first!
+        guard let components = try? dateString.match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
 
         context.saveGState {
-            var image: NSImage
+            var image: NSImage!
 
-            image = bundle.image(named: "Background")!
+            image = bundle.image(named: "Background")
             image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
 
-            if !components[0].isEmpty {
-                image = bundle.image(named: components[1])!
-                image.draw(at: CGPoint(x: 16, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
-            }
+            let imageName = components[1].isEmpty ? "0" : components[1]
+            image = bundle.image(named: imageName)
+            image.draw(at: CGPoint(x: 25 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            image = bundle.image(named: components[2])!
-            image.draw(at: CGPoint(x: 38, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+            image = bundle.image(named: components[2])
+            image.draw(at: CGPoint(x: 47 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            image = bundle.image(named: "Separator")!
-            image.draw(at: CGPoint(x: 63, y: 55), from: .zero, operation: .sourceOver, fraction: 1)
+            image = bundle.image(named: "Separator")
+            image.draw(at: CGPoint(x: 61, y: 55), from: .zero, operation: .sourceOver, fraction: 1)
 
-            image = bundle.image(named: components[3])!
-            image.draw(at: CGPoint(x: 71, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+            image = bundle.image(named: components[3])
+            image.draw(at: CGPoint(x: 80 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            image = bundle.image(named: components[4])!
-            image.draw(at: CGPoint(x: 93, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+            image = bundle.image(named: components[4])
+            image.draw(at: CGPoint(x: 102 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
         }
     }
 }

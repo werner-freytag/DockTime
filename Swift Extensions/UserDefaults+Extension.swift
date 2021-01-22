@@ -25,7 +25,7 @@ import Cocoa
 extension UserDefaults {
     var showSeconds: Bool {
         get {
-            guard let _ = Self.shared.object(forKey: .showSettings) else { return true }
+            guard Self.shared.object(forKey: .showSettings) != nil else { return true }
             return Self.shared.bool(forKey: .showSettings)
         }
         set {
@@ -34,7 +34,7 @@ extension UserDefaults {
     }
 
     static var shared: UserDefaults {
-        return UserDefaults(suiteName: "io.pecora.DockTime")!
+        return UserDefaults(suiteName: "DockTime")!
     }
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -77,6 +77,8 @@
 		366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */; };
 		366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C205150BFF7B00FF8099 /* InfoPlist.strings */; };
 		366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 366AFFB51516A3B1008062D9 /* Localizable.strings */; };
+		3673B16E25A4949B00BD67FD /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3673B16D25A4949B00BD67FD /* SwiftToolbox */; };
+		3673B17225A494CA00BD67FD /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3673B17125A494CA00BD67FD /* SwiftToolbox */; };
 		3676033D232A9B9300056F92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		3676034D232A9C8800056F92 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676031C232A9A2700056F92 /* ClockView.swift */; };
 		3676034E232AA1AD00056F92 /* Watch_white.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3676034B232A9B9300056F92 /* Watch_white.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -216,8 +218,6 @@
 		AD73591A231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
 		AD73591B231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
 		AD73591C231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
-		ADFF709A2318ECF700C00838 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70992318ECF700C00838 /* String+Regex.swift */; };
-		ADFF709B2318ED0C00C00838 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70992318ECF700C00838 /* String+Regex.swift */; };
 		ADFF70A22318FA0700C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF709C2318F24400C00838 /* ClockView.swift */; };
 		ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A3231903EB00C00838 /* ClockView.swift */; };
 		ADFF70A6231903F800C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A5231903F800C00838 /* ClockView.swift */; };
@@ -640,7 +640,6 @@
 		36FF490E232BFAA3000FB0D4 /* Black.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Black.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockTimeAppDelegate.swift; sourceTree = "<group>"; };
 		AD735915231815FE00B2AE6A /* Bundle+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Image.swift"; sourceTree = "<group>"; };
-		ADFF70992318ECF700C00838 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
 		ADFF709C2318F24400C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70A3231903EB00C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70A5231903F800C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -665,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3609C1ED150BFF1800FF8099 /* Cocoa.framework in Frameworks */,
+				3673B16E25A4949B00BD67FD /* SwiftToolbox in Frameworks */,
 				363E96B9232AB94B00AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +683,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */,
+				3673B17225A494CA00BD67FD /* SwiftToolbox in Frameworks */,
 				363E96AF232AB94200AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -812,28 +813,28 @@
 			isa = PBXGroup;
 			children = (
 				3609C208150BFF7B00FF8099 /* 0.png */,
-				3609C209150BFF7B00FF8099 /* 1.png */,
-				3609C20A150BFF7B00FF8099 /* 2.png */,
-				3609C20B150BFF7B00FF8099 /* 3.png */,
-				3609C20C150BFF7B00FF8099 /* 4.png */,
-				3609C20D150BFF7B00FF8099 /* 5.png */,
-				3609C20E150BFF7B00FF8099 /* 6.png */,
-				3609C20F150BFF7B00FF8099 /* 7.png */,
-				3609C210150BFF7B00FF8099 /* 8.png */,
-				3609C211150BFF7B00FF8099 /* 9.png */,
-				3609C212150BFF7B00FF8099 /* Background.png */,
-				3609C213150BFF7B00FF8099 /* Foreground.png */,
 				36BCCFC81594DAE200D22ABF /* 0@2x.png */,
+				3609C209150BFF7B00FF8099 /* 1.png */,
 				36BCCFC91594DAE200D22ABF /* 1@2x.png */,
+				3609C20A150BFF7B00FF8099 /* 2.png */,
 				36BCCFCA1594DAE200D22ABF /* 2@2x.png */,
+				3609C20B150BFF7B00FF8099 /* 3.png */,
 				36BCCFCB1594DAE200D22ABF /* 3@2x.png */,
+				3609C20C150BFF7B00FF8099 /* 4.png */,
 				36BCCFCC1594DAE200D22ABF /* 4@2x.png */,
+				3609C20D150BFF7B00FF8099 /* 5.png */,
 				36BCCFCD1594DAE200D22ABF /* 5@2x.png */,
+				3609C20E150BFF7B00FF8099 /* 6.png */,
 				36BCCFCE1594DAE200D22ABF /* 6@2x.png */,
+				3609C20F150BFF7B00FF8099 /* 7.png */,
 				36BCCFCF1594DAE200D22ABF /* 7@2x.png */,
+				3609C210150BFF7B00FF8099 /* 8.png */,
 				36BCCFD01594DAE200D22ABF /* 8@2x.png */,
+				3609C211150BFF7B00FF8099 /* 9.png */,
 				36BCCFD11594DAE200D22ABF /* 9@2x.png */,
+				3609C212150BFF7B00FF8099 /* Background.png */,
 				36BCCFD21594DAE200D22ABF /* Background@2x.png */,
+				3609C213150BFF7B00FF8099 /* Foreground.png */,
 				36BCCFD31594DAE200D22ABF /* Foreground@2x.png */,
 			);
 			path = Resources;
@@ -1077,7 +1078,6 @@
 			children = (
 				AD735915231815FE00B2AE6A /* Bundle+Image.swift */,
 				ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */,
-				ADFF70992318ECF700C00838 /* String+Regex.swift */,
 				36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */,
 				36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */,
 				36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */,
@@ -1148,6 +1148,9 @@
 				363E96BC232AB94B00AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-FlipClock";
+			packageProductDependencies = (
+				3673B16D25A4949B00BD67FD /* SwiftToolbox */,
+			);
 			productName = ClockView_White;
 			productReference = 3609C1FE150BFF1800FF8099 /* FlipClock.clockbundle */;
 			productType = "com.apple.product-type.bundle";
@@ -1186,6 +1189,9 @@
 				363E96B2232AB94200AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-Discreet";
+			packageProductDependencies = (
+				3673B17125A494CA00BD67FD /* SwiftToolbox */,
+			);
 			productName = ClockView_White;
 			productReference = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */;
 			productType = "com.apple.product-type.bundle";
@@ -1360,6 +1366,9 @@
 				Base,
 			);
 			mainGroup = 364E445D127B39C700963CE7;
+			packageReferences = (
+				3673B16C25A4949B00BD67FD /* XCRemoteSwiftPackageReference "SwiftToolbox" */,
+			);
 			productRefGroup = 364E446D127B39C800963CE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1616,7 +1625,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFF70B0231905D000C00838 /* NSView+CGContext.swift in Sources */,
-				ADFF709B2318ED0C00C00838 /* String+Regex.swift in Sources */,
 				ADFF70A6231903F800C00838 /* ClockView.swift in Sources */,
 				36FD308F25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD309625A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
@@ -1643,7 +1651,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFF70AF231905CF00C00838 /* NSView+CGContext.swift in Sources */,
-				ADFF709A2318ECF700C00838 /* String+Regex.swift in Sources */,
 				ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */,
 				36FD308E25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD309825A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
@@ -1931,7 +1938,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
@@ -1959,7 +1965,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
@@ -1993,7 +1998,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
@@ -2022,7 +2026,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
@@ -2056,7 +2059,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
@@ -2085,7 +2087,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
@@ -2119,7 +2120,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
@@ -2148,7 +2148,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
@@ -2180,7 +2179,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.pecora.DockTimePlugin;
@@ -2212,7 +2210,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.pecora.DockTimePlugin;
@@ -2273,6 +2270,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2326,6 +2324,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
@@ -2400,7 +2399,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch_white;
 				SKIP_INSTALL = YES;
@@ -2432,7 +2430,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch_white;
 				SKIP_INSTALL = YES;
@@ -2468,7 +2465,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2499,7 +2495,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2535,7 +2530,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur";
 				PRODUCT_NAME = "Big Sur";
 				SKIP_INSTALL = YES;
@@ -2565,7 +2559,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur";
 				PRODUCT_NAME = "Big Sur";
 				SKIP_INSTALL = YES;
@@ -2599,7 +2592,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Black";
 				PRODUCT_NAME = Black;
 				SKIP_INSTALL = YES;
@@ -2628,7 +2620,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Black";
 				PRODUCT_NAME = Black;
 				SKIP_INSTALL = YES;
@@ -2739,6 +2730,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3673B16C25A4949B00BD67FD /* XCRemoteSwiftPackageReference "SwiftToolbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:werner-freytag/SwiftToolbox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3673B16D25A4949B00BD67FD /* SwiftToolbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3673B16C25A4949B00BD67FD /* XCRemoteSwiftPackageReference "SwiftToolbox" */;
+			productName = SwiftToolbox;
+		};
+		3673B17125A494CA00BD67FD /* SwiftToolbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3673B16C25A4949B00BD67FD /* XCRemoteSwiftPackageReference "SwiftToolbox" */;
+			productName = SwiftToolbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 364E445F127B39C700963CE7 /* Project object */;
 }
