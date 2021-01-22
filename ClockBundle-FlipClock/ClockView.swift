@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019 Werner Freytag
+// Copyright 2012-2019, 2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,6 +22,7 @@
 
 import AppKit
 import DockTimePlugin
+import SwiftToolbox
 
 class ClockView: NSView, BundleAware {
     var bundle: Bundle?
@@ -30,48 +31,39 @@ class ClockView: NSView, BundleAware {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
         guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
-        var imageName: String
-        var image: NSImage
-
-        context.saveGState()
-
-        image = bundle.image(named: "Background")!
-        image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
-
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
 
         let dateString: String! = timeFormatter.string(from: Date())
 
-        let result = dateString.componentsMatchedByRegex("([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)")
-        let components = result[0]
+        guard let components = try? dateString.match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
 
-        if !components[1].isEmpty {
-            imageName = components[1]
-            image = bundle.image(named: imageName)!
+        context.saveGState {
+            var imageName: String
+            var image: NSImage!
+
+            image = bundle.image(named: "Background")!
+            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+
+            imageName = components[1].isEmpty ? "0" : components[1]
+            image = bundle.image(named: imageName)
             image.draw(at: CGPoint(x: 17, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
 
             imageName = components[2]
-            image = bundle.image(named: imageName)!
+            image = bundle.image(named: imageName)
             image.draw(at: CGPoint(x: 38, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
-        } else {
-            imageName = components[2]
-            image = bundle.image(named: imageName)!
-            image.draw(at: CGPoint(x: 29, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
+
+            imageName = components[3]
+            image = bundle.image(named: imageName)
+            image.draw(at: CGPoint(x: 72, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
+
+            imageName = components[4]
+            image = bundle.image(named: imageName)
+            image.draw(at: CGPoint(x: 92, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
+
+            image = bundle.image(named: "Foreground")
+            image.draw(at: .zero, from: .zero, operation: .sourceOver, fraction: 1)
         }
-
-        imageName = components[3]
-        image = bundle.image(named: imageName)!
-        image.draw(at: CGPoint(x: 72, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
-
-        imageName = components[4]
-        image = bundle.image(named: imageName)!
-        image.draw(at: CGPoint(x: 92, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
-
-        image = bundle.image(named: "Foreground")!
-        image.draw(at: .zero, from: .zero, operation: .sourceOver, fraction: 1)
-
-        context.restoreGState()
     }
 }

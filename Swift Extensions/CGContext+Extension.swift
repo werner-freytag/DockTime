@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019 Werner Freytag
+// Copyright 2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,16 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import Cocoa
 
-extension NSString {
-    func componentsMatchedByRegex(_ string: String) -> [[String]] {
-        let regex = try! NSRegularExpression(pattern: string, options: [])
-        let result = regex.matches(in: self as String, options: [], range: NSMakeRange(0, length))
-        return result.map { result in
-            (0 ..< result.numberOfRanges).map {
-                (self as NSString).substring(with: result.range(at: $0))
-            }
-        }
+public extension CGContext {
+    func saveGState(_ exec: () -> Void) {
+        saveGState()
+        exec()
+        restoreGState()
     }
 }

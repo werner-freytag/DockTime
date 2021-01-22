@@ -41,11 +41,21 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
             }
     }()
 
+    private lazy var showSecondsMenuItem: NSMenuItem = {
+        let item = NSMenuItem(title: NSLocalizedString("Show seconds", comment: "Show seconds menu item title"), action: #selector(didSelectShowSecondsMenuItem(_:)), keyEquivalent: ",")
+        item.target = self
+        item.state = UserDefaults.shared.showSeconds ? .on : .off
+        return item
+    }()
+
     private lazy var menu: NSMenu = {
         let menu = NSMenu(title: NSLocalizedString("Model", comment: ""))
         for item in clockMenuItems {
             menu.addItem(item)
         }
+        menu.addItem(.separator())
+        menu.addItem(showSecondsMenuItem)
+
         return menu
     }()
 
@@ -101,6 +111,13 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
         currentClockBundle = clockBundles[index]
         dockTile.display()
+    }
+
+    @objc func didSelectShowSecondsMenuItem(_ menuItem: NSMenuItem!) {
+        let showSeconds = menuItem.state == .off
+        UserDefaults.shared.showSeconds = showSeconds
+        NSLog("Toggle Show Seconds: \(showSeconds)")
+        menuItem.state = showSeconds ? .on : .off
     }
 
     @objc func refreshDockTile() {
