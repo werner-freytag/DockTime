@@ -23,8 +23,9 @@
 import AppKit
 import DockTimePlugin
 
-class ClockView: NSView, BundleAware {
+class ClockView: NSView, BundleClockView {
     var bundle: Bundle?
+    let granularity = Calendar.Component.second
 
     let defaults = UserDefaults.shared
 

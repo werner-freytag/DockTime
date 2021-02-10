@@ -23,7 +23,9 @@
 import Foundation
 
 extension Calendar {
-    func fractions(_ components: Set<Calendar.Component> = [.hour, .minute, .second, .nanosecond], from date: Date = .init()) -> (hour: CGFloat, minute: CGFloat, second: CGFloat) {
+    typealias Fractions = (hour: CGFloat, minute: CGFloat, second: CGFloat)
+
+    func fractions(_ components: Set<Calendar.Component> = [.hour, .minute, .second, .nanosecond], from date: Date = .init()) -> Fractions {
         let components = dateComponents(components, from: date)
 
         let secondFraction = (CGFloat(components.second ?? 0) + CGFloat(components.nanosecond ?? 0) / 1_000_000_000) / 60
