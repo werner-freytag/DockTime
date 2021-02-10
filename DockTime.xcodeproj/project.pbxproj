@@ -45,7 +45,7 @@
 		362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		363E969E232AB8E200AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
 		363E969F232AB8E200AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96A4232AB91100AC5CDC /* BundleAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E968E232AB7BA00AC5CDC /* BundleAware.swift */; };
+		363E96A4232AB91100AC5CDC /* BundleClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E968E232AB7BA00AC5CDC /* BundleClockView.swift */; };
 		363E96A5232AB93900AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
 		363E96A6232AB93900AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		363E96AA232AB93E00AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
@@ -589,7 +589,7 @@
 		3627D92B15027D6B006B89B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		362AEDBC150AD685009B8640 /* Watch.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watch.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		362AEDF9150AE12F009B8640 /* Discreet.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Discreet.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		363E968E232AB7BA00AC5CDC /* BundleAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleAware.swift; sourceTree = "<group>"; };
+		363E968E232AB7BA00AC5CDC /* BundleClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleClockView.swift; sourceTree = "<group>"; };
 		363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DockTimePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		363E969A232AB8E200AC5CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364E446C127B39C800963CE7 /* DockTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1030,7 +1030,7 @@
 			isa = PBXGroup;
 			children = (
 				363E969A232AB8E200AC5CDC /* Info.plist */,
-				363E968E232AB7BA00AC5CDC /* BundleAware.swift */,
+				363E968E232AB7BA00AC5CDC /* BundleClockView.swift */,
 			);
 			path = DockTimePlugin;
 			sourceTree = "<group>";
@@ -1554,7 +1554,7 @@
 		364E445F127B39C700963CE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Werner Freytag";
 				TargetAttributes = {
 					3609C19B150BEDE400FF8099 = {
@@ -1929,7 +1929,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363E96A4232AB91100AC5CDC /* BundleAware.swift in Sources */,
+				363E96A4232AB91100AC5CDC /* BundleClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2693,6 +2693,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
+				ENABLE_HARDENED_RUNTIME = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

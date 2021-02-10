@@ -24,8 +24,9 @@ import AppKit
 import DockTimePlugin
 import SwiftToolbox
 
-class ClockView: NSView, BundleAware {
+class ClockView: NSView, BundleClockView {
     var bundle: Bundle?
+    let granularity = Calendar.Component.minute
 
     override func draw(_: NSRect) {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }

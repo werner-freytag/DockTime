@@ -22,6 +22,7 @@
 
 import Foundation
 
-public protocol BundleAware {
+public protocol BundleClockView {
     var bundle: Bundle? { get set }
+    var granularity: Calendar.Component { get }
 }

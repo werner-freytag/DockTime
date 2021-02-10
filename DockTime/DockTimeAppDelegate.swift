@@ -31,6 +31,8 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
         .compactMap { Bundle(path: $0) }
         .sorted(by: { $0.bundleIdentifier! < $1.bundleIdentifier! })
 
+    private var updateGranularity = Calendar.Component.second
+
     private lazy var clockMenuItems: [NSMenuItem] = {
         clockBundles.enumerated()
             .map { index, bundle in
@@ -72,8 +74,10 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
             NSLog("Loading \(clockViewClass) of bundle \(currentClockBundle!.bundleIdentifier!)")
 
             let view = clockViewClass.init(frame: .zero)
-            if var bundleAware = view as? BundleAware {
-                bundleAware.bundle = currentClockBundle
+            if var clockView = view as? BundleClockView {
+                clockView.bundle = currentClockBundle
+                updateGranularity = clockView.granularity
+                lastRefreshDate = nil
             }
 
             dockTile.contentView = view
@@ -81,7 +85,8 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private var refreshTimer: Timer!
-    private var lastRefreshTime: TimeInterval!
+
+    private var lastRefreshDate: Date?
 
     private let dockTile = NSApp.dockTile
 
@@ -120,8 +125,28 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
         menuItem.state = showSeconds ? .on : .off
     }
 
+    var requiresRefresh: Bool {
+        let date = Date()
+        defer {
+            lastRefreshDate = date
+        }
+
+        guard let lastRefreshDate = lastRefreshDate else { return true }
+
+        let calendar = Calendar.current
+
+        switch updateGranularity {
+        case .nanosecond:
+            return true
+        case .second:
+            return calendar.dateComponents([.hour, .minute, .second], from: date) != calendar.dateComponents([.hour, .minute, .second], from: lastRefreshDate)
+        default:
+            return calendar.dateComponents([.hour, .minute], from: date) != calendar.dateComponents([.hour, .minute], from: lastRefreshDate)
+        }
+    }
+
     @objc func refreshDockTile() {
-        lastRefreshTime = Date.timeIntervalSinceReferenceDate
+        guard requiresRefresh else { return }
         dockTile.display()
     }
 }

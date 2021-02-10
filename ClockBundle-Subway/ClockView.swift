@@ -23,8 +23,9 @@
 import AppKit
 import DockTimePlugin
 
-class ClockView: NSView, BundleAware {
+class ClockView: NSView, BundleClockView {
     var bundle: Bundle?
+    let granularity = Calendar.Component.second
 
     let defaults = UserDefaults.shared
 
@@ -32,15 +33,15 @@ class ClockView: NSView, BundleAware {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
         guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
+        let currentCalendar = Calendar.current
+        let components = currentCalendar.dateComponents([.hour, .minute, .second], from: Date())
+
         context.saveGState {
             var imageName: String
             var image: NSImage
 
             image = bundle.image(named: "Background")!
             image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
-
-            let currentCalendar = Calendar.current
-            let components = currentCalendar.dateComponents([.hour, .minute, .second], from: Date())
 
             imageName = String(format: "%ld", components.hour! / 10)
             image = bundle.image(named: imageName)!
