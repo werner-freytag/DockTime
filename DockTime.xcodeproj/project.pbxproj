@@ -27,7 +27,6 @@
 		366DBF4525DD630B009D3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DBF3E25DD605F009D3CCE /* Images.xcassets */; };
 		366DBF4625DD6312009D3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DBF3F25DD6065009D3CCE /* Images.xcassets */; };
 		366DBF4825DD631D009D3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DBF4125DD6071009D3CCE /* Images.xcassets */; };
-		366DBF4925DD6326009D3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DBF4225DD6075009D3CCE /* Images.xcassets */; };
 		366DBF4A25DD633D009D3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DBF4325DD607B009D3CCE /* Images.xcassets */; };
 		366DBF4B25DD6342009D3CCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DBF4425DD607E009D3CCE /* Images.xcassets */; };
 		3673B16E25A4949B00BD67FD /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3673B16D25A4949B00BD67FD /* SwiftToolbox */; };
@@ -59,8 +58,21 @@
 		36EA523C25DD6D57009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA522D25DD6D57009E522E /* InfoPlist.strings */; };
 		36EA523D25DD6D57009E522E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA523025DD6D57009E522E /* ClockView.swift */; };
 		36EA524825DD6D77009E522E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EA524725DD6D77009E522E /* Images.xcassets */; };
-		36EA524D25DD6E4C009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA524925DD6E4C009E522E /* InfoPlist.strings */; };
 		36EA524E25DD6ECB009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36205CA9150ACE3F00D0B0C6 /* InfoPlist.strings */; };
+		36EA526C25DD8318009E522E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
+		36EA528025DD848A009E522E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA527B25DD848A009E522E /* ClockView.swift */; };
+		36EA528125DD848A009E522E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EA527C25DD848A009E522E /* Images.xcassets */; };
+		36EA528325DD852F009E522E /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
+		36EA528425DD8557009E522E /* Roman.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EA527325DD8318009E522E /* Roman.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36EA528525DD8565009E522E /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
+		36EA528625DD8569009E522E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
+		36EA528725DD8571009E522E /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
+		36EA528825DD8577009E522E /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
+		36EA528E25DD927D009E522E /* Classic-Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Classic-Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36EA529825DD944D009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA529125DD944D009E522E /* InfoPlist.strings */; };
+		36EA529925DD944D009E522E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA529425DD944D009E522E /* ClockView.swift */; };
+		36EA529A25DD944D009E522E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EA529525DD944D009E522E /* Images.xcassets */; };
+		36EA52A025DD9501009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA529C25DD9471009E522E /* InfoPlist.strings */; };
 		36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EC87931A927FEC00A80A35 /* Images.xcassets */; };
 		36FD304F25A399C3002B13CA /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36FD305125A399C3002B13CA /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
@@ -107,7 +119,6 @@
 		AD73591B231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		AD73591C231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		ADFF70A22318FA0700C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF709C2318F24400C00838 /* ClockView.swift */; };
-		ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A3231903EB00C00838 /* ClockView.swift */; };
 		ADFF70A6231903F800C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A5231903F800C00838 /* ClockView.swift */; };
 		ADFF70A82319040300C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A72319040200C00838 /* ClockView.swift */; };
 		ADFF70AC2319058D00C00838 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
@@ -142,6 +153,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				36EA528E25DD927D009E522E /* Classic-Discreet.clockbundle in CopyFiles */,
+				36EA528425DD8557009E522E /* Roman.clockbundle in CopyFiles */,
 				36FD307B25A3A454002B13CA /* BigSur.clockbundle in CopyFiles */,
 				36FF491C232BFB4D000FB0D4 /* Black.clockbundle in CopyFiles */,
 				36BFE62B25BF2BCE00A8FABA /* BigSur-numeric.clockbundle in CopyFiles */,
@@ -240,6 +253,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36EA526F25DD8318009E522E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36FD306225A399C3002B13CA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,7 +320,6 @@
 		366DBF3E25DD605F009D3CCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		366DBF3F25DD6065009D3CCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		366DBF4125DD6071009D3CCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		366DBF4225DD6075009D3CCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		366DBF4325DD607B009D3CCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		366DBF4425DD607E009D3CCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3676031A232A9A2700056F92 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -322,16 +344,25 @@
 		36CB03BF150AAE8900925361 /* Classic.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Classic.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D6DEB316AE1F5E000C40A0 /* DockTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DockTime.entitlements; sourceTree = "<group>"; };
 		36EA522925DD6B6B009E522E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		36EA522A25DD6D0B009E522E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36EA522E25DD6D57009E522E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36EA522F25DD6D57009E522E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36EA523025DD6D57009E522E /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		36EA523A25DD6D57009E522E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36EA523B25DD6D57009E522E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36EA524725DD6D77009E522E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		36EA524A25DD6E4C009E522E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		36EA524B25DD6E4C009E522E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		36EA524C25DD6E4C009E522E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA527325DD8318009E522E /* Roman.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Roman.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		36EA527B25DD848A009E522E /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		36EA527C25DD848A009E522E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		36EA527E25DD848A009E522E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36EA529225DD944D009E522E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA529325DD944D009E522E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA529425DD944D009E522E /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		36EA529525DD944D009E522E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		36EA529625DD944D009E522E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA529725DD944D009E522E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36EA529D25DD9471009E522E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA529E25DD9471009E522E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA529F25DD9471009E522E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36EC87931A927FEC00A80A35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36EE8393213E7E3A006C7A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36F06B93127B73C80003535B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -355,7 +386,6 @@
 		AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockTimeAppDelegate.swift; sourceTree = "<group>"; };
 		AD735915231815FE00B2AE6A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		ADFF709C2318F24400C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		ADFF70A3231903EB00C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70A5231903F800C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70A72319040200C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+CGContext.swift"; sourceTree = "<group>"; };
@@ -438,6 +468,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36EA526B25DD8318009E522E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA526C25DD8318009E522E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36FD305225A399C3002B13CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,17 +538,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		362AEDFB150AE854009B8640 /* ClockBundle-Classic-Discreet */ = {
-			isa = PBXGroup;
-			children = (
-				ADFF70A3231903EB00C00838 /* ClockView.swift */,
-				366DBF4225DD6075009D3CCE /* Images.xcassets */,
-				36EA524925DD6E4C009E522E /* InfoPlist.strings */,
-				36EA522A25DD6D0B009E522E /* Info.plist */,
-			);
-			path = "ClockBundle-Classic-Discreet";
-			sourceTree = "<group>";
-		};
 		364E445D127B39C700963CE7 = {
 			isa = PBXGroup;
 			children = (
@@ -521,9 +548,10 @@
 				36BFE5B825BF234700A8FABA /* ClockBundle-BigSur-numeric */,
 				36FF48DE232BFA9E000FB0D4 /* ClockBundle-Black */,
 				36205CA4150ACE3F00D0B0C6 /* ClockBundle-Classic */,
+				36EA529025DD944D009E522E /* ClockBundle-Discreet */,
+				36EA527725DD848A009E522E /* ClockBundle-Roman */,
 				36EA522C25DD6D57009E522E /* ClockBundle-Classic-Watch */,
 				36760318232A9A2700056F92 /* ClockBundle-Classic-Watch-white */,
-				362AEDFB150AE854009B8640 /* ClockBundle-Classic-Discreet */,
 				3609C1B8150BEE5B00FF8099 /* ClockBundle-Classic-Subway */,
 				3609C200150BFF7B00FF8099 /* ClockBundle-Classic-FlipClock */,
 				364E4467127B39C800963CE7 /* Frameworks */,
@@ -555,6 +583,7 @@
 				36FD306725A399C3002B13CA /* BigSur.clockbundle */,
 				36BFE5DF25BF239000A8FABA /* BigSur-black.clockbundle */,
 				36BFE5FE25BF239E00A8FABA /* BigSur-numeric.clockbundle */,
+				36EA527325DD8318009E522E /* Roman.clockbundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -609,6 +638,28 @@
 				36EA523B25DD6D57009E522E /* Info.plist */,
 			);
 			path = "ClockBundle-Classic-Watch";
+			sourceTree = "<group>";
+		};
+		36EA527725DD848A009E522E /* ClockBundle-Roman */ = {
+			isa = PBXGroup;
+			children = (
+				36EA529C25DD9471009E522E /* InfoPlist.strings */,
+				36EA527B25DD848A009E522E /* ClockView.swift */,
+				36EA527C25DD848A009E522E /* Images.xcassets */,
+				36EA527E25DD848A009E522E /* Info.plist */,
+			);
+			path = "ClockBundle-Roman";
+			sourceTree = "<group>";
+		};
+		36EA529025DD944D009E522E /* ClockBundle-Discreet */ = {
+			isa = PBXGroup;
+			children = (
+				36EA529425DD944D009E522E /* ClockView.swift */,
+				36EA529525DD944D009E522E /* Images.xcassets */,
+				36EA529725DD944D009E522E /* Info.plist */,
+				36EA529125DD944D009E522E /* InfoPlist.strings */,
+			);
+			path = "ClockBundle-Discreet";
 			sourceTree = "<group>";
 		};
 		36FD303625A397A9002B13CA /* ClockBundle-BigSur */ = {
@@ -720,9 +771,9 @@
 			productReference = 362AEDBC150AD685009B8640 /* Classic-Watch.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		362AEDE8150AE12F009B8640 /* ClockBundle-Classic-Discreet */ = {
+		362AEDE8150AE12F009B8640 /* ClockBundle-Discreet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Classic-Discreet" */;
+			buildConfigurationList = 362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Discreet" */;
 			buildPhases = (
 				362AEDE9150AE12F009B8640 /* Sources */,
 				362AEDED150AE12F009B8640 /* Frameworks */,
@@ -733,7 +784,7 @@
 			);
 			dependencies = (
 			);
-			name = "ClockBundle-Classic-Discreet";
+			name = "ClockBundle-Discreet";
 			packageProductDependencies = (
 				3673B17125A494CA00BD67FD /* SwiftToolbox */,
 			);
@@ -835,6 +886,24 @@
 			productReference = 36CB03BF150AAE8900925361 /* Classic.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		36EA526325DD8318009E522E /* ClockBundle-Roman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36EA527025DD8318009E522E /* Build configuration list for PBXNativeTarget "ClockBundle-Roman" */;
+			buildPhases = (
+				36EA526425DD8318009E522E /* Sources */,
+				36EA526B25DD8318009E522E /* Frameworks */,
+				36EA526D25DD8318009E522E /* Resources */,
+				36EA526F25DD8318009E522E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClockBundle-Roman";
+			productName = ClockView_White;
+			productReference = 36EA527325DD8318009E522E /* Roman.clockbundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		36FD304B25A399C3002B13CA /* ClockBundle-BigSur */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36FD306425A399C3002B13CA /* Build configuration list for PBXNativeTarget "ClockBundle-BigSur" */;
@@ -931,7 +1000,8 @@
 				36BFE5E325BF239E00A8FABA /* ClockBundle-BigSur-numeric */,
 				36FF48F2232BFAA3000FB0D4 /* ClockBundle-Black */,
 				36CB03BE150AAE8900925361 /* ClockBundle-Classic */,
-				362AEDE8150AE12F009B8640 /* ClockBundle-Classic-Discreet */,
+				362AEDE8150AE12F009B8640 /* ClockBundle-Discreet */,
+				36EA526325DD8318009E522E /* ClockBundle-Roman */,
 				3609C1E5150BFF1800FF8099 /* ClockBundle-Classic-FlipClock */,
 				3609C19B150BEDE400FF8099 /* ClockBundle-Classic-Subway */,
 				362AEDAB150AD685009B8640 /* ClockBundle-Classic-Watch */,
@@ -972,8 +1042,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				366DBF4925DD6326009D3CCE /* Images.xcassets in Resources */,
-				36EA524D25DD6E4C009E522E /* InfoPlist.strings in Resources */,
+				36EA529A25DD944D009E522E /* Images.xcassets in Resources */,
+				36EA529825DD944D009E522E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,6 +1091,15 @@
 			files = (
 				366DBF3925DD5EF6009D3CCE /* Images.xcassets in Resources */,
 				36EA524E25DD6ECB009E522E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36EA526D25DD8318009E522E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA528125DD848A009E522E /* Images.xcassets in Resources */,
+				36EA52A025DD9501009E522E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1104,7 +1183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFF70AF231905CF00C00838 /* NSView+CGContext.swift in Sources */,
-				ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */,
+				36EA529925DD944D009E522E /* ClockView.swift in Sources */,
 				36FD308E25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD309825A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
 				AD73591A231815FE00B2AE6A /* Bundle+Extension.swift in Sources */,
@@ -1175,6 +1254,19 @@
 				36FD308825A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
 				36FD309325A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				ADFF70AD231905CD00C00838 /* NSView+CGContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36EA526425DD8318009E522E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA528725DD8571009E522E /* NSView+CGContext.swift in Sources */,
+				36EA528825DD8577009E522E /* Calendar+Extension.swift in Sources */,
+				36EA528325DD852F009E522E /* UserDefaults+Extension.swift in Sources */,
+				36EA528025DD848A009E522E /* ClockView.swift in Sources */,
+				36EA528525DD8565009E522E /* CGContext+Extension.swift in Sources */,
+				36EA528625DD8569009E522E /* Bundle+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1314,12 +1406,22 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		36EA524925DD6E4C009E522E /* InfoPlist.strings */ = {
+		36EA529125DD944D009E522E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				36EA524A25DD6E4C009E522E /* en */,
-				36EA524B25DD6E4C009E522E /* fr */,
-				36EA524C25DD6E4C009E522E /* de */,
+				36EA529225DD944D009E522E /* de */,
+				36EA529325DD944D009E522E /* en */,
+				36EA529625DD944D009E522E /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		36EA529C25DD9471009E522E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36EA529D25DD9471009E522E /* de */,
+				36EA529E25DD9471009E522E /* en */,
+				36EA529F25DD9471009E522E /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1589,7 +1691,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1643,7 +1745,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
@@ -1883,6 +1985,51 @@
 			};
 			name = Release;
 		};
+		36EA527125DD8318009E522E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Roman";
+				PRODUCT_NAME = Roman;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = clockbundle;
+			};
+			name = Debug;
+		};
+		36EA527225DD8318009E522E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Roman";
+				PRODUCT_NAME = Roman;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = clockbundle;
+			};
+			name = Release;
+		};
 		36FD306525A399C3002B13CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2011,7 +2158,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Classic-Discreet" */ = {
+		362AEDF6150AE12F009B8640 /* Build configuration list for PBXNativeTarget "ClockBundle-Discreet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AEDF7150AE12F009B8640 /* Debug */,
@@ -2070,6 +2217,15 @@
 			buildConfigurations = (
 				36CB03C9150AAE8900925361 /* Debug */,
 				36CB03CA150AAE8900925361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36EA527025DD8318009E522E /* Build configuration list for PBXNativeTarget "ClockBundle-Roman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36EA527125DD8318009E522E /* Debug */,
+				36EA527225DD8318009E522E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
