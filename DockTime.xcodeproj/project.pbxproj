@@ -66,7 +66,6 @@
 		36CB03C0150AAE8900925361 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EC87931A927FEC00A80A35 /* Images.xcassets */; };
 		36EDF8FB1A8B297000BE9B66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8F71A8B297000BE9B66 /* InfoPlist.strings */; };
-		36F06BB7127B75B00003535B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 36F06BB6127B75B00003535B /* Icon.icns */; };
 		36FD304F25A399C3002B13CA /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36FD305125A399C3002B13CA /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36FD305325A399C3002B13CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
@@ -379,7 +378,6 @@
 		36EDF8FA1A8B297000BE9B66 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "ClockBundle-Discreet/fr.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		36EE8393213E7E3A006C7A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		36F06B93127B73C80003535B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		36F06BB6127B75B00003535B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		36F82F03154AFCEA00152D11 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
 		36F82F06154AFD1500152D11 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		36F82F08154AFD3E00152D11 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -696,7 +694,6 @@
 				AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */,
 				ADFF70BB23192E6800C00838 /* UserDefault+Keys.swift */,
 				364E4471127B39C800963CE7 /* Info.plist */,
-				36F06BB6127B75B00003535B /* Icon.icns */,
 				36EC87931A927FEC00A80A35 /* Images.xcassets */,
 				366AFFB51516A3B1008062D9 /* Localizable.strings */,
 				360CE725127CCF38009BC9FB /* MainMenu.xib */,
@@ -1037,7 +1034,6 @@
 				36EC87941A927FEC00A80A35 /* Images.xcassets in Resources */,
 				366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */,
 				360CE72D127CD056009BC9FB /* MainMenu.xib in Resources */,
-				36F06BB7127B75B00003535B /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
