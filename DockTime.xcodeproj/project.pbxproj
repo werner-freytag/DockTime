@@ -516,11 +516,11 @@
 			children = (
 				AD73590523180C6A00B2AE6A /* Swift Extensions */,
 				ADFF70B7231921E600C00838 /* DockTime */,
-				36205CA4150ACE3F00D0B0C6 /* ClockBundle-Classic */,
 				36FD303625A397A9002B13CA /* ClockBundle-BigSur */,
 				36BFE5AC25BF234700A8FABA /* ClockBundle-BigSur-black */,
 				36BFE5B825BF234700A8FABA /* ClockBundle-BigSur-numeric */,
 				36FF48DE232BFA9E000FB0D4 /* ClockBundle-Black */,
+				36205CA4150ACE3F00D0B0C6 /* ClockBundle-Classic */,
 				36EA522C25DD6D57009E522E /* ClockBundle-Classic-Watch */,
 				36760318232A9A2700056F92 /* ClockBundle-Classic-Watch-white */,
 				362AEDFB150AE854009B8640 /* ClockBundle-Classic-Discreet */,

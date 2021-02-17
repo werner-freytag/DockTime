@@ -35,7 +35,7 @@ class ClockView: NSView {
             var image: NSImage
 
             image = bundle.image(named: "Background")!
-            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+            image.draw(at: .init(x: 2, y: 1), from: .zero, operation: .copy, fraction: 1)
 
             context.saveGState {
                 context.translateBy(x: 64, y: 64)
@@ -46,13 +46,13 @@ class ClockView: NSView {
                 context.saveGState {
                     context.rotate(by: CGFloat(2) * .pi * fractions.hour)
                     image = bundle.image(named: "HourHand")!
-                    image.draw(at: CGPoint(x: -image.size.width / 2, y: -5), from: .zero, operation: .sourceOver, fraction: 1)
+                    image.draw(at: CGPoint(x: -image.size.width / 2, y: 0), from: .zero, operation: .sourceOver, fraction: 1)
                 }
 
                 context.saveGState {
                     context.rotate(by: CGFloat(2) * .pi * fractions.minute)
                     image = bundle.image(named: "MinuteHand")!
-                    image.draw(at: CGPoint(x: -image.size.width / 2, y: -3), from: .zero, operation: .sourceOver, fraction: 1.0)
+                    image.draw(at: CGPoint(x: -image.size.width / 2, y: 0), from: .zero, operation: .sourceOver, fraction: 1.0)
                 }
 
                 if defaults.showSeconds {
@@ -63,7 +63,6 @@ class ClockView: NSView {
                     }
                 }
 
-                context.setShadow(offset: CGSize(width: 0, height: -2), blur: 4, color: NSColor(deviceRed: 0.25, green: 0.28, blue: 0.32, alpha: 0.4).cgColor)
                 image = bundle.image(named: "HandsMiddle")!
                 image.draw(at: CGPoint(x: -image.size.width / 2, y: -image.size.width / 2), from: .zero, operation: .sourceOver, fraction: 1)
             }
