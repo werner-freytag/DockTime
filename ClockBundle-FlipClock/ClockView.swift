@@ -21,16 +21,13 @@
 // THE SOFTWARE.
 
 import AppKit
-import DockTimePlugin
 import SwiftToolbox
 
-class ClockView: NSView, BundleClockView {
-    var bundle: Bundle?
-    let granularity = Calendar.Component.minute
+class ClockView: NSView {
+    lazy var bundle = Bundle(for: type(of: self))
 
     override func draw(_: NSRect) {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
-        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none

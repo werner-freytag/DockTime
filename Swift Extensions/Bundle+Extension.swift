@@ -35,4 +35,8 @@ extension Bundle {
 
         return Bundle.images[bundlePath]![name]!
     }
+
+    var bundleName: String? {
+        object(forInfoDictionaryKey: kCFBundleNameKey as String) as? String
+    }
 }

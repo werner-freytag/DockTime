@@ -43,21 +43,6 @@
 		36205CBA150ACE3F00D0B0C6 /* SecondHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36205CB1150ACE3F00D0B0C6 /* SecondHand.png */; };
 		362AEDB1150AD685009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		363E969E232AB8E200AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E969F232AB8E200AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96A4232AB91100AC5CDC /* BundleClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E968E232AB7BA00AC5CDC /* BundleClockView.swift */; };
-		363E96A5232AB93900AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E96A6232AB93900AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96AA232AB93E00AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E96AB232AB93E00AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96AF232AB94200AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E96B0232AB94200AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96B4232AB94700AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E96B5232AB94700AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96B9232AB94B00AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E96BA232AB94B00AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96BE232AB94F00AC5CDC /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		363E96BF232AB95000AC5CDC /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		363E96CC232ABE7100AC5CDC /* Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		363E96CF232ABE7100AC5CDC /* FlipClock.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3609C1FE150BFF1800FF8099 /* FlipClock.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		363E96D2232ABE7100AC5CDC /* Subway.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3609C1B5150BEDE400FF8099 /* Subway.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -77,12 +62,14 @@
 		366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */; };
 		366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C205150BFF7B00FF8099 /* InfoPlist.strings */; };
 		366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 366AFFB51516A3B1008062D9 /* Localizable.strings */; };
+		366DBF2C25DD4FDE009D3CCE /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
+		366DBF3125DD51C6009D3CCE /* UpdateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DBF3025DD51C6009D3CCE /* UpdateInterval.swift */; };
 		3673B16E25A4949B00BD67FD /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3673B16D25A4949B00BD67FD /* SwiftToolbox */; };
 		3673B17225A494CA00BD67FD /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3673B17125A494CA00BD67FD /* SwiftToolbox */; };
 		3676033D232A9B9300056F92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		3676034D232A9C8800056F92 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676031C232A9A2700056F92 /* ClockView.swift */; };
 		3676034E232AA1AD00056F92 /* Watch_white.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3676034B232A9B9300056F92 /* Watch_white.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3676034F232AAA9300056F92 /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
+		3676034F232AAA9300056F92 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36760350232AAA9700056F92 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36BCCF851594D99600D22ABF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF7F1594D99500D22ABF /* Background@2x.png */; };
 		36BCCF861594D99600D22ABF /* Foreground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCF801594D99500D22ABF /* Foreground@2x.png */; };
@@ -113,22 +100,18 @@
 		36BCCFDD1594DAE200D22ABF /* 9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFD11594DAE200D22ABF /* 9@2x.png */; };
 		36BCCFDE1594DAE200D22ABF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFD21594DAE200D22ABF /* Background@2x.png */; };
 		36BCCFDF1594DAE200D22ABF /* Foreground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BCCFD31594DAE200D22ABF /* Foreground@2x.png */; };
-		36BFE5C825BF239000A8FABA /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
+		36BFE5C825BF239000A8FABA /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36BFE5C925BF239000A8FABA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
 		36BFE5CB25BF239000A8FABA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
 		36BFE5CC25BF239000A8FABA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
 		36BFE5CD25BF239000A8FABA /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36BFE5CF25BF239000A8FABA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		36BFE5D025BF239000A8FABA /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		36BFE5DB25BF239000A8FABA /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		36BFE5E725BF239E00A8FABA /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
+		36BFE5E725BF239E00A8FABA /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36BFE5E825BF239E00A8FABA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
 		36BFE5EA25BF239E00A8FABA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
 		36BFE5EB25BF239E00A8FABA /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
 		36BFE5EC25BF239E00A8FABA /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36BFE5EE25BF239E00A8FABA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		36BFE5EF25BF239E00A8FABA /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		36BFE5FA25BF239E00A8FABA /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36BFE60E25BF2A6D00A8FABA /* MinuteHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BFE5AF25BF234700A8FABA /* MinuteHand.png */; };
 		36BFE60F25BF2A6D00A8FABA /* SecondHand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BFE5B525BF234700A8FABA /* SecondHand@2x.png */; };
 		36BFE61025BF2A6D00A8FABA /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BFE5B625BF234700A8FABA /* Background@2x.png */; };
@@ -189,11 +172,9 @@
 		36EDF8F61A8B296600BE9B66 /* Separator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8DC1A8B296600BE9B66 /* Separator@2x.png */; };
 		36EDF8FB1A8B297000BE9B66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EDF8F71A8B297000BE9B66 /* InfoPlist.strings */; };
 		36F06BB7127B75B00003535B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 36F06BB6127B75B00003535B /* Icon.icns */; };
-		36FD304F25A399C3002B13CA /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
+		36FD304F25A399C3002B13CA /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36FD305125A399C3002B13CA /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36FD305325A399C3002B13CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		36FD305425A399C3002B13CA /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		36FD306325A399C3002B13CA /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FD306C25A39A53002B13CA /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD303A25A397A9002B13CA /* ClockView.swift */; };
 		36FD306F25A3A0A7002B13CA /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FD304125A397A9002B13CA /* Background.png */; };
 		36FD307025A3A0A7002B13CA /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FD304525A397A9002B13CA /* Background@2x.png */; };
@@ -231,11 +212,9 @@
 		36FD30B125A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
 		36FD30B225A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
 		36FD30B325A3C344002B13CA /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
-		36FF48F6232BFAA3000FB0D4 /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
+		36FF48F6232BFAA3000FB0D4 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36FF48F8232BFAA3000FB0D4 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36FF48FA232BFAA3000FB0D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		36FF48FB232BFAA3000FB0D4 /* DockTimePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; };
-		36FF490A232BFAA3000FB0D4 /* DockTimePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FF490F232BFAB7000FB0D4 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FF48E2232BFA9E000FB0D4 /* ClockView.swift */; };
 		36FF4910232BFAC7000FB0D4 /* HandsMiddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FF48E4232BFA9E000FB0D4 /* HandsMiddle@2x.png */; };
 		36FF4911232BFAC7000FB0D4 /* MinuteHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FF48E5232BFA9E000FB0D4 /* MinuteHand.png */; };
@@ -251,11 +230,11 @@
 		36FF491C232BFB4D000FB0D4 /* Black.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36FF490E232BFAA3000FB0D4 /* Black.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FF491D232C137D000FB0D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36FF48DF232BFA9E000FB0D4 /* InfoPlist.strings */; };
 		AD47A6D723182D4000C6651A /* DockTimeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */; };
-		AD735918231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
-		AD735919231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
-		AD73591A231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
-		AD73591B231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
-		AD73591C231815FE00B2AE6A /* Bundle+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Image.swift */; };
+		AD735918231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
+		AD735919231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
+		AD73591A231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
+		AD73591B231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
+		AD73591C231815FE00B2AE6A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		ADFF70A22318FA0700C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF709C2318F24400C00838 /* ClockView.swift */; };
 		ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A3231903EB00C00838 /* ClockView.swift */; };
 		ADFF70A6231903F800C00838 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70A5231903F800C00838 /* ClockView.swift */; };
@@ -270,55 +249,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		363E969C232AB8E200AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		363E96A7232AB93900AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		363E96AC232AB93E00AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		363E96B1232AB94200AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		363E96B6232AB94700AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		363E96BB232AB94B00AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		363E96C0232AB95000AC5CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
 		363E96CA232ABE7100AC5CDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
@@ -354,20 +284,6 @@
 			remoteGlobalIDString = 362AEDAB150AD685009B8640;
 			remoteInfo = "ClockBundle-Watch";
 		};
-		36BFE5C625BF239000A8FABA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		36BFE5E525BF239E00A8FABA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
 		36BFE62925BF2BCE00A8FABA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
@@ -381,20 +297,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 36BFE5E325BF239E00A8FABA;
 			remoteInfo = "ClockBundle-BigSur-numeric";
-		};
-		36FD304D25A399C3002B13CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
-		};
-		36FF48F4232BFAA3000FB0D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 364E445F127B39C700963CE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 363E9696232AB8E200AC5CDC;
-			remoteInfo = DockTimePlugin;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -424,7 +326,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E969F232AB8E200AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +336,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E96A6232AB93900AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +346,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E96AB232AB93E00AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +356,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E96B0232AB94200AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +366,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E96B5232AB94700AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +376,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E96BA232AB94B00AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +386,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				363E96BF232AB95000AC5CDC /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +396,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				36BFE5DB25BF239000A8FABA /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +406,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				36BFE5FA25BF239E00A8FABA /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,7 +416,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				36FD306325A399C3002B13CA /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +426,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				36FF490A232BFAA3000FB0D4 /* DockTimePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,9 +480,6 @@
 		3627D92B15027D6B006B89B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		362AEDBC150AD685009B8640 /* Watch.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watch.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		362AEDF9150AE12F009B8640 /* Discreet.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Discreet.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		363E968E232AB7BA00AC5CDC /* BundleClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleClockView.swift; sourceTree = "<group>"; };
-		363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DockTimePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		363E969A232AB8E200AC5CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364E446C127B39C800963CE7 /* DockTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364E446F127B39C800963CE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		364E4471127B39C800963CE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -602,6 +490,7 @@
 		366AFFB41516A3B1008062D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		366AFFB61516A3C0008062D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		366B282014B852240018DD37 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		366DBF3025DD51C6009D3CCE /* UpdateInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInterval.swift; sourceTree = "<group>"; };
 		3676031A232A9A2700056F92 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3676031B232A9A2700056F92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3676031C232A9A2700056F92 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -757,7 +646,7 @@
 		36FF48F1232BFA9E000FB0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36FF490E232BFAA3000FB0D4 /* Black.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Black.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD47A6D623182D4000C6651A /* DockTimeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockTimeAppDelegate.swift; sourceTree = "<group>"; };
-		AD735915231815FE00B2AE6A /* Bundle+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Image.swift"; sourceTree = "<group>"; };
+		AD735915231815FE00B2AE6A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		ADFF709C2318F24400C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70A3231903EB00C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		ADFF70A5231903F800C00838 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -773,7 +662,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3609C1A4150BEDE400FF8099 /* Cocoa.framework in Frameworks */,
-				363E96B4232AB94700AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,7 +671,6 @@
 			files = (
 				3609C1ED150BFF1800FF8099 /* Cocoa.framework in Frameworks */,
 				3673B16E25A4949B00BD67FD /* SwiftToolbox in Frameworks */,
-				363E96B9232AB94B00AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,7 +679,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				362AEDB1150AD685009B8640 /* Cocoa.framework in Frameworks */,
-				363E96AA232AB93E00AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,14 +688,6 @@
 			files = (
 				362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */,
 				3673B17225A494CA00BD67FD /* SwiftToolbox in Frameworks */,
-				363E96AF232AB94200AC5CDC /* DockTimePlugin.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		363E9694232AB8E200AC5CDC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,7 +695,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363E969E232AB8E200AC5CDC /* DockTimePlugin.framework in Frameworks */,
 				36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */,
 				364E4470127B39C800963CE7 /* Cocoa.framework in Frameworks */,
 			);
@@ -828,7 +705,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3676033D232A9B9300056F92 /* Cocoa.framework in Frameworks */,
-				363E96BE232AB94F00AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,7 +713,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BFE5CF25BF239000A8FABA /* Cocoa.framework in Frameworks */,
-				36BFE5D025BF239000A8FABA /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,7 +721,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BFE5EE25BF239E00A8FABA /* Cocoa.framework in Frameworks */,
-				36BFE5EF25BF239E00A8FABA /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,7 +729,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36CB03C0150AAE8900925361 /* Cocoa.framework in Frameworks */,
-				363E96A5232AB93900AC5CDC /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,7 +737,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD305325A399C3002B13CA /* Cocoa.framework in Frameworks */,
-				36FD305425A399C3002B13CA /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,7 +745,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FF48FA232BFAA3000FB0D4 /* Cocoa.framework in Frameworks */,
-				36FF48FB232BFAA3000FB0D4 /* DockTimePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,15 +897,6 @@
 			path = "ClockBundle-Discreet";
 			sourceTree = "<group>";
 		};
-		363E9698232AB8E200AC5CDC /* DockTimePlugin */ = {
-			isa = PBXGroup;
-			children = (
-				363E969A232AB8E200AC5CDC /* Info.plist */,
-				363E968E232AB7BA00AC5CDC /* BundleClockView.swift */,
-			);
-			path = DockTimePlugin;
-			sourceTree = "<group>";
-		};
 		364E445D127B39C700963CE7 = {
 			isa = PBXGroup;
 			children = (
@@ -1050,7 +912,6 @@
 				362AEDFB150AE854009B8640 /* ClockBundle-Discreet */,
 				3609C1B8150BEE5B00FF8099 /* ClockBundle-Subway */,
 				3609C200150BFF7B00FF8099 /* ClockBundle-FlipClock */,
-				363E9698232AB8E200AC5CDC /* DockTimePlugin */,
 				364E4467127B39C800963CE7 /* Frameworks */,
 				364E446D127B39C800963CE7 /* Products */,
 			);
@@ -1076,13 +937,20 @@
 				3609C1B5150BEDE400FF8099 /* Subway.clockbundle */,
 				3609C1FE150BFF1800FF8099 /* FlipClock.clockbundle */,
 				3676034B232A9B9300056F92 /* Watch_white.clockbundle */,
-				363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */,
 				36FF490E232BFAA3000FB0D4 /* Black.clockbundle */,
 				36FD306725A399C3002B13CA /* BigSur.clockbundle */,
 				36BFE5DF25BF239000A8FABA /* BigSur-black.clockbundle */,
 				36BFE5FE25BF239E00A8FABA /* BigSur-numeric.clockbundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		366DBF3425DD5393009D3CCE /* ValueType */ = {
+			isa = PBXGroup;
+			children = (
+				366DBF3025DD51C6009D3CCE /* UpdateInterval.swift */,
+			);
+			path = ValueType;
 			sourceTree = "<group>";
 		};
 		36760318232A9A2700056F92 /* ClockBundle-Watch-white */ = {
@@ -1268,7 +1136,7 @@
 		AD73590523180C6A00B2AE6A /* Swift Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AD735915231815FE00B2AE6A /* Bundle+Image.swift */,
+				AD735915231815FE00B2AE6A /* Bundle+Extension.swift */,
 				ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */,
 				36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */,
 				36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */,
@@ -1289,21 +1157,12 @@
 				360CE725127CCF38009BC9FB /* MainMenu.xib */,
 				36F06B92127B73C80003535B /* Credits.rtf */,
 				36D6DEB316AE1F5E000C40A0 /* DockTime.entitlements */,
+				366DBF3425DD5393009D3CCE /* ValueType */,
 			);
 			path = DockTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		363E9692232AB8E200AC5CDC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3609C19B150BEDE400FF8099 /* ClockBundle-Subway */ = {
@@ -1318,7 +1177,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E96B7232AB94700AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-Subway";
 			productName = ClockView_White;
@@ -1337,7 +1195,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E96BC232AB94B00AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-FlipClock";
 			packageProductDependencies = (
@@ -1359,7 +1216,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E96AD232AB93E00AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-Watch";
 			productName = ClockView_White;
@@ -1378,7 +1234,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E96B2232AB94200AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-Discreet";
 			packageProductDependencies = (
@@ -1387,24 +1242,6 @@
 			productName = ClockView_White;
 			productReference = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		363E9696232AB8E200AC5CDC /* DockTimePlugin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 363E96A0232AB8E200AC5CDC /* Build configuration list for PBXNativeTarget "DockTimePlugin" */;
-			buildPhases = (
-				363E9692232AB8E200AC5CDC /* Headers */,
-				363E9693232AB8E200AC5CDC /* Sources */,
-				363E9694232AB8E200AC5CDC /* Frameworks */,
-				363E9695232AB8E200AC5CDC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DockTimePlugin;
-			productName = DockTimePlugin;
-			productReference = 363E9697232AB8E200AC5CDC /* DockTimePlugin.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		364E446B127B39C800963CE7 /* DockTime */ = {
 			isa = PBXNativeTarget;
@@ -1420,7 +1257,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E969D232AB8E200AC5CDC /* PBXTargetDependency */,
 				363E96CB232ABE7100AC5CDC /* PBXTargetDependency */,
 				363E96CE232ABE7100AC5CDC /* PBXTargetDependency */,
 				363E96D1232ABE7100AC5CDC /* PBXTargetDependency */,
@@ -1446,7 +1282,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E96C1232AB95000AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-Watch-white";
 			productName = ClockView_White;
@@ -1465,7 +1300,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				36BFE5C525BF239000A8FABA /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-BigSur-black";
 			productName = ClockView_White;
@@ -1484,7 +1318,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				36BFE5E425BF239E00A8FABA /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-BigSur-numeric";
 			productName = ClockView_White;
@@ -1503,7 +1336,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				363E96A8232AB93900AC5CDC /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-White";
 			productName = ClockView_White;
@@ -1522,7 +1354,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				36FD304C25A399C3002B13CA /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-BigSur";
 			productName = ClockView_White;
@@ -1541,7 +1372,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				36FF48F3232BFAA3000FB0D4 /* PBXTargetDependency */,
 			);
 			name = "ClockBundle-Black";
 			productName = ClockView_White;
@@ -1568,9 +1398,6 @@
 					};
 					362AEDE8150AE12F009B8640 = {
 						LastSwiftMigration = 1100;
-					};
-					363E9696232AB8E200AC5CDC = {
-						CreatedOnToolsVersion = 11.0;
 					};
 					364E446B127B39C800963CE7 = {
 						SystemCapabilities = {
@@ -1616,7 +1443,6 @@
 				362AEDAB150AD685009B8640 /* ClockBundle-Watch */,
 				36760336232A9B9300056F92 /* ClockBundle-Watch-white */,
 				36CB03BE150AAE8900925361 /* ClockBundle-White */,
-				363E9696232AB8E200AC5CDC /* DockTimePlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -1731,13 +1557,6 @@
 				36EDF8EC1A8B296600BE9B66 /* 6@2x.png in Resources */,
 				36EDF8E71A8B296600BE9B66 /* 4.png in Resources */,
 				36EDF8ED1A8B296600BE9B66 /* 7.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		363E9695232AB8E200AC5CDC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1882,7 +1701,7 @@
 				ADFF70A82319040300C00838 /* ClockView.swift in Sources */,
 				36FD308525A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
 				36FD309025A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
-				AD73591B231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				AD73591B231815FE00B2AE6A /* Bundle+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1894,7 +1713,7 @@
 				ADFF70A6231903F800C00838 /* ClockView.swift in Sources */,
 				36FD308F25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD309625A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
-				AD73591C231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				AD73591C231815FE00B2AE6A /* Bundle+Extension.swift in Sources */,
 				36FD30AF25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1905,7 +1724,7 @@
 			files = (
 				ADFF70BA2319239500C00838 /* ClockView.swift in Sources */,
 				36FD30B125A3C344002B13CA /* Calendar+Extension.swift in Sources */,
-				AD735919231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				AD735919231815FE00B2AE6A /* Bundle+Extension.swift in Sources */,
 				36FD308625A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
 				36FD309125A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				ADFF70AE231905CE00C00838 /* NSView+CGContext.swift in Sources */,
@@ -1920,16 +1739,8 @@
 				ADFF70A4231903EC00C00838 /* ClockView.swift in Sources */,
 				36FD308E25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD309825A3B849002B13CA /* UserDefaults+Extension.swift in Sources */,
-				AD73591A231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				AD73591A231815FE00B2AE6A /* Bundle+Extension.swift in Sources */,
 				36FD30AE25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		363E9693232AB8E200AC5CDC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				363E96A4232AB91100AC5CDC /* BundleClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1938,6 +1749,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD47A6D723182D4000C6651A /* DockTimeAppDelegate.swift in Sources */,
+				366DBF2C25DD4FDE009D3CCE /* Bundle+Extension.swift in Sources */,
+				366DBF3125DD51C6009D3CCE /* UpdateInterval.swift in Sources */,
 				36FD308B25A3B53C002B13CA /* CGContext+Extension.swift in Sources */,
 				36FD308225A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
 				ADFF70BC23192E6800C00838 /* UserDefault+Keys.swift in Sources */,
@@ -1949,7 +1762,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3676034F232AAA9300056F92 /* Bundle+Image.swift in Sources */,
+				3676034F232AAA9300056F92 /* Bundle+Extension.swift in Sources */,
 				36FD30B225A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				3676034D232A9C8800056F92 /* ClockView.swift in Sources */,
 				36FD308725A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
@@ -1962,7 +1775,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BFE5C825BF239000A8FABA /* Bundle+Image.swift in Sources */,
+				36BFE5C825BF239000A8FABA /* Bundle+Extension.swift in Sources */,
 				36BFE61225BF2A6D00A8FABA /* ClockView.swift in Sources */,
 				36BFE5C925BF239000A8FABA /* Calendar+Extension.swift in Sources */,
 				36BFE5CB25BF239000A8FABA /* UserDefaults+Extension.swift in Sources */,
@@ -1975,7 +1788,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BFE5E725BF239E00A8FABA /* Bundle+Image.swift in Sources */,
+				36BFE5E725BF239E00A8FABA /* Bundle+Extension.swift in Sources */,
 				36BFE61A25BF2A9200A8FABA /* ClockView.swift in Sources */,
 				36BFE5E825BF239E00A8FABA /* Calendar+Extension.swift in Sources */,
 				36BFE5EA25BF239E00A8FABA /* UserDefaults+Extension.swift in Sources */,
@@ -1988,7 +1801,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD735918231815FE00B2AE6A /* Bundle+Image.swift in Sources */,
+				AD735918231815FE00B2AE6A /* Bundle+Extension.swift in Sources */,
 				36FD30B325A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				ADFF70A22318FA0700C00838 /* ClockView.swift in Sources */,
 				36FD308825A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
@@ -2001,7 +1814,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36FD304F25A399C3002B13CA /* Bundle+Image.swift in Sources */,
+				36FD304F25A399C3002B13CA /* Bundle+Extension.swift in Sources */,
 				36FD30AC25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				36FD306C25A39A53002B13CA /* ClockView.swift in Sources */,
 				36FD308325A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
@@ -2014,7 +1827,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36FF48F6232BFAA3000FB0D4 /* Bundle+Image.swift in Sources */,
+				36FF48F6232BFAA3000FB0D4 /* Bundle+Extension.swift in Sources */,
 				36FD30AD25A3C344002B13CA /* Calendar+Extension.swift in Sources */,
 				36FF490F232BFAB7000FB0D4 /* ClockView.swift in Sources */,
 				36FD308425A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */,
@@ -2026,41 +1839,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		363E969D232AB8E200AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E969C232AB8E200AC5CDC /* PBXContainerItemProxy */;
-		};
-		363E96A8232AB93900AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E96A7232AB93900AC5CDC /* PBXContainerItemProxy */;
-		};
-		363E96AD232AB93E00AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E96AC232AB93E00AC5CDC /* PBXContainerItemProxy */;
-		};
-		363E96B2232AB94200AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E96B1232AB94200AC5CDC /* PBXContainerItemProxy */;
-		};
-		363E96B7232AB94700AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E96B6232AB94700AC5CDC /* PBXContainerItemProxy */;
-		};
-		363E96BC232AB94B00AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E96BB232AB94B00AC5CDC /* PBXContainerItemProxy */;
-		};
-		363E96C1232AB95000AC5CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 363E96C0232AB95000AC5CDC /* PBXContainerItemProxy */;
-		};
 		363E96CB232ABE7100AC5CDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 36760336232A9B9300056F92 /* ClockBundle-Watch-white */;
@@ -2086,16 +1864,6 @@
 			target = 362AEDAB150AD685009B8640 /* ClockBundle-Watch */;
 			targetProxy = 363E96D6232ABE7100AC5CDC /* PBXContainerItemProxy */;
 		};
-		36BFE5C525BF239000A8FABA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 36BFE5C625BF239000A8FABA /* PBXContainerItemProxy */;
-		};
-		36BFE5E425BF239E00A8FABA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 36BFE5E525BF239E00A8FABA /* PBXContainerItemProxy */;
-		};
 		36BFE62A25BF2BCE00A8FABA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 36BFE5C425BF239000A8FABA /* ClockBundle-BigSur-black */;
@@ -2105,16 +1873,6 @@
 			isa = PBXTargetDependency;
 			target = 36BFE5E325BF239E00A8FABA /* ClockBundle-BigSur-numeric */;
 			targetProxy = 36BFE62C25BF2BCE00A8FABA /* PBXContainerItemProxy */;
-		};
-		36FD304C25A399C3002B13CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 36FD304D25A399C3002B13CA /* PBXContainerItemProxy */;
-		};
-		36FF48F3232BFAA3000FB0D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 363E9696232AB8E200AC5CDC /* DockTimePlugin */;
-			targetProxy = 36FF48F4232BFAA3000FB0D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2265,11 +2023,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
@@ -2292,11 +2045,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Subway;
 				SKIP_INSTALL = YES;
@@ -2325,11 +2073,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
@@ -2353,11 +2096,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = FlipClock;
 				SKIP_INSTALL = YES;
@@ -2386,11 +2124,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
@@ -2414,11 +2147,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch;
 				SKIP_INSTALL = YES;
@@ -2447,11 +2175,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
@@ -2475,82 +2198,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Discreet;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
-			};
-			name = Release;
-		};
-		363E96A1232AB8E200AC5CDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DockTimePlugin/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.pecora.DockTimePlugin;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		363E96A2232AB8E200AC5CDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6F42U4FE9C;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DockTimePlugin/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.pecora.DockTimePlugin;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -2727,11 +2378,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch_white;
 				SKIP_INSTALL = YES;
@@ -2758,11 +2404,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Watch_white;
 				SKIP_INSTALL = YES;
@@ -2792,11 +2433,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur-black";
 				PRODUCT_NAME = "BigSur-black";
 				SKIP_INSTALL = YES;
@@ -2820,11 +2456,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur-black";
 				PRODUCT_NAME = "BigSur-black";
 				SKIP_INSTALL = YES;
@@ -2853,11 +2484,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur-numeric";
 				PRODUCT_NAME = "BigSur-numeric";
 				SKIP_INSTALL = YES;
@@ -2881,11 +2507,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur-numeric";
 				PRODUCT_NAME = "BigSur-numeric";
 				SKIP_INSTALL = YES;
@@ -2899,7 +2520,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = "";
@@ -2915,14 +2535,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -2934,7 +2548,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -2945,14 +2558,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -2979,11 +2586,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur";
 				PRODUCT_NAME = BigSur;
 				SKIP_INSTALL = YES;
@@ -3007,11 +2609,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-BigSur";
 				PRODUCT_NAME = BigSur;
 				SKIP_INSTALL = YES;
@@ -3040,11 +2637,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Black";
 				PRODUCT_NAME = Black;
 				SKIP_INSTALL = YES;
@@ -3068,11 +2660,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Black";
 				PRODUCT_NAME = Black;
 				SKIP_INSTALL = YES;
@@ -3115,15 +2702,6 @@
 			buildConfigurations = (
 				362AEDF7150AE12F009B8640 /* Debug */,
 				362AEDF8150AE12F009B8640 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		363E96A0232AB8E200AC5CDC /* Build configuration list for PBXNativeTarget "DockTimePlugin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				363E96A1232AB8E200AC5CDC /* Debug */,
-				363E96A2232AB8E200AC5CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
