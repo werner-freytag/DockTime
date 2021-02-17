@@ -24,7 +24,7 @@ import AppKit
 
 @NSApplicationMain
 class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
-    private let defaultBundleIdentifier = "io.pecora.DockTime-ClockBundle-White"
+    private let defaultBundleIdentifier = "io.pecora.DockTime-ClockBundle-BigSur"
 
     private let clockBundles = Bundle.paths(forResourcesOfType: "clockbundle", inDirectory: Bundle.main.builtInPlugInsPath!)
         .compactMap { Bundle(path: $0) }
