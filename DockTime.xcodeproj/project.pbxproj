@@ -760,7 +760,6 @@
 				36C4FE4C1A8C9D6D000641AC /* Resources */,
 			);
 			name = "ClockBundle-Watch";
-			path = "ClockBundle-iWatch";
 			sourceTree = "<group>";
 		};
 		3609C1B8150BEE5B00FF8099 /* ClockBundle-Subway */ = {
