@@ -126,6 +126,7 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
         UserDefaults.shared.showSeconds = showSeconds
         NSLog("Toggle Show Seconds: \(showSeconds)")
         menuItem.state = showSeconds ? .on : .off
+        lastRefreshDate = nil
     }
 
     var requiresRefresh: Bool {
