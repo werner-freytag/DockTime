@@ -58,8 +58,5 @@ class ClockView: NSView {
         imageName = components[4]
         image = bundle.image(named: imageName)
         image.draw(at: CGPoint(x: 86, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
-
-        image = bundle.image(named: "Foreground")
-        image.draw(at: .init(x: 15, y: 65), from: .zero, operation: .sourceOver, fraction: 1)
     }
 }
