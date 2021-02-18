@@ -27,31 +27,39 @@ class ClockView: NSView {
     lazy var bundle = Bundle(for: type(of: self))
 
     override func draw(_: NSRect) {
+        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
+
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
 
-        guard let components = try? timeFormatter.string(from: Date()).match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
+        let dateString: String! = timeFormatter.string(from: Date())
 
-        let dateString = components[0]
+        guard let components = try? dateString.match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
 
+        var imageName: String
         var image: NSImage!
 
-        image = bundle.image(named: "Background")
-        image.draw(at: .init(x: 9, y: 7), from: .zero, operation: .copy, fraction: 1)
+        image = bundle.image(named: "Background")!
+        image.draw(at: .init(x: 8, y: 8), from: .zero, operation: .copy, fraction: 1)
 
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .center
+        imageName = components[1].isEmpty ? "0" : components[1]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 22, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
 
-        let font = NSFont.systemFont(ofSize: 36, weight: .light)
+        imageName = components[2]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 41, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
 
-        let shadow = NSShadow()
-        shadow.shadowColor = NSColor.black.withAlphaComponent(0.05)
-        shadow.shadowOffset = NSSize(width: 0, height: -2)
-        shadow.shadowBlurRadius = 4
+        imageName = components[3]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 67, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
 
-        let attrs = [NSAttributedString.Key.font: font, .paragraphStyle: paragraphStyle, .foregroundColor: NSColor.white, .shadow: shadow]
+        imageName = components[4]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 86, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
 
-        dateString.draw(with: CGRect(x: 10, y: -4 - font.pointSize / 2, width: 108, height: 108), options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
+        image = bundle.image(named: "Foreground")
+        image.draw(at: .init(x: 15, y: 65), from: .zero, operation: .sourceOver, fraction: 1)
     }
 }

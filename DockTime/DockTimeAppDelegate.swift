@@ -41,7 +41,7 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
             .map { index, bundle in
                 let item = NSMenuItem(title: bundle.bundleName!, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
                 item.target = self
-                item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
+                item.state = bundle.bundleIdentifier == currentClockBundle?.bundleIdentifier ? .on : .off
                 return item
             }
     }()
@@ -94,15 +94,15 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private let dockTile = NSApp.dockTile
 
     func applicationWillFinishLaunching(_: Notification) {
-        let menuItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
-        menuItem.submenu = menu
-        NSApp.mainMenu?.addItem(menuItem)
-
         currentClockBundle = clockBundles.first(where: { $0.bundleIdentifier == UserDefaults.standard.selectedClockBundle }) ??
             clockBundles.first(where: { $0.bundleIdentifier == defaultBundleIdentifier }) ??
             clockBundles.first!
 
         refreshTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(refreshDockTile), userInfo: nil, repeats: true)
+
+        let menuItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
+        menuItem.submenu = menu
+        NSApp.mainMenu?.addItem(menuItem)
     }
 
     func applicationDockMenu(_: NSApplication) -> NSMenu? {

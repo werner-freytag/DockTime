@@ -41,7 +41,7 @@ class ClockView: NSView {
                 context.translateBy(x: 64, y: 64)
                 context.concatenate(CGAffineTransform(scaleX: 1, y: -1))
                 context.rotate(by: .pi)
-                
+
                 if defaults.showSeconds {
                     context.saveGState {
                         context.rotate(by: CGFloat(2) * .pi * fractions.second)
@@ -61,7 +61,7 @@ class ClockView: NSView {
                 context.saveGState {
                     context.rotate(by: CGFloat(2) * .pi * fractions.minute)
                     image = bundle.image(named: "MinuteHand")!
-                    image.draw(at: CGPoint(x: -image.size.width / 2, y: -2), from: .zero, operation: .sourceOver, fraction: 1.0)
+                    image.draw(at: CGPoint(x: -image.size.width / 2 - 0.5, y: -2), from: .zero, operation: .sourceOver, fraction: 1.0)
                 }
 
                 image = bundle.image(named: "HandsMiddle")!
