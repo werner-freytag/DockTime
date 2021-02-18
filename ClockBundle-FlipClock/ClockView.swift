@@ -43,18 +43,18 @@ class ClockView: NSView {
 
         imageName = components[1].isEmpty ? "0" : components[1]
         image = bundle.image(named: imageName)
-        image.draw(at: CGPoint(x: 22, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 21, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
 
         imageName = components[2]
         image = bundle.image(named: imageName)
-        image.draw(at: CGPoint(x: 41, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 40, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
 
         imageName = components[3]
         image = bundle.image(named: imageName)
-        image.draw(at: CGPoint(x: 67, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 66, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
 
         imageName = components[4]
         image = bundle.image(named: imageName)
-        image.draw(at: CGPoint(x: 86, y: 46), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 85, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
     }
 }
