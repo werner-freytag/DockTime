@@ -1,0 +1,1 @@
+DockTime fügt eine Uhr zum Dock hinzu, die die Zeit anzeigt. Man kann zwischen einer Auswahl wunderschöner, zeitloser Designs wählen. Während andere Apps of viele, unwichtige Funktionen mit sich bringen, bleibt DockTime dezent im Hintergrund und macht, wofür eine Uhr da ist: Es zeigt die Zeit.

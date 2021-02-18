@@ -1,0 +1,1 @@
+Uhr,DockClock,Dock,iClock,Freytag,Dock Time,Time,Zeit,Uhrzeit

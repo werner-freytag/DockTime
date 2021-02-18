@@ -1,0 +1,1 @@
+DockTime adds a clock to the Dock, which always displays the current time. The appearance can be chosen from a selection of beautiful, timeless designs. While other apps often bring many, non-essential functions, DockTime remains discreetly in the background and does only what a clock is made for: It displays the time.
