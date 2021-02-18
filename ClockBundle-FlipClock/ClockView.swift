@@ -27,8 +27,6 @@ class ClockView: NSView {
     lazy var bundle = Bundle(for: type(of: self))
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
-
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
