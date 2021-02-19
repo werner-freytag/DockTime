@@ -25,6 +25,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2012-2021 Werner Freytag. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>ClockView</string>
+	<string>${PRODUCT_NAME}.ClockView</string>
 </dict>
 </plist>
