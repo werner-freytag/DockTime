@@ -23,7 +23,7 @@
 	<key>DTUpdateInterval</key>
 	<string>second</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2021 Werner Freytag. All rights reserved.</string>
+	<string>Copyright © 2012-2021 Werner Freytag. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>${PRODUCT_NAME}.ClockView</string>
 </dict>
