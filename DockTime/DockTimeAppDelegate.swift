@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019 Werner Freytag
+// Copyright 2012-2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,24 +21,27 @@
 // THE SOFTWARE.
 
 import AppKit
-import DockTimePlugin
 
 @NSApplicationMain
 class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
-    private let defaultBundleIdentifier = "io.pecora.DockTime-ClockBundle-White"
+    private let defaultBundleIdentifier = "io.pecora.DockTime-ClockBundle-BigSur"
 
     private let clockBundles = Bundle.paths(forResourcesOfType: "clockbundle", inDirectory: Bundle.main.builtInPlugInsPath!)
         .compactMap { Bundle(path: $0) }
-        .sorted(by: { $0.bundleIdentifier! < $1.bundleIdentifier! })
+        .sorted(by: { $0.bundleName! < $1.bundleName! })
 
-    private var updateGranularity = Calendar.Component.second
+    private var updateInterval = UpdateInterval.second {
+        didSet {
+            lastRefreshDate = nil
+        }
+    }
 
     private lazy var clockMenuItems: [NSMenuItem] = {
         clockBundles.enumerated()
             .map { index, bundle in
-                let item = NSMenuItem(title: bundle.object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
+                let item = NSMenuItem(title: bundle.bundleName!, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
                 item.target = self
-                item.state = bundle.bundleIdentifier == UserDefaults.standard.selectedClockBundle ? .on : .off
+                item.state = bundle.bundleIdentifier == currentClockBundle?.bundleIdentifier ? .on : .off
                 return item
             }
     }()
@@ -63,24 +66,24 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
     private var currentClockBundle: Bundle? {
         didSet {
-            guard let principalClass = currentClockBundle?.principalClass else {
-                return assertionFailure("Missing principalClass for bundle \(String(describing: currentClockBundle?.bundleIdentifier)).")
+            guard let clockBundle = currentClockBundle else {
+                return assertionFailure("No clock bundle.")
+            }
+
+            guard let principalClass = clockBundle.principalClass else {
+                return assertionFailure("Missing principalClass for bundle \(String(describing: clockBundle.bundleIdentifier)).")
             }
 
             guard let clockViewClass = principalClass as? NSView.Type else {
                 return assertionFailure("\(String(describing: principalClass)) is not a NSView.")
             }
 
-            NSLog("Loading \(clockViewClass) of bundle \(currentClockBundle!.bundleIdentifier!)")
+            NSLog("Loading \(clockViewClass) of bundle \(clockBundle.bundleIdentifier!)")
 
-            let view = clockViewClass.init(frame: .zero)
-            if var clockView = view as? BundleClockView {
-                clockView.bundle = currentClockBundle
-                updateGranularity = clockView.granularity
-                lastRefreshDate = nil
-            }
+            let updateIntervalString = clockBundle.object(forInfoDictionaryKey: "DTUpdateInterval") as? String ?? ""
+            updateInterval = UpdateInterval(updateIntervalString) ?? .second
 
-            dockTile.contentView = view
+            dockTile.contentView = clockViewClass.init(frame: .zero)
         }
     }
 
@@ -91,15 +94,15 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private let dockTile = NSApp.dockTile
 
     func applicationWillFinishLaunching(_: Notification) {
-        let menuItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
-        menuItem.submenu = menu
-        NSApp.mainMenu?.addItem(menuItem)
-
         currentClockBundle = clockBundles.first(where: { $0.bundleIdentifier == UserDefaults.standard.selectedClockBundle }) ??
             clockBundles.first(where: { $0.bundleIdentifier == defaultBundleIdentifier }) ??
             clockBundles.first!
 
         refreshTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(refreshDockTile), userInfo: nil, repeats: true)
+
+        let menuItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
+        menuItem.submenu = menu
+        NSApp.mainMenu?.addItem(menuItem)
     }
 
     func applicationDockMenu(_: NSApplication) -> NSMenu? {
@@ -123,6 +126,7 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
         UserDefaults.shared.showSeconds = showSeconds
         NSLog("Toggle Show Seconds: \(showSeconds)")
         menuItem.state = showSeconds ? .on : .off
+        lastRefreshDate = nil
     }
 
     var requiresRefresh: Bool {
@@ -135,13 +139,13 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
         let calendar = Calendar.current
 
-        switch updateGranularity {
-        case .nanosecond:
-            return true
+        switch updateInterval {
+        case .minute:
+            return calendar.dateComponents([.hour, .minute], from: date) != calendar.dateComponents([.hour, .minute], from: lastRefreshDate)
         case .second:
             return calendar.dateComponents([.hour, .minute, .second], from: date) != calendar.dateComponents([.hour, .minute, .second], from: lastRefreshDate)
-        default:
-            return calendar.dateComponents([.hour, .minute], from: date) != calendar.dateComponents([.hour, .minute], from: lastRefreshDate)
+        case .continual:
+            return true
         }
     }
 

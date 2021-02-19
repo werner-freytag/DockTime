@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019, 2021 Werner Freytag
+// Copyright 2012-2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,17 +21,13 @@
 // THE SOFTWARE.
 
 import AppKit
-import DockTimePlugin
 
-class ClockView: NSView, BundleClockView {
-    var bundle: Bundle?
-    let granularity = Calendar.Component.second
-
+class ClockView: NSView {
+    lazy var bundle = Bundle(for: type(of: self))
     let defaults = UserDefaults.shared
 
     override func draw(_: NSRect) {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
-        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
 
         let fractions = Calendar.current.fractions([.hour, .minute, .second])
 
@@ -39,7 +35,7 @@ class ClockView: NSView, BundleClockView {
             var image: NSImage
 
             image = bundle.image(named: "Background")!
-            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+            image.draw(at: .init(x: 2, y: 1), from: .zero, operation: .copy, fraction: 1)
 
             context.saveGState {
                 context.translateBy(x: 64, y: 64)
@@ -50,13 +46,13 @@ class ClockView: NSView, BundleClockView {
                 context.saveGState {
                     context.rotate(by: CGFloat(2) * .pi * fractions.hour)
                     image = bundle.image(named: "HourHand")!
-                    image.draw(at: CGPoint(x: -image.size.width / 2, y: -5), from: .zero, operation: .sourceOver, fraction: 1)
+                    image.draw(at: CGPoint(x: -image.size.width / 2, y: 0), from: .zero, operation: .sourceOver, fraction: 1)
                 }
 
                 context.saveGState {
                     context.rotate(by: CGFloat(2) * .pi * fractions.minute)
                     image = bundle.image(named: "MinuteHand")!
-                    image.draw(at: CGPoint(x: -image.size.width / 2, y: -3), from: .zero, operation: .sourceOver, fraction: 1.0)
+                    image.draw(at: CGPoint(x: -image.size.width / 2, y: 0), from: .zero, operation: .sourceOver, fraction: 1.0)
                 }
 
                 if defaults.showSeconds {
@@ -67,7 +63,6 @@ class ClockView: NSView, BundleClockView {
                     }
                 }
 
-                context.setShadow(offset: CGSize(width: 0, height: -2), blur: 4, color: NSColor(deviceRed: 0.25, green: 0.28, blue: 0.32, alpha: 0.4).cgColor)
                 image = bundle.image(named: "HandsMiddle")!
                 image.draw(at: CGPoint(x: -image.size.width / 2, y: -image.size.width / 2), from: .zero, operation: .sourceOver, fraction: 1)
             }

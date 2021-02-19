@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019, 2021 Werner Freytag
+// Copyright 2012-2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,17 +21,12 @@
 // THE SOFTWARE.
 
 import AppKit
-import DockTimePlugin
 import SwiftToolbox
 
-class ClockView: NSView, BundleClockView {
-    var bundle: Bundle?
-    let granularity = Calendar.Component.minute
+class ClockView: NSView {
+    lazy var bundle = Bundle(for: type(of: self))
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
-        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
-
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
@@ -40,31 +35,26 @@ class ClockView: NSView, BundleClockView {
 
         guard let components = try? dateString.match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
 
-        context.saveGState {
-            var imageName: String
-            var image: NSImage!
+        var imageName: String
+        var image: NSImage!
 
-            image = bundle.image(named: "Background")!
-            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+        image = bundle.image(named: "Background")!
+        image.draw(at: .init(x: 8, y: 8), from: .zero, operation: .copy, fraction: 1)
 
-            imageName = components[1].isEmpty ? "0" : components[1]
-            image = bundle.image(named: imageName)
-            image.draw(at: CGPoint(x: 17, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = components[1].isEmpty ? "0" : components[1]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 21, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
 
-            imageName = components[2]
-            image = bundle.image(named: imageName)
-            image.draw(at: CGPoint(x: 38, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = components[2]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 40, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
 
-            imageName = components[3]
-            image = bundle.image(named: imageName)
-            image.draw(at: CGPoint(x: 72, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = components[3]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 66, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
 
-            imageName = components[4]
-            image = bundle.image(named: imageName)
-            image.draw(at: CGPoint(x: 92, y: 44), from: .zero, operation: .sourceOver, fraction: 1)
-
-            image = bundle.image(named: "Foreground")
-            image.draw(at: .zero, from: .zero, operation: .sourceOver, fraction: 1)
-        }
+        imageName = components[4]
+        image = bundle.image(named: imageName)
+        image.draw(at: CGPoint(x: 85, y: 45), from: .zero, operation: .sourceOver, fraction: 1)
     }
 }

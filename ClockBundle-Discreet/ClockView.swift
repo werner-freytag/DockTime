@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019, 2021 Werner Freytag
+// Copyright 2012-2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,45 +21,37 @@
 // THE SOFTWARE.
 
 import AppKit
-import DockTimePlugin
 import SwiftToolbox
 
-class ClockView: NSView, BundleClockView {
-    var bundle: Bundle?
-    let granularity = Calendar.Component.minute
+class ClockView: NSView {
+    lazy var bundle = Bundle(for: type(of: self))
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
-        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
-
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
 
-        let dateString = timeFormatter.string(from: Date())
-        guard let components = try? dateString.match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
+        guard let components = try? timeFormatter.string(from: Date()).match(regex: "([0-9])?([0-9])[^0-9]+([0-9]+)([0-9]+)") else { return assertionFailure("Can not parse date.") }
 
-        context.saveGState {
-            var image: NSImage!
+        let dateString = components[0]
 
-            image = bundle.image(named: "Background")
-            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+        var image: NSImage!
 
-            let imageName = components[1].isEmpty ? "0" : components[1]
-            image = bundle.image(named: imageName)
-            image.draw(at: CGPoint(x: 25 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        image = bundle.image(named: "Background")
+        image.draw(at: .init(x: 9, y: 7), from: .zero, operation: .copy, fraction: 1)
 
-            image = bundle.image(named: components[2])
-            image.draw(at: CGPoint(x: 47 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
 
-            image = bundle.image(named: "Separator")
-            image.draw(at: CGPoint(x: 61, y: 55), from: .zero, operation: .sourceOver, fraction: 1)
+        let font = NSFont.systemFont(ofSize: 36, weight: .light)
 
-            image = bundle.image(named: components[3])
-            image.draw(at: CGPoint(x: 80 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        let shadow = NSShadow()
+        shadow.shadowColor = NSColor.black.withAlphaComponent(0.05)
+        shadow.shadowOffset = NSSize(width: 0, height: -2)
+        shadow.shadowBlurRadius = 4
 
-            image = bundle.image(named: components[4])
-            image.draw(at: CGPoint(x: 102 - image.size.width / 2, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
-        }
+        let attrs = [NSAttributedString.Key.font: font, .paragraphStyle: paragraphStyle, .foregroundColor: NSColor.white, .shadow: shadow]
+
+        dateString.draw(with: CGRect(x: 10, y: -4 - font.pointSize / 2, width: 108, height: 108), options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
     }
 }

@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019, 2021 Werner Freytag
+// Copyright 2012-2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,61 +21,55 @@
 // THE SOFTWARE.
 
 import AppKit
-import DockTimePlugin
 
-class ClockView: NSView, BundleClockView {
-    var bundle: Bundle?
-    let granularity = Calendar.Component.second
-
+class ClockView: NSView {
+    lazy var bundle = Bundle(for: type(of: self))
     let defaults = UserDefaults.shared
 
     override func draw(_: NSRect) {
-        guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
-        guard let bundle = bundle else { return assertionFailure("Bundle not assigned.") }
-
         let currentCalendar = Calendar.current
         let components = currentCalendar.dateComponents([.hour, .minute, .second], from: Date())
 
-        context.saveGState {
-            var imageName: String
-            var image: NSImage
+        var imageName: String
+        var image: NSImage
 
-            image = bundle.image(named: "Background")!
-            image.draw(at: .zero, from: .zero, operation: .copy, fraction: 1)
+        image = bundle.image(named: "Background")!
+        image.draw(at: .init(x: 9, y: 8), from: .zero, operation: .copy, fraction: 1)
 
-            imageName = String(format: "%ld", components.hour! / 10)
-            image = bundle.image(named: imageName)!
-            image.draw(at: CGPoint(x: 21, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = String(format: "%ld", components.hour! / 10)
+        image = bundle.image(named: imageName)!
+        image.draw(at: CGPoint(x: 27, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            imageName = String(format: "%ld", components.hour! % 10)
-            image = bundle.image(named: imageName)!
-            image.draw(at: CGPoint(x: 41, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = String(format: "%ld", components.hour! % 10)
+        image = bundle.image(named: imageName)!
+        image.draw(at: CGPoint(x: 44, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            imageName = String(format: "%ld", components.minute! / 10)
-            image = bundle.image(named: imageName)!
-            image.draw(at: CGPoint(x: 63, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = String(format: "%ld", components.minute! / 10)
+        image = bundle.image(named: imageName)!
+        image.draw(at: CGPoint(x: 64, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            imageName = String(format: "%ld", components.minute! % 10)
-            image = bundle.image(named: imageName)!
-            image.draw(at: CGPoint(x: 83, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
+        imageName = String(format: "%ld", components.minute! % 10)
+        image = bundle.image(named: imageName)!
+        image.draw(at: CGPoint(x: 81, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
 
-            if defaults.showSeconds {
-                image = bundle.image(named: "Dot")!
-
-                for i in stride(from: 0, to: 60, by: 5) {
-                    let angle = CGFloat.pi * 2 / 60 * CGFloat(i)
-                    let x = sin(angle) * 52
-                    let y = cos(angle) * 52
-                    image.draw(at: CGPoint(x: 62.0 + x, y: 64.0 + y), from: .zero, operation: .sourceOver, fraction: 1)
-                }
-
-                for i in 0 ... components.second! {
-                    let angle = CGFloat.pi * 2 / 60 * CGFloat(i)
-                    let x = sin(angle) * 48
-                    let y = cos(angle) * 48
-                    image.draw(at: CGPoint(x: 62.0 + x, y: 64.0 + y), from: .zero, operation: .sourceOver, fraction: 1)
+        if defaults.showSeconds {
+            image = bundle.image(named: "Dot")!
+            let center = CGPoint(x: 62.5, y: 62.5)
+            for i in 0 ... components.second! {
+                let angle = CGFloat(i) * .pi * 2 / 60
+                image.draw(at: center.applying(angle: angle, distance: 42), from: .zero, operation: .sourceOver, fraction: 1)
+                if i % 5 == 0 {
+                    image.draw(at: center.applying(angle: angle, distance: 46), from: .zero, operation: .sourceOver, fraction: 1)
                 }
             }
         }
+    }
+}
+
+extension CGPoint {
+    func applying(angle: CGFloat, distance: CGFloat) -> CGPoint {
+        let x = sin(angle) * distance
+        let y = cos(angle) * distance
+        return applying(.init(translationX: x, y: y))
     }
 }
