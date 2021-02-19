@@ -1,0 +1,2 @@
+- Viele neue Designs passend zum neuesten Mac Betriebssystem
+- Überarbeitung des Codes für geringeren Resourcenbedarf
