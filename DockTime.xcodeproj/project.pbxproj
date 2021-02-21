@@ -1206,7 +1206,7 @@
 				};
 			};
 			buildConfigurationList = 364E4462127B39C700963CE7 /* Build configuration list for PBXProject "DockTime" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2298,7 +2298,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/ClockBundle-White/Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				SKIP_INSTALL = YES;
@@ -2320,7 +2320,7 @@
 				GCC_PREFIX_HEADER = "ClockBundle-White/ClockBundle-White-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/ClockBundle-White/Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = White;
 				SKIP_INSTALL = YES;

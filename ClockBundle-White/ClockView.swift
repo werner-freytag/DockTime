@@ -46,7 +46,7 @@ class ClockView: NSView {
         let shadow = NSShadow()
         shadow.shadowOffset = .init(width: 0, height: -1.8)
         shadow.shadowBlurRadius = 1.8
-        shadow.shadowColor = .black.withAlphaComponent(0.18)
+        shadow.shadowColor = NSColor.black.withAlphaComponent(0.18)
 
         self.shadow = shadow
     }
