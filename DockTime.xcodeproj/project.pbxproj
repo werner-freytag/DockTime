@@ -13,7 +13,6 @@
 		360CE732127CD056009BC9FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 36F06B92127B73C80003535B /* Credits.rtf */; };
 		362AEDB1150AD685009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		362AEDEE150AE12F009B8640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
-		3636BEC925DE78030098C6B9 /* FlipClock.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3699A48B25DE725E003F0C74 /* FlipClock.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3636BED225DE78F80098C6B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3636BECB25DE78F80098C6B9 /* InfoPlist.strings */; };
 		3636BED325DE78F80098C6B9 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636BECE25DE78F80098C6B9 /* ClockView.swift */; };
 		3636BED425DE78F80098C6B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3636BECF25DE78F80098C6B9 /* Images.xcassets */; };
@@ -25,8 +24,6 @@
 		3636BEF125DE8BD40098C6B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3636BEEA25DE8BD40098C6B9 /* InfoPlist.strings */; };
 		3636BEF225DE8BD40098C6B9 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636BEED25DE8BD40098C6B9 /* ClockView.swift */; };
 		3636BEF325DE8BD40098C6B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3636BEEE25DE8BD40098C6B9 /* Images.xcassets */; };
-		3636BEF525DE8C3D0098C6B9 /* Subway.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3636BEE825DE8B740098C6B9 /* Subway.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		363E96D8232ABFB000AC5CDC /* White-Classic.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36CB03BF150AAE8900925361 /* White-Classic.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		363E96E4232AD64800AC5CDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36760319232A9A2700056F92 /* InfoPlist.strings */; };
 		364E4470127B39C800963CE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */; };
@@ -49,6 +46,15 @@
 		367CC1F925DEC5030057E683 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		367CC1FA25DEC5160057E683 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		367CC1FB25DEC51C0057E683 /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
+		367F3E0925E2746900D26C2B /* White-Classic.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36CB03BF150AAE8900925361 /* White-Classic.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E0A25E2746900D26C2B /* Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E0B25E2746900D26C2B /* BigSur.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36FD306725A399C3002B13CA /* BigSur.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E0C25E2746900D26C2B /* BigSur-black.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36BFE5DF25BF239000A8FABA /* BigSur-black.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E0D25E2746900D26C2B /* BigSur-numeric.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36BFE5FE25BF239E00A8FABA /* BigSur-numeric.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E0E25E2746900D26C2B /* Roman.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EA527325DD8318009E522E /* Roman.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E0F25E2746900D26C2B /* FlipClock.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3699A48B25DE725E003F0C74 /* FlipClock.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E1025E2746900D26C2B /* Subway.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3636BEE825DE8B740098C6B9 /* Subway.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		367F3E1125E2746900D26C2B /* White.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C8A0C525DFC16800C94299 /* White.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3685237B25DFD5A9006C1090 /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3685237A25DFD5A9006C1090 /* SwiftToolbox */; };
 		3685237D25DFD5E5006C1090 /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3685237C25DFD5E5006C1090 /* SwiftToolbox */; };
 		3685237F25DFD5ED006C1090 /* SwiftToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 3685237E25DFD5ED006C1090 /* SwiftToolbox */; };
@@ -58,7 +64,6 @@
 		3699A48025DE725E003F0C74 /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
 		3699A48225DE725E003F0C74 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		369B7FF925DFC4F900036492 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36C8A0D525DFC2BB00C94299 /* InfoPlist.strings */; };
-		369B7FFA25DFC7DD00036492 /* White.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C8A0C525DFC16800C94299 /* White.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		369B800125DFC8DC00036492 /* FaceBackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B7FFE25DFC8C000036492 /* FaceBackgroundLayer.swift */; };
 		369B800225DFC8DC00036492 /* FaceLinesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B7FFF25DFC8C000036492 /* FaceLinesLayer.swift */; };
 		369B800325DFC8DC00036492 /* FaceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B7FFD25DFC8C000036492 /* FaceLayer.swift */; };
@@ -82,8 +87,6 @@
 		36BFE61825BF2A7E00A8FABA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36BFE60225BF241100A8FABA /* InfoPlist.strings */; };
 		36BFE61A25BF2A9200A8FABA /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFE5B925BF234700A8FABA /* ClockView.swift */; };
 		36BFE62425BF2A9600A8FABA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36BFE60625BF242000A8FABA /* InfoPlist.strings */; };
-		36BFE62825BF2BCE00A8FABA /* BigSur-black.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36BFE5DF25BF239000A8FABA /* BigSur-black.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		36BFE62B25BF2BCE00A8FABA /* BigSur-numeric.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36BFE5FE25BF239E00A8FABA /* BigSur-numeric.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36C4633D13744BB200A91AC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C4633C13744BB200A91AC4 /* QuartzCore.framework */; };
 		36C8A0B725DFC16800C94299 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36C8A0B825DFC16800C94299 /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
@@ -101,11 +104,9 @@
 		36EA528025DD848A009E522E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA527B25DD848A009E522E /* ClockView.swift */; };
 		36EA528125DD848A009E522E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EA527C25DD848A009E522E /* Images.xcassets */; };
 		36EA528325DD852F009E522E /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
-		36EA528425DD8557009E522E /* Roman.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36EA527325DD8318009E522E /* Roman.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36EA528525DD8565009E522E /* CGContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308A25A3B53C002B13CA /* CGContext+Extension.swift */; };
 		36EA528625DD8569009E522E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD735915231815FE00B2AE6A /* Bundle+Extension.swift */; };
 		36EA528825DD8577009E522E /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD30AA25A3C344002B13CA /* Calendar+Extension.swift */; };
-		36EA528E25DD927D009E522E /* Discreet.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362AEDF9150AE12F009B8640 /* Discreet.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36EA529825DD944D009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA529125DD944D009E522E /* InfoPlist.strings */; };
 		36EA529925DD944D009E522E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA529425DD944D009E522E /* ClockView.swift */; };
 		36EA529A25DD944D009E522E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EA529525DD944D009E522E /* Images.xcassets */; };
@@ -115,7 +116,6 @@
 		36FD305125A399C3002B13CA /* NSView+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF70AB2319058D00C00838 /* NSView+CGContext.swift */; };
 		36FD305325A399C3002B13CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		36FD306C25A39A53002B13CA /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD303A25A397A9002B13CA /* ClockView.swift */; };
-		36FD307B25A3A454002B13CA /* BigSur.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36FD306725A399C3002B13CA /* BigSur.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FD308225A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
 		36FD308325A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
 		36FD308425A3B1F0002B13CA /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD308125A3B1F0002B13CA /* UserDefaults+Extension.swift */; };
@@ -187,16 +187,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				36FD307B25A3A454002B13CA /* BigSur.clockbundle in CopyFiles */,
-				36BFE62B25BF2BCE00A8FABA /* BigSur-numeric.clockbundle in CopyFiles */,
-				36BFE62825BF2BCE00A8FABA /* BigSur-black.clockbundle in CopyFiles */,
+				367F3E0925E2746900D26C2B /* White-Classic.clockbundle in CopyFiles */,
+				367F3E0A25E2746900D26C2B /* Discreet.clockbundle in CopyFiles */,
+				367F3E0B25E2746900D26C2B /* BigSur.clockbundle in CopyFiles */,
+				367F3E0C25E2746900D26C2B /* BigSur-black.clockbundle in CopyFiles */,
+				367F3E0D25E2746900D26C2B /* BigSur-numeric.clockbundle in CopyFiles */,
+				367F3E0E25E2746900D26C2B /* Roman.clockbundle in CopyFiles */,
+				367F3E0F25E2746900D26C2B /* FlipClock.clockbundle in CopyFiles */,
+				367F3E1025E2746900D26C2B /* Subway.clockbundle in CopyFiles */,
+				367F3E1125E2746900D26C2B /* White.clockbundle in CopyFiles */,
 				36FF491C232BFB4D000FB0D4 /* Black.clockbundle in CopyFiles */,
-				36EA528E25DD927D009E522E /* Discreet.clockbundle in CopyFiles */,
-				3636BEC925DE78030098C6B9 /* FlipClock.clockbundle in CopyFiles */,
-				36EA528425DD8557009E522E /* Roman.clockbundle in CopyFiles */,
-				3636BEF525DE8C3D0098C6B9 /* Subway.clockbundle in CopyFiles */,
-				369B7FFA25DFC7DD00036492 /* White.clockbundle in CopyFiles */,
-				363E96D8232ABFB000AC5CDC /* White-Classic.clockbundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2020,6 +2020,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -2074,6 +2075,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2088,12 +2090,14 @@
 				CODE_SIGN_ENTITLEMENTS = DockTime/DockTime.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1977;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.pecora.iClock;
 				PRODUCT_NAME = DockTime;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -2104,12 +2108,14 @@
 				CODE_SIGN_ENTITLEMENTS = DockTime/DockTime.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1977;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.pecora.iClock;
 				PRODUCT_NAME = DockTime;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
