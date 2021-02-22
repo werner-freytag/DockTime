@@ -15,18 +15,23 @@
 
 default_platform(:mac)
 
-platform :mac do
-  desc "Push a new release build to the App Store"
-  lane :release do
-    build_app(scheme: "DockTime")
-    upload_to_app_store(
-        skip_screenshots: true,
-        submit_for_review: true,
-        automatic_release: true,
-        submission_information: {
-          export_compliance_uses_encryption: false,
-          add_id_info_uses_idfa: false
-        }
-    )
-  end
+desc "Increment build number"
+lane :build_number do
+  increment_build_number
+end
+
+desc "Push a new release build to the App Store"
+lane :release do
+  increment_build_number
+  build_app(scheme: "DockTime")
+  upload_to_app_store(
+    force: true, # Skip HTML report verification
+    skip_screenshots: true,
+    submit_for_review: true,
+    automatic_release: true,
+    submission_information: {
+      export_compliance_uses_encryption: false,
+      add_id_info_uses_idfa: false
+    }
+  )
 end

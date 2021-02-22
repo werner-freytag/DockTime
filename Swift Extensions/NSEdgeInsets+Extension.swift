@@ -1,6 +1,6 @@
 // The MIT License
 //
-// Copyright 2012-2019 Werner Freytag
+// Copyright 2021 Werner Freytag
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,8 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import Foundation.NSGeometry
 
-protocol BundleInitiable {
-    init(bundle: Bundle)
+public extension NSEdgeInsets {
+    static let zero = NSEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 }

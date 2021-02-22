@@ -27,8 +27,7 @@ class ClockView: NSView {
     let defaults = UserDefaults.shared
 
     override func draw(_: NSRect) {
-        let currentCalendar = Calendar.current
-        let components = currentCalendar.dateComponents([.hour, .minute, .second], from: Date())
+        let components = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
 
         var imageName: String
         var image: NSImage

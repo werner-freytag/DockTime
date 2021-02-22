@@ -15,10 +15,14 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
-## Mac
-### mac release
+### build_number
 ```
-fastlane mac release
+fastlane build_number
+```
+Increment build number
+### release
+```
+fastlane release
 ```
 Push a new release build to the App Store
 

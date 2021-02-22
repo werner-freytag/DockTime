@@ -29,6 +29,18 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private let clockBundles = Bundle.paths(forResourcesOfType: "clockbundle", inDirectory: Bundle.main.builtInPlugInsPath!)
         .compactMap { Bundle(path: $0) }
         .sorted(by: { $0.bundleName! < $1.bundleName! })
+        .filter {
+            guard let principalClass = $0.principalClass else {
+                assertionFailure("Missing principalClass for bundle \(String(describing: $0.bundleIdentifier)).")
+                return false
+            }
+
+            guard let clockViewClass = principalClass as? NSView.Type else {
+                assertionFailure("\(String(describing: principalClass)) is not an NSView.")
+                return false
+            }
+            return true
+        }
 
     private var updateInterval = UpdateInterval.second {
         didSet {
@@ -39,7 +51,15 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
     private lazy var clockMenuItems: [NSMenuItem] = {
         clockBundles.enumerated()
             .map { index, bundle in
-                let item = NSMenuItem(title: bundle.bundleName!, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: String(index + 1))
+                let keyEquivalent: String = {
+                    switch index {
+                    case 0 ..< 9: return String(index + 1)
+                    case 9: return "0"
+                    default: return ""
+                    }
+                }()
+
+                let item = NSMenuItem(title: bundle.bundleName!, action: #selector(didSelectClockMenuItem(_:)), keyEquivalent: keyEquivalent)
                 item.target = self
                 item.state = bundle.bundleIdentifier == currentClockBundle?.bundleIdentifier ? .on : .off
                 return item
@@ -66,16 +86,8 @@ class DockTimeAppDelegate: NSObject, NSApplicationDelegate {
 
     private var currentClockBundle: Bundle? {
         didSet {
-            guard let clockBundle = currentClockBundle else {
-                return assertionFailure("No clock bundle.")
-            }
-
-            guard let principalClass = clockBundle.principalClass else {
-                return assertionFailure("Missing principalClass for bundle \(String(describing: clockBundle.bundleIdentifier)).")
-            }
-
-            guard let clockViewClass = principalClass as? NSView.Type else {
-                return assertionFailure("\(String(describing: principalClass)) is not a NSView.")
+            guard let clockBundle = currentClockBundle, let clockViewClass = clockBundle.principalClass as? NSView.Type else {
+                return assertionFailure()
             }
 
             NSLog("Loading \(clockViewClass) of bundle \(clockBundle.bundleIdentifier!)")

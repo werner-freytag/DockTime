@@ -29,8 +29,7 @@ class ClockView: NSView {
     override func draw(_: NSRect) {
         guard let context = currentContext else { return assertionFailure("Can not access graphics context.") }
 
-        let currentCalendar = Calendar.current
-        let components = currentCalendar.dateComponents([.hour, .minute, .second], from: Date())
+        let components = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
 
         context.saveGState {
             var imageName: String

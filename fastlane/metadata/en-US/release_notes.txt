@@ -1,3 +1,2 @@
-- Many new designs to match the latest Mac operating system
-- Reworked code for lower resource requirements
-
+- Add new White design
+- Fix for older operating system versions
