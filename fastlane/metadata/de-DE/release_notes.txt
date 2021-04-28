@@ -1,2 +1,1 @@
-- Neues Design Weiß hinzufügen
-- Fix für ältere Betriebssystemversionen
+- Klassisches "Watch weiß"-Design hinzugefügt

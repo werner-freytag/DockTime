@@ -26,6 +26,7 @@
 		3636BEF325DE8BD40098C6B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3636BEEE25DE8BD40098C6B9 /* Images.xcassets */; };
 		363E96E4232AD64800AC5CDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36760319232A9A2700056F92 /* InfoPlist.strings */; };
 		364E4470127B39C800963CE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
+		366A161E25EE32A000230DF3 /* Watch-white-Classic.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3676034B232A9B9300056F92 /* Watch-white-Classic.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		366AFFAA15169C5D008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C1BD150BEE5B00FF8099 /* InfoPlist.strings */; };
 		366AFFAE15169CDE008062D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3609C205150BFF7B00FF8099 /* InfoPlist.strings */; };
 		366AFFBA1516A3F1008062D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 366AFFB51516A3B1008062D9 /* Localizable.strings */; };
@@ -187,16 +188,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				367F3E0925E2746900D26C2B /* White-Classic.clockbundle in CopyFiles */,
-				367F3E0A25E2746900D26C2B /* Discreet.clockbundle in CopyFiles */,
+				36FF491C232BFB4D000FB0D4 /* Black.clockbundle in CopyFiles */,
 				367F3E0B25E2746900D26C2B /* BigSur.clockbundle in CopyFiles */,
 				367F3E0C25E2746900D26C2B /* BigSur-black.clockbundle in CopyFiles */,
 				367F3E0D25E2746900D26C2B /* BigSur-numeric.clockbundle in CopyFiles */,
-				367F3E0E25E2746900D26C2B /* Roman.clockbundle in CopyFiles */,
+				367F3E0A25E2746900D26C2B /* Discreet.clockbundle in CopyFiles */,
 				367F3E0F25E2746900D26C2B /* FlipClock.clockbundle in CopyFiles */,
+				367F3E0E25E2746900D26C2B /* Roman.clockbundle in CopyFiles */,
 				367F3E1025E2746900D26C2B /* Subway.clockbundle in CopyFiles */,
+				366A161E25EE32A000230DF3 /* Watch-white-Classic.clockbundle in CopyFiles */,
 				367F3E1125E2746900D26C2B /* White.clockbundle in CopyFiles */,
-				36FF491C232BFB4D000FB0D4 /* Black.clockbundle in CopyFiles */,
+				367F3E0925E2746900D26C2B /* White-Classic.clockbundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +410,7 @@
 		3676031C232A9A2700056F92 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		36760326232A9A2700056F92 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36760327232A9A2700056F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3676034B232A9B9300056F92 /* Classic-Watch-white.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classic-Watch-white.clockbundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3676034B232A9B9300056F92 /* Watch-white-Classic.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch-white-Classic.clockbundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3699A48B25DE725E003F0C74 /* FlipClock.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClock.clockbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		369B7FFC25DFC8C000036492 /* HandsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsLayer.swift; sourceTree = "<group>"; };
 		369B7FFD25DFC8C000036492 /* FaceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLayer.swift; sourceTree = "<group>"; };
@@ -694,10 +696,10 @@
 				3636BECA25DE78F80098C6B9 /* ClockBundle-FlipClock */,
 				36EA527725DD848A009E522E /* ClockBundle-Roman */,
 				3636BEE925DE8BD40098C6B9 /* ClockBundle-Subway */,
+				36760318232A9A2700056F92 /* ClockBundle-Watch-white-Classic */,
 				36C8A0C825DFC1FE00C94299 /* ClockBundle-White */,
 				36205CA4150ACE3F00D0B0C6 /* ClockBundle-White-Classic */,
 				36EA522C25DD6D57009E522E /* ClockBundle-Classic-Watch */,
-				36760318232A9A2700056F92 /* ClockBundle-Classic-Watch-white */,
 				3609C1B8150BEE5B00FF8099 /* ClockBundle-Classic-Subway */,
 				3609C200150BFF7B00FF8099 /* ClockBundle-Classic-FlipClock */,
 				361F2DC325DEEE78003AFEE7 /* fastlane */,
@@ -725,7 +727,7 @@
 				362AEDF9150AE12F009B8640 /* Discreet.clockbundle */,
 				3609C1B5150BEDE400FF8099 /* Classic-Subway.clockbundle */,
 				3609C1FE150BFF1800FF8099 /* Classic-FlipClock.clockbundle */,
-				3676034B232A9B9300056F92 /* Classic-Watch-white.clockbundle */,
+				3676034B232A9B9300056F92 /* Watch-white-Classic.clockbundle */,
 				36FF490E232BFAA3000FB0D4 /* Black.clockbundle */,
 				36FD306725A399C3002B13CA /* BigSur.clockbundle */,
 				36BFE5DF25BF239000A8FABA /* BigSur-black.clockbundle */,
@@ -746,7 +748,7 @@
 			path = ValueType;
 			sourceTree = "<group>";
 		};
-		36760318232A9A2700056F92 /* ClockBundle-Classic-Watch-white */ = {
+		36760318232A9A2700056F92 /* ClockBundle-Watch-white-Classic */ = {
 			isa = PBXGroup;
 			children = (
 				3676031C232A9A2700056F92 /* ClockView.swift */,
@@ -754,7 +756,7 @@
 				36760319232A9A2700056F92 /* InfoPlist.strings */,
 				36760327232A9A2700056F92 /* Info.plist */,
 			);
-			path = "ClockBundle-Classic-Watch-white";
+			path = "ClockBundle-Watch-white-Classic";
 			sourceTree = "<group>";
 		};
 		369B7FFB25DFC8C000036492 /* Layers */ = {
@@ -1007,9 +1009,9 @@
 			productReference = 364E446C127B39C800963CE7 /* DockTime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36760336232A9B9300056F92 /* ClockBundle-Classic-Watch-white */ = {
+		36760336232A9B9300056F92 /* ClockBundle-Watch-white-Classic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36760348232A9B9300056F92 /* Build configuration list for PBXNativeTarget "ClockBundle-Classic-Watch-white" */;
+			buildConfigurationList = 36760348232A9B9300056F92 /* Build configuration list for PBXNativeTarget "ClockBundle-Watch-white-Classic" */;
 			buildPhases = (
 				36760337232A9B9300056F92 /* Sources */,
 				3676033C232A9B9300056F92 /* Frameworks */,
@@ -1020,9 +1022,9 @@
 			);
 			dependencies = (
 			);
-			name = "ClockBundle-Classic-Watch-white";
+			name = "ClockBundle-Watch-white-Classic";
 			productName = ClockView_White;
-			productReference = 3676034B232A9B9300056F92 /* Classic-Watch-white.clockbundle */;
+			productReference = 3676034B232A9B9300056F92 /* Watch-white-Classic.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		3699A47725DE725E003F0C74 /* ClockBundle-FlipClock */ = {
@@ -1231,16 +1233,16 @@
 				36BFE5C425BF239000A8FABA /* ClockBundle-BigSur-black */,
 				36BFE5E325BF239E00A8FABA /* ClockBundle-BigSur-numeric */,
 				36FF48F2232BFAA3000FB0D4 /* ClockBundle-Black */,
-				36C8A0B525DFC16800C94299 /* ClockBundle-White */,
-				36CB03BE150AAE8900925361 /* ClockBundle-White-Classic */,
 				362AEDE8150AE12F009B8640 /* ClockBundle-Discreet */,
 				3699A47725DE725E003F0C74 /* ClockBundle-FlipClock */,
 				36EA526325DD8318009E522E /* ClockBundle-Roman */,
 				3636BED725DE8B740098C6B9 /* ClockBundle-Subway */,
+				36760336232A9B9300056F92 /* ClockBundle-Watch-white-Classic */,
+				36C8A0B525DFC16800C94299 /* ClockBundle-White */,
+				36CB03BE150AAE8900925361 /* ClockBundle-White-Classic */,
 				3609C1E5150BFF1800FF8099 /* ClockBundle-Classic-FlipClock */,
 				3609C19B150BEDE400FF8099 /* ClockBundle-Classic-Subway */,
 				362AEDAB150AD685009B8640 /* ClockBundle-Classic-Watch */,
-				36760336232A9B9300056F92 /* ClockBundle-Classic-Watch-white */,
 			);
 		};
 /* End PBXProject section */
@@ -2090,7 +2092,7 @@
 				CODE_SIGN_ENTITLEMENTS = DockTime/DockTime.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1977;
+				CURRENT_PROJECT_VERSION = 1978;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.pecora.iClock;
@@ -2108,7 +2110,7 @@
 				CODE_SIGN_ENTITLEMENTS = DockTime/DockTime.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1977;
+				CURRENT_PROJECT_VERSION = 1978;
 				DEVELOPMENT_TEAM = 6F42U4FE9C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.pecora.iClock;
@@ -2132,12 +2134,11 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockBundle-Watch/ClockBundle-Watch-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Classic-Watch-white";
+				PRODUCT_NAME = "Watch-white-Classic";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2157,11 +2158,10 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ClockBundle-Watch/ClockBundle-Watch-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Classic-Watch-white";
+				PRODUCT_NAME = "Watch-white-Classic";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = clockbundle;
@@ -2564,7 +2564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36760348232A9B9300056F92 /* Build configuration list for PBXNativeTarget "ClockBundle-Classic-Watch-white" */ = {
+		36760348232A9B9300056F92 /* Build configuration list for PBXNativeTarget "ClockBundle-Watch-white-Classic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36760349232A9B9300056F92 /* Debug */,

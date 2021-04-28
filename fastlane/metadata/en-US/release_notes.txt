@@ -1,2 +1,1 @@
-- Add new White design
-- Fix for older operating system versions
+- Add classic "Watch white" design
