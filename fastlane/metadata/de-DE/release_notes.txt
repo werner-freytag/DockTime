@@ -1,1 +1,1 @@
-- Klassisches "Watch weiß"-Design hinzugefügt
+- Darstellung des Designs "U-Bahn" verbessert
