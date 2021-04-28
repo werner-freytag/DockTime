@@ -37,19 +37,19 @@ class ClockView: NSView {
 
         imageName = String(format: "%ld", components.hour! / 10)
         image = bundle.image(named: imageName)!
-        image.draw(at: CGPoint(x: 27, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 28, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
 
         imageName = String(format: "%ld", components.hour! % 10)
         image = bundle.image(named: imageName)!
-        image.draw(at: CGPoint(x: 44, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 45, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
 
         imageName = String(format: "%ld", components.minute! / 10)
         image = bundle.image(named: imageName)!
-        image.draw(at: CGPoint(x: 64, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 67, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
 
         imageName = String(format: "%ld", components.minute! % 10)
         image = bundle.image(named: imageName)!
-        image.draw(at: CGPoint(x: 81, y: 51), from: .zero, operation: .sourceOver, fraction: 1)
+        image.draw(at: CGPoint(x: 84, y: 50), from: .zero, operation: .sourceOver, fraction: 1)
 
         if defaults.showSeconds {
             image = bundle.image(named: "Dot")!
