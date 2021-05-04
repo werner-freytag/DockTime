@@ -104,7 +104,7 @@
 		36DA80AF2641B95F00C85E38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E446F127B39C800963CE7 /* Cocoa.framework */; };
 		36DA80B82641B98700C85E38 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA809F2641B76C00C85E38 /* ClockView.swift */; };
 		36DA80BA2641B9BF00C85E38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36DA80A02641B76C00C85E38 /* Images.xcassets */; };
-		36DA80BB2641B9EB00C85E38 /* Subway-Classic.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36DA80B72641B95F00C85E38 /* Subway-Classic.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36DA80BB2641B9EB00C85E38 /* Subway-21.clockbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36DA80B72641B95F00C85E38 /* Subway-21.clockbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36DA80BC2641BB0B00C85E38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36DA809C2641B76C00C85E38 /* InfoPlist.strings */; };
 		36EA523C25DD6D57009E522E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA522D25DD6D57009E522E /* InfoPlist.strings */; };
 		36EA523D25DD6D57009E522E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA523025DD6D57009E522E /* ClockView.swift */; };
@@ -205,7 +205,7 @@
 				367F3E0F25E2746900D26C2B /* FlipClock.clockbundle in CopyFiles */,
 				367F3E0E25E2746900D26C2B /* Roman.clockbundle in CopyFiles */,
 				367F3E1025E2746900D26C2B /* Subway.clockbundle in CopyFiles */,
-				36DA80BB2641B9EB00C85E38 /* Subway-Classic.clockbundle in CopyFiles */,
+				36DA80BB2641B9EB00C85E38 /* Subway-21.clockbundle in CopyFiles */,
 				366A161E25EE32A000230DF3 /* Watch-white-Classic.clockbundle in CopyFiles */,
 				367F3E1125E2746900D26C2B /* White.clockbundle in CopyFiles */,
 				367F3E0925E2746900D26C2B /* White-Classic.clockbundle in CopyFiles */,
@@ -467,7 +467,7 @@
 		36DA80A02641B76C00C85E38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36DA80A12641B76C00C85E38 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36DA80A22641B76C00C85E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36DA80B72641B95F00C85E38 /* Subway-Classic.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subway-Classic.clockbundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DA80B72641B95F00C85E38 /* Subway-21.clockbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subway-21.clockbundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EA522925DD6B6B009E522E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36EA522E25DD6D57009E522E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36EA522F25DD6D57009E522E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -731,7 +731,7 @@
 				3636BECA25DE78F80098C6B9 /* ClockBundle-FlipClock */,
 				36EA527725DD848A009E522E /* ClockBundle-Roman */,
 				3636BEE925DE8BD40098C6B9 /* ClockBundle-Subway */,
-				36DA809B2641B76C00C85E38 /* ClockBundle-Subway-Classic */,
+				36DA809B2641B76C00C85E38 /* ClockBundle-Subway-21 */,
 				36760318232A9A2700056F92 /* ClockBundle-Watch-white-Classic */,
 				36C8A0C825DFC1FE00C94299 /* ClockBundle-White */,
 				36205CA4150ACE3F00D0B0C6 /* ClockBundle-White-Classic */,
@@ -772,7 +772,7 @@
 				3699A48B25DE725E003F0C74 /* FlipClock.clockbundle */,
 				3636BEE825DE8B740098C6B9 /* Subway.clockbundle */,
 				36C8A0C525DFC16800C94299 /* White.clockbundle */,
-				36DA80B72641B95F00C85E38 /* Subway-Classic.clockbundle */,
+				36DA80B72641B95F00C85E38 /* Subway-21.clockbundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -840,7 +840,7 @@
 			path = "ClockBundle-White";
 			sourceTree = "<group>";
 		};
-		36DA809B2641B76C00C85E38 /* ClockBundle-Subway-Classic */ = {
+		36DA809B2641B76C00C85E38 /* ClockBundle-Subway-21 */ = {
 			isa = PBXGroup;
 			children = (
 				36DA809C2641B76C00C85E38 /* InfoPlist.strings */,
@@ -849,7 +849,7 @@
 				36DA80A02641B76C00C85E38 /* Images.xcassets */,
 				36DA80A22641B76C00C85E38 /* Info.plist */,
 			);
-			path = "ClockBundle-Subway-Classic";
+			path = "ClockBundle-Subway-21";
 			sourceTree = "<group>";
 		};
 		36EA522C25DD6D57009E522E /* ClockBundle-Classic-Watch */ = {
@@ -1169,9 +1169,9 @@
 			productReference = 36CB03BF150AAE8900925361 /* White-Classic.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		36DA80A72641B95F00C85E38 /* ClockBundle-Subway-Classic */ = {
+		36DA80A72641B95F00C85E38 /* ClockBundle-Subway-21 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36DA80B42641B95F00C85E38 /* Build configuration list for PBXNativeTarget "ClockBundle-Subway-Classic" */;
+			buildConfigurationList = 36DA80B42641B95F00C85E38 /* Build configuration list for PBXNativeTarget "ClockBundle-Subway-21" */;
 			buildPhases = (
 				36DA80A82641B95F00C85E38 /* Sources */,
 				36DA80AE2641B95F00C85E38 /* Frameworks */,
@@ -1182,9 +1182,9 @@
 			);
 			dependencies = (
 			);
-			name = "ClockBundle-Subway-Classic";
+			name = "ClockBundle-Subway-21";
 			productName = ClockView_White;
-			productReference = 36DA80B72641B95F00C85E38 /* Subway-Classic.clockbundle */;
+			productReference = 36DA80B72641B95F00C85E38 /* Subway-21.clockbundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		36EA526325DD8318009E522E /* ClockBundle-Roman */ = {
@@ -1304,7 +1304,7 @@
 				3699A47725DE725E003F0C74 /* ClockBundle-FlipClock */,
 				36EA526325DD8318009E522E /* ClockBundle-Roman */,
 				3636BED725DE8B740098C6B9 /* ClockBundle-Subway */,
-				36DA80A72641B95F00C85E38 /* ClockBundle-Subway-Classic */,
+				36DA80A72641B95F00C85E38 /* ClockBundle-Subway-21 */,
 				36760336232A9B9300056F92 /* ClockBundle-Watch-white-Classic */,
 				36C8A0B525DFC16800C94299 /* ClockBundle-White */,
 				36CB03BE150AAE8900925361 /* ClockBundle-White-Classic */,
@@ -2493,8 +2493,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Subway-Classic";
-				PRODUCT_NAME = "Subway-Classic";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Subway-21";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -2511,8 +2511,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-Subway-Classic";
-				PRODUCT_NAME = "Subway-Classic";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.pecora.DockTime-ClockBundle-${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Subway-21";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = clockbundle;
 			};
@@ -2762,7 +2762,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36DA80B42641B95F00C85E38 /* Build configuration list for PBXNativeTarget "ClockBundle-Subway-Classic" */ = {
+		36DA80B42641B95F00C85E38 /* Build configuration list for PBXNativeTarget "ClockBundle-Subway-21" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36DA80B52641B95F00C85E38 /* Debug */,
